@@ -1,0 +1,41 @@
+header {
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
+  box-shadow: 0 0.07rem;
+  h1 {
+    color: #ffffff;
+    font-size: 0.86rem;
+    font-family: $font;
+    font-weight: 400;
+    // padding: 0.21rem, 0, 0.5rem, 0.29rem; not working!!
+    padding-top: 0.21rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.29rem;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  h2 {
+    background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: $font;
+    font-weight: 700;
+  }
+  div {
+    display: flex;
+    justify-content: baseline;
+    background-color: #e6e6e6;
+    h3 {
+      background-color: #ffffff;
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+  }
+  button {
+    display: flex;
+    justify-content: baseline;
+  }
+}

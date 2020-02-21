@@ -1,0 +1,43 @@
+html {
+  font-size: 14px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+header {
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
+  box-shadow: 0 0.07rem; }
+  header h1 {
+    color: #ffffff;
+    font-size: 0.86rem;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    padding-top: 0.21rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.29rem; }
+
+nav {
+  display: flex;
+  justify-content: space-between; }
+
+section h2 {
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700; }
+section div {
+  display: flex;
+  justify-content: baseline;
+  background-color: #e6e6e6; }
+  section div h3 {
+    background-color: #ffffff;
+    margin: 0.5rem;
+    padding: 0.5rem; }
+section button {
+  display: flex;
+  justify-content: baseline; }
+
+/*# sourceMappingURL=styles.css.map */
