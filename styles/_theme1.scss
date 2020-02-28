@@ -1,6 +1,9 @@
+body {
+  background-color: #fff0fe;
+}
 header {
   background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
-  box-shadow: 0 0.07rem;
+  box-shadow: 0 0.07rem #110038;
   h1 {
     color: #ffffff;
     font-size: 0.86rem;
@@ -15,27 +18,73 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  img {
+    padding: 2.5rem 6.5rem;
+  }
+  div {
+    display: flex;
+    padding: 3.14rem 10.04rem 2.5rem;
+    button {
+      margin: 0.57rem;
+    }
+    div {
+      margin: 0px;
+      padding: 0px;
+      button {
+        margin: 0.57rem 0;
+        padding: 0px;
+      }
+    }
+  }
 }
 section {
+  margin: 0 auto;
+  width: 85.71rem;
+
   h2 {
+    position: relative;
+    top: 1.92rem;
+    margin: -1.92rem 0.21rem 0rem;
+    height: 1.71rem;
     background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
     color: #ffffff;
     font-size: 1rem;
     font-family: $font;
-    font-weight: 700;
+    font-weight: 600;
+    padding-left: 0.21rem;
+    line-height: 1.8rem;
   }
-  div {
+
+  .bottom-part-container {
     display: flex;
-    justify-content: baseline;
+    height: 7.2rem;
     background-color: #e6e6e6;
-    h3 {
+    box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset,
+      -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+    .search-bar-container {
+      display: flex;
+      margin: 2.79rem 1.07rem 0.86rem;
+      width: 75.5rem;
+      height: 3.43rem;
       background-color: #ffffff;
-      margin: 0.5rem;
-      padding: 0.5rem;
+      box-shadow: 0.14rem 0.14rem 0 0 #000000 inset,
+        -0.14rem -0.14rem 0 0 #e6e6e6 inset;
+      border: solid 0.07rem #979797;
+      h3 {
+        padding-left: 1.14rem;
+        align-self: center;
+        font-size: 1.14rem;
+        font-family: $font;
+        font-weight: 300;
+        color: #b4b4b4;
+      }
     }
-  }
-  button {
-    display: flex;
-    justify-content: baseline;
+    button {
+      width: 7.29rem;
+      height: 2.57rem;
+      margin: 3.21rem 0.57rem 0rem;
+      display: flex;
+      justify-content: baseline;
+    }
   }
 }
