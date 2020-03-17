@@ -53,14 +53,25 @@ nav div button {
   margin: 0.57rem;
 }
 
-nav div div {
+nav div .tema-button-container {
   margin: 0px;
   padding: 0px;
 }
 
-nav div div button {
+nav div .tema-button-container button {
   margin: 0.57rem 0;
-  padding: 0px;
+  padding: 5px;
+  border: solid 1px;
+}
+
+nav div .tema-button-container button img {
+  margin: 0;
+  padding: 0;
+}
+
+nav div .mis-guifos {
+  background-color: transparent;
+  margin-right: 0;
 }
 
 section {
@@ -89,8 +100,8 @@ section .bottom-part-container {
   display: flex;
   height: 7.2rem;
   background-color: #e6e6e6;
-  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
-          box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+          box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
 }
 
 section .bottom-part-container .search-bar-container {
@@ -101,8 +112,8 @@ section .bottom-part-container .search-bar-container {
   width: 75.5rem;
   height: 3.43rem;
   background-color: #ffffff;
-  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #000000 inset, -0.14rem -0.14rem 0 0 #e6e6e6 inset;
-          box-shadow: 0.14rem 0.14rem 0 0 #000000 inset, -0.14rem -0.14rem 0 0 #e6e6e6 inset;
+  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #000000 inset, -0.14rem -0.14rem 0 0 #e6e6e6 inset;
+          box-shadow: 0.14rem 0.14rem 0 0 #000000 inset, -0.14rem -0.14rem 0 0 #e6e6e6 inset;
   border: solid 0.07rem #979797;
 }
 

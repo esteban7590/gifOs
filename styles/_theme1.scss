@@ -27,13 +27,22 @@ nav {
     button {
       margin: 0.57rem;
     }
-    div {
+    .tema-button-container {
       margin: 0px;
       padding: 0px;
       button {
         margin: 0.57rem 0;
-        padding: 0px;
+        padding: 5px;
+        border: solid 1px;
+        img {
+          margin: 0;
+          padding: 0;
+        }
       }
+    }
+    .mis-guifos {
+      background-color: transparent;
+      margin-right: 0;
     }
   }
 }
