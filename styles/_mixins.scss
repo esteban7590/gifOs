@@ -1,5 +1,42 @@
 @mixin button {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  border: solid 0.07rem;
+  background-color: #f7c9f3;
+  box-shadow: inset -0.07rem -0.07rem 0 0 #997d97,
+    inset 0.07rem 0.07rem 0 0 #ffffff;
+}
+
+@mixin intro-section {
+  margin: 0 10rem 0 7.14rem;
+  display: flex;
+  background: #fffafe;
+  border: 0.07rem solid #e6bbe2;
+  box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4,
+    inset 0.14rem 0.14rem 0 0 #80687d;
+  h3 {
+    padding: 0.5rem;
+    align-self: center;
+    font-size: 1rem;
+    font-family: $font;
+    color: #110038;
+    font-weight: 300;
+  }
+}
+
+@mixin gif-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.36rem 8.9rem 0 7.14rem;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+@mixin gif-img-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.14rem 0 0;
+  border: none;
+  background: #e6e6e6;
+  box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4,
+    inset 0.14rem 0.14rem 0 0 #ffffff;
 }
