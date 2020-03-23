@@ -40,6 +40,7 @@ nav {
 
 nav img {
   padding: 2.5rem 7rem;
+  height: 4rem;
 }
 
 nav div {
@@ -56,9 +57,36 @@ nav div button {
           box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
   padding: 0.64rem 1.89rem;
   margin: 0.57rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  color: #110038;
+  text-align: center;
+  line-height: 1.19rem;
+  position: relative;
+}
+
+nav div button:hover:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+nav div button:focus:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 nav div .tema-button-container {
+  position: relative;
   margin: 0px;
   padding: 0px;
 }
@@ -71,22 +99,67 @@ nav div .tema-button-container .dropdown-button {
   position: relative;
   left: -0.64rem;
   margin: 0.57rem 0;
-  padding: 5px;
-  border: solid 0.07rem;
+  padding: 0.93rem 1.07rem;
 }
 
-nav div .tema-button-container .dropdown-button img {
+nav div .tema-button-container .dropdown-button .dropdown-icon {
   margin: 0;
   padding: 0;
+  height: auto;
 }
 
-nav div .mis-guifos {
+nav div .tema-button-container .dropdown-themes {
+  display: none;
+  position: absolute;
+  top: 3.7rem;
+  left: 0.5rem;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  width: 91.8%;
+  z-index: 1;
+  padding-bottom: 0.71rem;
+}
+
+nav div .tema-button-container .dropdown-themes button {
+  width: 86.5%;
+  margin: 0.71rem 0 0 0.71rem;
+  padding: 0.5rem 1.14rem;
+  background: #f0f0f0;
+  border: 0.07rem solid #808080;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  text-align: left;
+}
+
+nav div .tema-button-container .dropdown-themes .day-button {
+  background: #fff4fd;
+  border: 1px solid #cca6c9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+}
+
+nav div .tema-button-container .dropdown-themes .day-button::first-letter {
+  text-decoration: underline;
+}
+
+nav div .dropdown-button:focus ~ .dropdown-themes {
+  display: block;
+}
+
+nav .mis-guifos {
   background-color: transparent;
   padding: 0 0.8rem;
-  margin: 0;
+  margin: 0.4rem 0;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+nav .mis-guifos:focus {
+  color: #9674e6;
 }
 
 .search-section {
@@ -112,6 +185,11 @@ nav div .mis-guifos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 7.2rem;
   background-color: #e6e6e6;
   -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
@@ -122,8 +200,14 @@ nav div .mis-guifos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 2.79rem 0.57rem 0.86rem 1.07rem;
-  width: 100rem;
   height: 3.43rem;
   background-color: #ffffff;
   -webkit-box-shadow: 0.14rem 0.14rem 0 0 #000000 inset, -0.14rem -0.14rem 0 0 #e6e6e6 inset;
@@ -131,11 +215,9 @@ nav div .mis-guifos {
   border: solid 0.07rem #979797;
 }
 
-.search-section .bottom-part-container .search-bar-container h3 {
-  padding-left: 1.14rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.search-section .bottom-part-container .search-bar-container .search-bar {
+  background-color: transparent;
+  padding: 0.93rem 0rem 0.93rem 1.14rem;
   font-size: 1.14rem;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 300;
@@ -158,6 +240,7 @@ nav div .mis-guifos {
   border: 0.07rem solid #808080;
   -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
           box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  position: relative;
 }
 
 .search-section .bottom-part-container button p {
@@ -167,8 +250,114 @@ nav div .mis-guifos {
   padding: 0 1.29rem 0 0.71rem;
 }
 
-.search-section .bottom-part-container button img {
+.search-section .bottom-part-container button .lupa-inactive {
   padding: 0 0 0 0.5rem;
+}
+
+.search-section .bottom-part-container button .lupa {
+  display: none;
+}
+
+.search-section .bottom-part-container .on-search-menu {
+  display: none;
+  position: relative;
+  width: 100%;
+  background-color: #e6e6e6;
+  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+          box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+
+.search-section .bottom-part-container .on-search-menu li {
+  font-family: "Chakra Petch", sans-serif;
+  list-style: none;
+  padding: 0.5rem 1.14rem;
+  background: #f0f0f0;
+  border: 0.07rem solid #808080;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  margin: 1.21rem 9.21rem 1.21rem 1.14rem;
+  position: relative;
+}
+
+.search-section .bottom-part-container .on-search-menu li:hover:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+  background: #dbdbdb;
+}
+
+.search-section .bottom-part-container .on-search-menu a {
+  text-decoration: none;
+  font-size: 1.14rem;
+  color: #110038;
+  position: relative;
+  z-index: 1;
+}
+
+.search-section .bottom-part-container button:hover {
+  background-color: #f7c9f3;
+}
+
+.search-section .bottom-part-container button:hover p {
+  color: #110038;
+}
+
+.search-section .bottom-part-container button:hover .lupa-inactive {
+  display: none;
+}
+
+.search-section .bottom-part-container button:hover .lupa {
+  display: block;
+  padding: 0 0 0 0.5rem;
+}
+
+.search-section .bottom-part-container button:hover:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.search-section .bottom-part-container button:focus:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.search-section .bottom-part-container button:focus {
+  background-color: #f7c9f3;
+}
+
+.search-section .bottom-part-container button:focus p {
+  color: #110038;
+}
+
+.search-section .bottom-part-container button:focus .lupa-inactive {
+  display: none;
+}
+
+.search-section .bottom-part-container button:focus .lupa {
+  display: block;
+  padding: 0 0 0 0.5rem;
+}
+
+.search-section .bottom-part-container button:focus ~ .on-search-menu {
+  display: block;
 }
 
 .suggested-section {
@@ -224,6 +413,7 @@ nav div .mis-guifos {
   background: #e6e6e6;
   -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
           box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  position: relative;
 }
 
 .suggested-section .suggested-gif-container .suggested-gif .hashtag-bar {
@@ -249,10 +439,6 @@ nav div .mis-guifos {
   padding: 0.2rem 0.3rem;
 }
 
-.suggested-section .suggested-gif-container .suggested-gif .hashtag-bar img {
-  padding: 0.36rem 0.29rem;
-}
-
 .suggested-section .suggested-gif-container .suggested-gif img {
   margin: 0.14rem 0.29rem;
   max-width: 100%;
@@ -272,6 +458,20 @@ nav div .mis-guifos {
   color: #ffffff;
   font-size: 1rem;
   margin-bottom: -2.25rem;
+}
+
+.suggested-section .suggested-gif-container .suggested-gif img:hover {
+  outline: 0.07rem dashed #000000;
+}
+
+.suggested-section .suggested-gif-container .suggested-gif img:hover ~ button:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 .tendency-section {
@@ -301,9 +501,14 @@ nav div .mis-guifos {
 }
 
 .tendency-section .tendency-gif-container {
+  margin: 1.36rem 8.9rem 0 6.14rem;
   display: -ms-grid;
   display: grid;
-  margin: 1.36rem 8.9rem 0 7.14rem;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  -ms-grid-rows: (20.5vw)[3];
+      grid-template-rows: repeat(3, 20.5vw);
+  grid-row-gap: 1.14rem;
 }
 
 .tendency-section .tendency-gif-container .tendency-gif {
@@ -319,13 +524,158 @@ nav div .mis-guifos {
   background: #e6e6e6;
   -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
           box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  margin: 0.28rem auto;
 }
 
-.tendency-section .tendency-gif-container img {
-  display: block;
+.tendency-section .tendency-gif-container .tendency-gif img {
+  max-block-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.tendency-section .tendency-gif-container div {
+.tendency-section .tendency-gif-container .tendency-gif div {
   display: none;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif img:hover {
+  outline: 0.07rem dashed #000000;
+  margin: 0.21rem;
+  max-block-size: 98%;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif img:hover ~ div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  position: relative;
+  top: -1.5rem;
+  left: 0.14rem;
+  margin: 0 0.35rem 0 0.14rem;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif img:hover ~ div p {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 1.14rem 0 0;
+  border: none;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  margin: 0.28rem 0.8rem;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-1 img {
+  max-block-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-1 div {
+  display: none;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-1 img:hover {
+  outline: 0.07rem dashed #000000;
+  margin: 0.21rem;
+  max-block-size: 98%;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-1 img:hover ~ div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  position: relative;
+  top: -1.5rem;
+  left: 0.14rem;
+  margin: 0 0.35rem 0 0.14rem;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-1 img:hover ~ div p {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 1.14rem 0 0;
+  border: none;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  margin: 0.28rem 0.8rem;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-2 img {
+  max-block-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-2 div {
+  display: none;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-2 img:hover {
+  outline: 0.07rem dashed #000000;
+  margin: 0.21rem;
+  max-block-size: 98%;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-2 img:hover ~ div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  position: relative;
+  top: -1.5rem;
+  left: 0.14rem;
+  margin: 0 0.35rem 0 0.14rem;
+}
+
+.tendency-section .tendency-gif-container .tendency-gif-wide-2 img:hover ~ div p {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */
