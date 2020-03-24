@@ -5,21 +5,15 @@
     inset 0.07rem 0.07rem 0 0 #ffffff;
 }
 
-@mixin intro-section {
-  margin: 0 10rem 0 7.14rem;
-  display: flex;
-  background: #fffafe;
-  border: 0.07rem solid #e6bbe2;
-  box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4,
-    inset 0.14rem 0.14rem 0 0 #80687d;
-  h3 {
-    padding: 0.5rem;
-    align-self: center;
-    font-size: 1rem;
-    font-family: $font;
-    color: #110038;
-    font-weight: 300;
-  }
+@mixin button-blue {
+  background: #4180f6;
+  border: 0.07rem solid #4c2f99;
+  box-shadow: inset -0.07rem -0.07rem 0 0 #284f99,
+    inset 0.07rem 0.07rem 0 0 #ffffff;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: $font;
+  line-height: 1.29rem;
 }
 
 @mixin gif-container {
@@ -31,21 +25,6 @@
   background-color: transparent;
 }
 
-@mixin gif-img-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 1.14rem 0 0;
-  border: none;
-  background: #e6e6e6;
-  box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4,
-    inset 0.14rem 0.14rem 0 0 #ffffff;
-}
-
-@mixin img-preset {
-  max-block-size: 100%;
-  object-fit: cover;
-}
-
 @mixin dotted-border {
   border: 0.07rem dashed #000000;
   position: absolute;
@@ -54,21 +33,4 @@
   left: 0.14rem;
   right: 0.14rem;
   bottom: 0.14rem;
-}
-
-@mixin hashtag-bar {
-  display: flex;
-  flex-wrap: nowrap;
-  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
-  position: relative;
-  top: -1.5rem;
-  left: 0.14rem;
-  margin: 0 0.35rem 0 0.14rem;
-  p {
-    display: inline-block;
-    font-family: $font;
-    font-weight: 600;
-    font-size: 1rem;
-    color: #ffffff;
-  }
 }

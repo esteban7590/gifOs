@@ -8,6 +8,97 @@ html {
   border: 0;
 }
 
+.template-section {
+  padding: 4.57rem 0 0 0;
+}
+
+.template-section .intro-section {
+  margin: 0 10rem 0 7.14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fffafe;
+  border: 0.07rem solid #e6bbe2;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+}
+
+.template-section .intro-section h3 {
+  padding: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+  color: #110038;
+  font-weight: 300;
+}
+
+.template-section .template-gif-container {
+  margin: 1.36rem 10rem 0 7.43rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.template-section .template-gif-container .template-gif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 1.14rem 0 0;
+  border: none;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  position: relative;
+  margin: 0 0 1.14rem 0;
+}
+
+.template-section .template-gif-container .template-gif img {
+  width: 19vw;
+}
+
+.template-section .template-gif-container .template-gif div {
+  display: none;
+}
+
+.template-section .template-gif-container .template-gif img:hover {
+  outline: 0.07rem dashed #000000;
+  width: 18.8vw;
+  padding: 0.1vw;
+}
+
+.template-section .template-gif-container .template-gif img:hover ~ div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  position: relative;
+  top: -1.4rem;
+  left: 0.1rem;
+  margin: 0 0.1rem -1.25rem 0;
+}
+
+.template-section .template-gif-container .template-gif img:hover ~ div p {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
 body {
   background-color: #fff0fe;
 }
@@ -65,6 +156,10 @@ nav div button {
   position: relative;
 }
 
+nav div .crear-button {
+  margin-right: 1.14rem;
+}
+
 nav div button:hover:before {
   border: 0.07rem dashed #000000;
   position: absolute;
@@ -97,7 +192,6 @@ nav div .tema-button-container .dropdown-button {
   -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
           box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
   position: relative;
-  left: -0.64rem;
   margin: 0.57rem 0;
   padding: 0.93rem 1.07rem;
 }
@@ -108,15 +202,33 @@ nav div .tema-button-container .dropdown-button .dropdown-icon {
   height: auto;
 }
 
+nav div .tema-button-container .tema-button {
+  border: solid 0.07rem;
+  background-color: #f7c9f3;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  position: relative;
+  margin: 0.57rem 0;
+  padding: 0.64rem 1.71rem;
+}
+
+nav div .tema-button-container .dropdown-button:hover ~ .tema-button:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
 nav div .tema-button-container .dropdown-themes {
   display: none;
   position: absolute;
   top: 3.7rem;
-  left: 0.5rem;
   background: #e6e6e6;
   -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
           box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-  width: 91.8%;
   z-index: 1;
   padding-bottom: 0.71rem;
 }
@@ -149,6 +261,10 @@ nav div .dropdown-button:focus ~ .dropdown-themes {
   display: block;
 }
 
+nav div .tema-button:focus ~ .dropdown-themes {
+  display: block;
+}
+
 nav .mis-guifos {
   background-color: transparent;
   padding: 0 0.8rem;
@@ -163,14 +279,28 @@ nav .mis-guifos:focus {
 }
 
 .search-section {
-  padding: 0 10rem 0 7.14rem;
+  margin: 0 10rem 0 7.14rem;
 }
 
-.search-section h2 {
-  position: relative;
-  top: 1.92rem;
-  margin: -1.92rem 0.21rem 0rem;
-  height: 1.71rem;
+.search-section .bottom-part-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 7.2rem;
+  background-color: #e6e6e6;
+  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+          box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+}
+
+.search-section .bottom-part-container h2 {
+  margin: 0.14rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
   background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
   color: #ffffff;
@@ -181,56 +311,58 @@ nav .mis-guifos:focus {
   line-height: 1.8rem;
 }
 
-.search-section .bottom-part-container {
+.search-section .bottom-part-container .search-bar-container {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 7.2rem;
-  background-color: #e6e6e6;
-  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
-          box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
-}
-
-.search-section .bottom-part-container .search-bar-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 2.79rem 0.57rem 0.86rem 1.07rem;
-  height: 3.43rem;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #000000 inset, -0.14rem -0.14rem 0 0 #e6e6e6 inset;
-          box-shadow: 0.14rem 0.14rem 0 0 #000000 inset, -0.14rem -0.14rem 0 0 #e6e6e6 inset;
-  border: solid 0.07rem #979797;
 }
 
 .search-section .bottom-part-container .search-bar-container .search-bar {
-  background-color: transparent;
-  padding: 0.93rem 0rem 0.93rem 1.14rem;
+  background-color: #ffffff;
+  padding: 0 0 0 1.14rem;
+  margin: 0.86rem 0 0.86rem 1.07rem;
+  height: 3.43rem;
+  width: 60%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-size: 1.14rem;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 300;
   color: #b4b4b4;
 }
 
-.search-section .bottom-part-container button {
+.search-section .bottom-part-container .search-bar-container .search-bar:focus ~ .on-search-menu {
+  display: block;
+}
+
+.search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button {
+  background-color: #f7c9f3;
+}
+
+.search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button p {
+  color: #110038;
+}
+
+.search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button .lupa-inactive {
+  display: none;
+}
+
+.search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button .lupa {
+  display: block;
+  padding: 0 0 0 0.5rem;
+}
+
+.search-section .bottom-part-container .search-bar-container button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 7.29rem;
   height: 2.57rem;
-  margin: 3.21rem 1.29rem 0 0;
+  margin: auto 1.29rem auto 0.57rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -243,24 +375,81 @@ nav .mis-guifos:focus {
   position: relative;
 }
 
-.search-section .bottom-part-container button p {
+.search-section .bottom-part-container .search-bar-container button p {
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
   color: #b4b4b4;
   padding: 0 1.29rem 0 0.71rem;
 }
 
-.search-section .bottom-part-container button .lupa-inactive {
+.search-section .bottom-part-container .search-bar-container button .lupa-inactive {
   padding: 0 0 0 0.5rem;
 }
 
-.search-section .bottom-part-container button .lupa {
+.search-section .bottom-part-container .search-bar-container button .lupa {
   display: none;
 }
 
-.search-section .bottom-part-container .on-search-menu {
+.search-section .bottom-part-container .search-bar-container button:hover {
+  background-color: #f7c9f3;
+}
+
+.search-section .bottom-part-container .search-bar-container button:hover p {
+  color: #110038;
+}
+
+.search-section .bottom-part-container .search-bar-container button:hover .lupa-inactive {
   display: none;
-  position: relative;
+}
+
+.search-section .bottom-part-container .search-bar-container button:hover .lupa {
+  display: block;
+  padding: 0 0 0 0.5rem;
+}
+
+.search-section .bottom-part-container .search-bar-container button:hover:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.search-section .bottom-part-container .search-bar-container button:focus:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.search-section .bottom-part-container .search-bar-container button:focus {
+  background-color: #f7c9f3;
+}
+
+.search-section .bottom-part-container .search-bar-container button:focus p {
+  color: #110038;
+}
+
+.search-section .bottom-part-container .search-bar-container button:focus .lupa-inactive {
+  display: none;
+}
+
+.search-section .bottom-part-container .search-bar-container button:focus .lupa {
+  display: block;
+  padding: 0 0 0 0.5rem;
+}
+
+.search-section .bottom-part-container .search-bar-container button:focus ~ .on-search-menu {
+  display: none;
+}
+
+.search-section .bottom-part-container .search-bar-container .on-search-menu {
+  display: none;
   width: 100%;
   background-color: #e6e6e6;
   -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
@@ -271,7 +460,7 @@ nav .mis-guifos:focus {
   z-index: 1;
 }
 
-.search-section .bottom-part-container .on-search-menu li {
+.search-section .bottom-part-container .search-bar-container .on-search-menu li {
   font-family: "Chakra Petch", sans-serif;
   list-style: none;
   padding: 0.5rem 1.14rem;
@@ -283,7 +472,7 @@ nav .mis-guifos:focus {
   position: relative;
 }
 
-.search-section .bottom-part-container .on-search-menu li:hover:before {
+.search-section .bottom-part-container .search-bar-container .on-search-menu li:hover:before {
   border: 0.07rem dashed #000000;
   position: absolute;
   content: "";
@@ -294,7 +483,7 @@ nav .mis-guifos:focus {
   background: #dbdbdb;
 }
 
-.search-section .bottom-part-container .on-search-menu a {
+.search-section .bottom-part-container .search-bar-container .on-search-menu a {
   text-decoration: none;
   font-size: 1.14rem;
   color: #110038;
@@ -302,62 +491,21 @@ nav .mis-guifos:focus {
   z-index: 1;
 }
 
-.search-section .bottom-part-container button:hover {
-  background-color: #f7c9f3;
-}
-
-.search-section .bottom-part-container button:hover p {
-  color: #110038;
-}
-
-.search-section .bottom-part-container button:hover .lupa-inactive {
+.search-section .results-buttons-container {
   display: none;
 }
 
-.search-section .bottom-part-container button:hover .lupa {
-  display: block;
-  padding: 0 0 0 0.5rem;
-}
-
-.search-section .bottom-part-container button:hover:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.search-section .bottom-part-container button:focus:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.search-section .bottom-part-container button:focus {
-  background-color: #f7c9f3;
-}
-
-.search-section .bottom-part-container button:focus p {
-  color: #110038;
-}
-
-.search-section .bottom-part-container button:focus .lupa-inactive {
-  display: none;
-}
-
-.search-section .bottom-part-container button:focus .lupa {
-  display: block;
-  padding: 0 0 0 0.5rem;
-}
-
-.search-section .bottom-part-container button:focus ~ .on-search-menu {
-  display: block;
+.search-section .results-buttons-container .result-button {
+  background: #4180f6;
+  border: 0.07rem solid #4c2f99;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+  line-height: 1.29rem;
+  padding: 0.57rem 0.5rem;
+  margin: 0.86rem 0.57rem 3.86rem 0.1rem;
 }
 
 .suggested-section {
@@ -451,13 +599,15 @@ nav .mis-guifos:focus {
   top: -3.65rem;
   width: 5.79rem;
   height: 2.43rem;
+  margin-bottom: -2.25rem;
   background: #4180f6;
   border: 0.07rem solid #4c2f99;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #284f99, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #284f99, inset 0.14rem 0.14rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
   color: #ffffff;
   font-size: 1rem;
-  margin-bottom: -2.25rem;
+  font-family: "Chakra Petch", sans-serif;
+  line-height: 1.29rem;
 }
 
 .suggested-section .suggested-gif-container .suggested-gif img:hover {
@@ -474,208 +624,12 @@ nav .mis-guifos:focus {
   bottom: 0.14rem;
 }
 
-.tendency-section {
-  padding: 4.57rem 0 0 0;
+.mis-guifos-section {
+  padding-top: 0rem;
 }
 
-.tendency-section .intro-section {
-  margin: 0 10rem 0 7.14rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #fffafe;
-  border: 0.07rem solid #e6bbe2;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
-}
-
-.tendency-section .intro-section h3 {
-  padding: 0.5rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1rem;
-  font-family: "Chakra Petch", sans-serif;
-  color: #110038;
-  font-weight: 300;
-}
-
-.tendency-section .tendency-gif-container {
-  margin: 1.36rem 8.9rem 0 6.14rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (25%)[4];
-      grid-template-columns: repeat(4, 25%);
-  -ms-grid-rows: (20.5vw)[3];
-      grid-template-rows: repeat(3, 20.5vw);
-  grid-row-gap: 1.14rem;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 1.14rem 0 0;
-  border: none;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-  margin: 0.28rem auto;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif img {
-  max-block-size: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif div {
+.results-section {
   display: none;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif img:hover {
-  outline: 0.07rem dashed #000000;
-  margin: 0.21rem;
-  max-block-size: 98%;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif img:hover ~ div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
-  position: relative;
-  top: -1.5rem;
-  left: 0.14rem;
-  margin: 0 0.35rem 0 0.14rem;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif img:hover ~ div p {
-  display: inline-block;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #ffffff;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 1.14rem 0 0;
-  border: none;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  margin: 0.28rem 0.8rem;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-1 img {
-  max-block-size: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-1 div {
-  display: none;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-1 img:hover {
-  outline: 0.07rem dashed #000000;
-  margin: 0.21rem;
-  max-block-size: 98%;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-1 img:hover ~ div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
-  position: relative;
-  top: -1.5rem;
-  left: 0.14rem;
-  margin: 0 0.35rem 0 0.14rem;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-1 img:hover ~ div p {
-  display: inline-block;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #ffffff;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 1.14rem 0 0;
-  border: none;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3/5;
-  margin: 0.28rem 0.8rem;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-2 img {
-  max-block-size: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-2 div {
-  display: none;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-2 img:hover {
-  outline: 0.07rem dashed #000000;
-  margin: 0.21rem;
-  max-block-size: 98%;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-2 img:hover ~ div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
-  position: relative;
-  top: -1.5rem;
-  left: 0.14rem;
-  margin: 0 0.35rem 0 0.14rem;
-}
-
-.tendency-section .tendency-gif-container .tendency-gif-wide-2 img:hover ~ div p {
-  display: inline-block;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #ffffff;
+  padding-top: 0rem;
 }
 /*# sourceMappingURL=styles.css.map */

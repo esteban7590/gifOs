@@ -19,11 +19,13 @@
       </h1>
     </header>
     <nav>
-      <img src="images/gifOF_logo.png" alt="Logo gifOs" />
+      <a href="index.html"
+        ><img src="images/gifOF_logo.png" alt="Logo gifOs"
+      /></a>
       <div>
-        <button>Crear Guifos</button>
+        <button class="crear-button">Crear Guifos</button>
         <div class="tema-button-container">
-          <button>Elegir tema</button>
+          <button class="tema-button">Elegir tema</button>
           <button class="dropdown-button">
             <img class="dropdown-icon" src="images/dropdown.svg" alt="arrow" />
           </button>
@@ -32,12 +34,18 @@
             <button class="night-button">Sailor Night</button>
           </ul>
         </div>
-        <button class="mis-guifos"><u>M</u>is Guifos</button>
+        <button
+          class="mis-guifos"
+          onclick="window.location.href = 'mis-guifos.html';"
+        >
+          <u>M</u>is Guifos
+        </button>
+        <!-- <a href="mis-guifos.html" class="btn btn-primary">Go to Google</a> -->
       </div>
     </nav>
     <section class="search-section">
-      <h2>Buscar</h2>
       <div class="bottom-part-container">
+        <h2>Buscar</h2>
         <div class="search-bar-container">
           <input
             class="search-bar"
@@ -45,21 +53,114 @@
             size="10%"
             placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
           />
+          <button>
+            <img
+              class="lupa-inactive"
+              src="images/lupa_inactive.svg"
+              alt="Lupa"
+            />
+            <img class="lupa" src="images/lupa.svg" alt="Lupa" />
+            <p>Buscar</p>
+          </button>
+          <ul class="on-search-menu">
+            <li><a href="">Resultado de búsqueda sugerido</a></li>
+            <li><a href="">Un resultado similar de búsqueda</a></li>
+            <li><a href="">Y otro más</a></li>
+          </ul>
         </div>
-        <button>
-          <img
-            class="lupa-inactive"
-            src="images/lupa_inactive.svg"
-            alt="Lupa"
-          />
-          <img class="lupa" src="images/lupa.svg" alt="Lupa" />
-          <p>Buscar</p>
-        </button>
-        <ul class="on-search-menu">
-          <li><a href="">Resultado de búsqueda sugerido</a></li>
-          <li><a href="">Un resultado similar de búsqueda</a></li>
-          <li><a href="">Y otro más</a></li>
-        </ul>
+      </div>
+      <div class="results-buttons-container">
+        <button class="result-button">#Un ejemplo</button>
+        <button class="result-button">#Un ejemplomáslargo</button>
+        <button class="result-button">#tagsrelacionados</button>
+      </div>
+    </section>
+    <section id="resultados" class="template-section results-section">
+      <div class="intro-section">
+        <h3>Ejemplo de búsqueda (resultados)</h3>
+      </div>
+      <div class="template-gif-container">
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif1" />
+          <div>
+            <p>#wink</p>
+            <p>#dog</p>
+            <p>#cute</p>
+            <p>#hello</p>
+          </div>
+        </div>
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif2" />
+          <div>
+            <p>#wink</p>
+            <p>#dog</p>
+            <p>#cute</p>
+            <p>#hello</p>
+          </div>
+        </div>
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif3" />
+          <div>
+            <p>#wink</p>
+            <p>#dog</p>
+            <p>#cute</p>
+            <p>#hello</p>
+          </div>
+        </div>
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
+          <div>
+            <p>#wink</p>
+            <p>#dog</p>
+            <p>#cute</p>
+            <p>#hello</p>
+          </div>
+        </div>
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
+          <div>
+            <p>#wink</p>
+            <p>#dog</p>
+            <p>#cute</p>
+            <p>#hello</p>
+          </div>
+        </div>
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
+          <div>
+            <p>#wink</p>
+            <p>#dog</p>
+            <p>#cute</p>
+            <p>#hello</p>
+          </div>
+        </div>
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
+          <div>
+            <p>#wink</p>
+            <p>#dog</p>
+            <p>#cute</p>
+            <p>#hello</p>
+          </div>
+        </div>
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
+          <div>
+            <p>#wink</p>
+            <p>#dog</p>
+            <p>#cute</p>
+            <p>#hello</p>
+          </div>
+        </div>
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
+          <div>
+            <p>#wink</p>
+            <p>#dog</p>
+            <p>#cute</p>
+            <p>#hello</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="suggested-section">
@@ -101,12 +202,12 @@
         </div>
       </div>
     </section>
-    <section class="tendency-section">
+    <section id="tendencias" class="template-section">
       <div class="intro-section">
         <h3>Tendencias:</h3>
       </div>
-      <div class="tendency-gif-container">
-        <div class="tendency-gif">
+      <div class="template-gif-container">
+        <div class="template-gif">
           <img src="images/Capture.JPG" alt="gif1" />
           <div>
             <p>#wink</p>
@@ -115,8 +216,8 @@
             <p>#hello</p>
           </div>
         </div>
-        <div class="tendency-gif">
-          <img src="images/Capture.JPG" alt="gif1" />
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif2" />
           <div>
             <p>#wink</p>
             <p>#dog</p>
@@ -124,8 +225,8 @@
             <p>#hello</p>
           </div>
         </div>
-        <div class="tendency-gif">
-          <img src="images/Capture.JPG" alt="gif1" />
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif3" />
           <div>
             <p>#wink</p>
             <p>#dog</p>
@@ -133,8 +234,8 @@
             <p>#hello</p>
           </div>
         </div>
-        <div class="tendency-gif">
-          <img src="images/Capture.JPG" alt="gif1" />
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
           <div>
             <p>#wink</p>
             <p>#dog</p>
@@ -142,8 +243,8 @@
             <p>#hello</p>
           </div>
         </div>
-        <div class="tendency-gif-wide-1">
-          <img src="images/Capture.JPG" alt="gif1" />
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
           <div>
             <p>#wink</p>
             <p>#dog</p>
@@ -151,8 +252,8 @@
             <p>#hello</p>
           </div>
         </div>
-        <div class="tendency-gif">
-          <img src="images/Capture.JPG" alt="gif1" />
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
           <div>
             <p>#wink</p>
             <p>#dog</p>
@@ -160,8 +261,8 @@
             <p>#hello</p>
           </div>
         </div>
-        <div class="tendency-gif">
-          <img src="images/Capture.JPG" alt="gif1" />
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
           <div>
             <p>#wink</p>
             <p>#dog</p>
@@ -169,8 +270,8 @@
             <p>#hello</p>
           </div>
         </div>
-        <div class="tendency-gif">
-          <img src="images/Capture.JPG" alt="gif1" />
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
           <div>
             <p>#wink</p>
             <p>#dog</p>
@@ -178,17 +279,8 @@
             <p>#hello</p>
           </div>
         </div>
-        <div class="tendency-gif">
-          <img src="images/Capture.JPG" alt="gif1" />
-          <div>
-            <p>#wink</p>
-            <p>#dog</p>
-            <p>#cute</p>
-            <p>#hello</p>
-          </div>
-        </div>
-        <div class="tendency-gif-wide-2">
-          <img src="images/Capture.JPG" alt="gif1" />
+        <div class="template-gif">
+          <img src="images/Capture.JPG" alt="gif4" />
           <div>
             <p>#wink</p>
             <p>#dog</p>
