@@ -54,7 +54,6 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 1.14rem 0 0;
   border: none;
   background: #e6e6e6;
   -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
@@ -63,21 +62,26 @@ html {
   margin: 0 0 1.14rem 0;
 }
 
-.template-section .template-gif-container .template-gif img {
+.template-section .template-gif-container .template-gif .gif-img {
   width: 19vw;
+  height: 19vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.template-section .template-gif-container .template-gif div {
+.template-section .template-gif-container .template-gif .gif-title {
   display: none;
+  overflow: hidden;
 }
 
-.template-section .template-gif-container .template-gif img:hover {
+.template-section .template-gif-container .template-gif .gif-img:hover {
   outline: 0.07rem dashed #000000;
   width: 18.8vw;
+  height: 18.7vw;
   padding: 0.1vw;
 }
 
-.template-section .template-gif-container .template-gif img:hover ~ div {
+.template-section .template-gif-container .template-gif .gif-img:hover ~ .gif-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,17 +90,45 @@ html {
   background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
   background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
   position: relative;
-  top: -1.4rem;
+  top: -1.3rem;
   left: 0.1rem;
-  margin: 0 0.1rem -1.25rem 0;
+  margin: 0 0.2rem -1.25rem 0;
 }
 
-.template-section .template-gif-container .template-gif img:hover ~ div p {
+.template-section .template-gif-container .template-gif .gif-img:hover ~ .gif-title .gif-text {
   display: inline-block;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   font-size: 1rem;
   color: #ffffff;
+  max-width: 19vw;
+  white-space: nowrap;
+  -webkit-animation: animation-textfloat 6s infinite alternate ease-in-out;
+          animation: animation-textfloat 6s infinite alternate ease-in-out;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes animation-textfloat {
+  0% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animation-textfloat {
+  0% {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 body {
@@ -544,11 +576,7 @@ nav .mis-guifos:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 1.36rem 8.9rem 0 7.14rem;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: transparent;
+  margin: 1.36rem 10rem 0 7.14rem;
 }
 
 .suggested-section .suggested-gif-container .suggested-gif {
@@ -559,7 +587,6 @@ nav .mis-guifos:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 1.14rem 0 0;
   border: none;
   background: #e6e6e6;
   -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
@@ -596,6 +623,13 @@ nav .mis-guifos:focus {
   height: auto;
 }
 
+.suggested-section .suggested-gif-container .suggested-gif .gif {
+  width: 18.5vw;
+  height: 19vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .suggested-section .suggested-gif-container .suggested-gif button {
   position: relative;
   left: 0.79rem;
@@ -611,6 +645,26 @@ nav .mis-guifos:focus {
   font-size: 1rem;
   font-family: "Chakra Petch", sans-serif;
   line-height: 1.29rem;
+}
+
+.suggested-section .suggested-gif-container .suggested-gif button:hover:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.suggested-section .suggested-gif-container .suggested-gif button:hover ~ img:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 .suggested-section .suggested-gif-container .suggested-gif img:hover {

@@ -308,6 +308,11 @@ nav {
         max-width: 100%;
         height: auto;
       }
+      .gif {
+        width: 18.5vw;
+        height: 19vw;
+        object-fit: cover;
+      }
       button {
         position: relative;
         left: 0.79rem;
@@ -316,6 +321,12 @@ nav {
         height: 2.43rem;
         margin-bottom: -2.25rem;
         @include button-blue;
+      }
+      button:hover:before {
+        @include dotted-border;
+      }
+      button:hover ~ img:before {
+        @include dotted-border;
       }
       img:hover {
         outline: 0.07rem dashed #000000;
