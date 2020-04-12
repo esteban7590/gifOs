@@ -48,12 +48,14 @@
         <h2>Buscar</h2>
         <div class="search-bar-container">
           <input
+            id="input-field"
             class="search-bar"
             type="text"
             size="10%"
             placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
+            autocomplete="on"
           />
-          <button>
+          <button id="search-button">
             <img
               class="lupa-inactive"
               src="images/lupa_inactive.svg"
@@ -62,10 +64,13 @@
             <img class="lupa" src="images/lupa.svg" alt="Lupa" />
             <p>Buscar</p>
           </button>
-          <ul class="on-search-menu">
-            <li><a href="">Resultado de búsqueda sugerido</a></li>
-            <li><a href="">Un resultado similar de búsqueda</a></li>
-            <li><a href="">Y otro más</a></li>
+          <ul id="auto-list" class="on-search-menu">
+            <img id="close-onsearch" src="images/button_close.svg" alt="">
+            <li><a id="result1" href="javascript:void(0)">Resultado de búsqueda sugerido</a></li>
+            <li>
+              <a id="result2" href="javascript:void(0)">Un resultado similar de búsqueda</a>
+            </li>
+            <li><a id="result3" href="javascript:void(0)">Y otro más</a></li>
           </ul>
         </div>
       </div>
@@ -75,94 +80,6 @@
         <button class="result-button">#tagsrelacionados</button>
       </div>
     </section>
-    <section id="resultados" class="template-section results-section">
-      <div class="intro-section">
-        <h3>Ejemplo de búsqueda (resultados)</h3>
-      </div>
-      <div class="template-gif-container">
-        <div class="template-gif">
-          <img src="images/Capture.JPG" alt="gif1" />
-          <div>
-            <p>#wink</p>
-            <p>#dog</p>
-            <p>#cute</p>
-            <p>#hello</p>
-          </div>
-        </div>
-        <div class="template-gif">
-          <img src="images/Capture.JPG" alt="gif2" />
-          <div>
-            <p>#wink</p>
-            <p>#dog</p>
-            <p>#cute</p>
-            <p>#hello</p>
-          </div>
-        </div>
-        <div class="template-gif">
-          <img src="images/Capture.JPG" alt="gif3" />
-          <div>
-            <p>#wink</p>
-            <p>#dog</p>
-            <p>#cute</p>
-            <p>#hello</p>
-          </div>
-        </div>
-        <div class="template-gif">
-          <img src="images/Capture.JPG" alt="gif4" />
-          <div>
-            <p>#wink</p>
-            <p>#dog</p>
-            <p>#cute</p>
-            <p>#hello</p>
-          </div>
-        </div>
-        <div class="template-gif">
-          <img src="images/Capture.JPG" alt="gif4" />
-          <div>
-            <p>#wink</p>
-            <p>#dog</p>
-            <p>#cute</p>
-            <p>#hello</p>
-          </div>
-        </div>
-        <div class="template-gif">
-          <img src="images/Capture.JPG" alt="gif4" />
-          <div>
-            <p>#wink</p>
-            <p>#dog</p>
-            <p>#cute</p>
-            <p>#hello</p>
-          </div>
-        </div>
-        <div class="template-gif">
-          <img src="images/Capture.JPG" alt="gif4" />
-          <div>
-            <p>#wink</p>
-            <p>#dog</p>
-            <p>#cute</p>
-            <p>#hello</p>
-          </div>
-        </div>
-        <div class="template-gif">
-          <img src="images/Capture.JPG" alt="gif4" />
-          <div>
-            <p>#wink</p>
-            <p>#dog</p>
-            <p>#cute</p>
-            <p>#hello</p>
-          </div>
-        </div>
-        <div class="template-gif">
-          <img src="images/Capture.JPG" alt="gif4" />
-          <div>
-            <p>#wink</p>
-            <p>#dog</p>
-            <p>#cute</p>
-            <p>#hello</p>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="suggested-section">
       <div class="intro-section">
         <h3>Hoy te sugerimos:</h3>
@@ -170,35 +87,49 @@
       <div class="suggested-gif-container">
         <div class="suggested-gif">
           <div class="hashtag-bar">
-            <h4>#Jonathanvaness</h4>
+            <h4 id="gif-heading1">#hashtag</h4>
             <img src="images/button_close.svg" alt="exit" />
           </div>
           <img class="gif" id="pos1" src="images/Capture.JPG" alt="gif1" />
-          <button>Ver más...</button>
+          <button id='more-button1'>Ver más...</button>
         </div>
         <div class="suggested-gif">
           <div class="hashtag-bar">
-            <h4>#Jonathanvaness</h4>
+            <h4 id="gif-heading2">#hashtag</h4>
             <img src="images/button_close.svg" alt="exit" />
           </div>
           <img class="gif" id="pos2" src="images/Capture.JPG" alt="gif1" />
-          <button>Ver más...</button>
+          <button id='more-button2'>Ver más...</button>
         </div>
         <div class="suggested-gif">
           <div class="hashtag-bar">
-            <h4>#Jonathanvaness</h4>
+            <h4 id="gif-heading3">#hashtag</h4>
             <img src="images/button_close.svg" alt="exit" />
           </div>
           <img class="gif" id="pos3" src="images/Capture.JPG" alt="gif1" />
-          <button>Ver más...</button>
+          <button id='more-button3'>Ver más...</button>
         </div>
         <div class="suggested-gif">
           <div class="hashtag-bar">
-            <h4>#Jonathanvaness</h4>
+            <h4 id="gif-heading4">#hashtag</h4>
             <img src="images/button_close.svg" alt="exit" />
           </div>
           <img class="gif" id="pos4" src="images/Capture.JPG" alt="gif1" />
-          <button>Ver más...</button>
+          <button id='more-button4'>Ver más...</button>
+        </div>
+      </div>
+    </section>
+    <section id="results-section" class="template-section results-section">
+      <div class="intro-section">
+        <h3 id="results-intro">Resultados</h3>
+      </div>
+      <div id="resultados" class="template-gif-container">
+        <!-- <div class="template-gif">
+          <img class="gif-img" src="images/Capture.JPG" alt="gif1" />
+          <div class="gif-title">
+            <p class="gif-text">title</p>
+          </div>
+        </div> -->
         </div>
       </div>
     </section>
@@ -216,6 +147,8 @@
       </div>
     </section>
     <script type="text/javascript" src="js/tendencies.js"></script>
+    <script type="text/javascript" src="js/suggestedResults.js"></script>
     <script type="text/javascript" src="js/suggested.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
   </body>
 </html>

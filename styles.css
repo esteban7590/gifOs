@@ -69,11 +69,6 @@ html {
      object-fit: cover;
 }
 
-.template-section .template-gif-container .template-gif .gif-title {
-  display: none;
-  overflow: hidden;
-}
-
 .template-section .template-gif-container .template-gif .gif-img:hover {
   outline: 0.07rem dashed #000000;
   width: 18.8vw;
@@ -103,16 +98,16 @@ html {
   color: #ffffff;
   max-width: 19vw;
   white-space: nowrap;
-  -webkit-animation: animation-textfloat 6s infinite alternate ease-in-out;
-          animation: animation-textfloat 6s infinite alternate ease-in-out;
+  -webkit-animation: animation-textfloat 5s 1 ease-in-out;
+          animation: animation-textfloat 5s 1 ease-in-out;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
 
 @-webkit-keyframes animation-textfloat {
   0% {
-    -webkit-transform: translateX(5%);
-            transform: translateX(5%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   100% {
     -webkit-transform: translateX(-100%);
@@ -122,13 +117,61 @@ html {
 
 @keyframes animation-textfloat {
   0% {
-    -webkit-transform: translateX(5%);
-            transform: translateX(5%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   100% {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
+}
+
+.template-section .template-gif-container .template-gif .gif-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  position: relative;
+  top: -1.3rem;
+  left: 0.1rem;
+  margin: 0 0.2rem -1.25rem 0;
+  overflow: hidden;
+  width: 18.8vw;
+  display: none;
+}
+
+.template-section .template-gif-container .template-gif .gif-title .gif-text {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  max-width: 19vw;
+  white-space: nowrap;
+  -webkit-animation: animation-textfloat 5s 1 ease-in-out;
+          animation: animation-textfloat 5s 1 ease-in-out;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes animation-textfloat {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.template-section .template-gif-container .template-gif .gif-title:hover {
+  display: block;
+  background-image: -webkit-gradient(linear, right top, left top, from(#4180f6), to(#f7c9f3));
+  background-image: linear-gradient(270deg, #4180f6, #f7c9f3);
 }
 
 body {
@@ -192,6 +235,10 @@ nav div .crear-button {
   margin-right: 1.14rem;
 }
 
+nav div .crear-button:active {
+  background: #daafd7;
+}
+
 nav div button:hover:before {
   border: 0.07rem dashed #000000;
   position: absolute;
@@ -228,6 +275,10 @@ nav div .tema-button-container .dropdown-button {
   padding: 0.93rem 1.07rem;
 }
 
+nav div .tema-button-container .dropdown-button:active {
+  background: #daafd7;
+}
+
 nav div .tema-button-container .dropdown-button .dropdown-icon {
   margin: 0;
   padding: 0;
@@ -242,6 +293,10 @@ nav div .tema-button-container .tema-button {
   position: relative;
   margin: 0.57rem 0;
   padding: 0.64rem 1.71rem;
+}
+
+nav div .tema-button-container .tema-button:active {
+  background: #daafd7;
 }
 
 nav div .tema-button-container .dropdown-button:hover ~ .tema-button:before {
@@ -325,7 +380,7 @@ nav .mis-guifos:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 7.2rem;
+  height: 7.4rem;
   background-color: #e6e6e6;
   -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
           box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
@@ -370,12 +425,22 @@ nav .mis-guifos:focus {
   color: #b4b4b4;
 }
 
-.search-section .bottom-part-container .search-bar-container .search-bar:focus ~ .on-search-menu {
-  display: block;
+.search-section .bottom-part-container .search-bar-container .search-bar:focus {
+  color: #110038;
 }
 
 .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button {
   background-color: #f7c9f3;
+}
+
+.search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button:hover:before {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button p {
@@ -425,33 +490,6 @@ nav .mis-guifos:focus {
   display: none;
 }
 
-.search-section .bottom-part-container .search-bar-container button:hover {
-  background-color: #f7c9f3;
-}
-
-.search-section .bottom-part-container .search-bar-container button:hover p {
-  color: #110038;
-}
-
-.search-section .bottom-part-container .search-bar-container button:hover .lupa-inactive {
-  display: none;
-}
-
-.search-section .bottom-part-container .search-bar-container button:hover .lupa {
-  display: block;
-  padding: 0 0 0 0.5rem;
-}
-
-.search-section .bottom-part-container .search-bar-container button:hover:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
 .search-section .bottom-part-container .search-bar-container button:focus:before {
   border: 0.07rem dashed #000000;
   position: absolute;
@@ -479,10 +517,6 @@ nav .mis-guifos:focus {
   padding: 0 0 0 0.5rem;
 }
 
-.search-section .bottom-part-container .search-bar-container button:focus ~ .on-search-menu {
-  display: none;
-}
-
 .search-section .bottom-part-container .search-bar-container .on-search-menu {
   display: none;
   width: 100%;
@@ -493,6 +527,16 @@ nav .mis-guifos:focus {
   height: -moz-fit-content;
   height: fit-content;
   z-index: 1;
+}
+
+.search-section .bottom-part-container .search-bar-container .on-search-menu img {
+  position: relative;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.search-section .bottom-part-container .search-bar-container .on-search-menu img:hover {
+  outline: 0.07rem dashed #000000;
 }
 
 .search-section .bottom-part-container .search-bar-container .on-search-menu li {
@@ -617,13 +661,8 @@ nav .mis-guifos:focus {
   padding: 0.2rem 0.3rem;
 }
 
-.suggested-section .suggested-gif-container .suggested-gif img {
-  margin: 0.14rem 0.29rem;
-  max-width: 100%;
-  height: auto;
-}
-
 .suggested-section .suggested-gif-container .suggested-gif .gif {
+  margin: 0.14rem 0.29rem;
   width: 18.5vw;
   height: 19vw;
   -o-object-fit: cover;
@@ -657,7 +696,7 @@ nav .mis-guifos:focus {
   bottom: 0.14rem;
 }
 
-.suggested-section .suggested-gif-container .suggested-gif button:hover ~ img:before {
+.suggested-section .suggested-gif-container .suggested-gif button:hover ~ .gif:before {
   border: 0.07rem dashed #000000;
   position: absolute;
   content: "";
@@ -667,11 +706,11 @@ nav .mis-guifos:focus {
   bottom: 0.14rem;
 }
 
-.suggested-section .suggested-gif-container .suggested-gif img:hover {
+.suggested-section .suggested-gif-container .suggested-gif .gif:hover {
   outline: 0.07rem dashed #000000;
 }
 
-.suggested-section .suggested-gif-container .suggested-gif img:hover ~ button:before {
+.suggested-section .suggested-gif-container .suggested-gif .gif:hover ~ button:before {
   border: 0.07rem dashed #000000;
   position: absolute;
   content: "";
@@ -687,6 +726,6 @@ nav .mis-guifos:focus {
 
 .results-section {
   display: none;
-  padding-top: 0rem;
+  padding-top: 5rem;
 }
 /*# sourceMappingURL=styles.css.map */

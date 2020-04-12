@@ -38,6 +38,9 @@ nav {
     }
     .crear-button {
       margin-right: 1.14rem;
+      &:active {
+        background: $pushed-button-light;
+      }
     }
     button:hover:before {
       @include dotted-border;
@@ -54,6 +57,9 @@ nav {
         position: relative;
         margin: 0.57rem 0;
         padding: 0.93rem 1.07rem;
+        &:active {
+          background: $pushed-button-light;
+        }
         .dropdown-icon {
           margin: 0;
           padding: 0;
@@ -65,6 +71,9 @@ nav {
         position: relative;
         margin: 0.57rem 0;
         padding: 0.64rem 1.71rem;
+        &:active {
+          background: $pushed-button-light;
+        }
       }
       .dropdown-button:hover ~ .tema-button:before {
         @include dotted-border;
@@ -125,7 +134,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 7.2rem;
+    height: 7.4rem;
     background-color: #e6e6e6;
     box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset,
       -0.14rem -0.14rem 0 0 #b4b4b4 inset;
@@ -157,11 +166,17 @@ nav {
         font-family: $font;
         font-weight: 300;
         color: #b4b4b4;
-        &:focus ~ .on-search-menu {
-          display: block;
+        &:focus {
+          color: #110038;
         }
+        // &:focus ~ .on-search-menu {
+        //   display: block;
+        // }
         &:focus ~ button {
           background-color: #f7c9f3;
+          &:hover:before {
+            @include dotted-border;
+          }
           p {
             color: #110038;
           }
@@ -198,22 +213,20 @@ nav {
         .lupa {
           display: none;
         }
-        &:hover {
-          background-color: #f7c9f3;
-          p {
-            color: #110038;
-          }
-          .lupa-inactive {
-            display: none;
-          }
-          .lupa {
-            display: block;
-            padding: 0 0 0 0.5rem;
-          }
-        }
-        &:hover:before {
-          @include dotted-border;
-        }
+        // &:hover {
+        //   background-color: #f7c9f3;
+        //   p {
+        //     color: #110038;
+        //   }
+        //   .lupa-inactive {
+        //     display: none;
+        //   }
+        //   .lupa {
+        //     display: block;
+        //     padding: 0 0 0 0.5rem;
+        //   }
+        // }
+
         &:focus:before {
           @include dotted-border;
         }
@@ -230,9 +243,6 @@ nav {
             padding: 0 0 0 0.5rem;
           }
         }
-        &:focus ~ .on-search-menu {
-          display: none;
-        }
       }
       .on-search-menu {
         display: none;
@@ -242,6 +252,14 @@ nav {
           -0.14rem -0.14rem 0 0 #b4b4b4 inset;
         height: fit-content;
         z-index: 1;
+        img {
+          position: relative;
+          top: 0.5rem;
+          left: 0.5rem;
+          &:hover {
+            outline: 0.07rem dashed #000000;
+          }
+        }
         li {
           font-family: $font;
           list-style: none;
@@ -303,12 +321,8 @@ nav {
           padding: 0.2rem 0.3rem;
         }
       }
-      img {
-        margin: 0.14rem 0.29rem;
-        max-width: 100%;
-        height: auto;
-      }
       .gif {
+        margin: 0.14rem 0.29rem;
         width: 18.5vw;
         height: 19vw;
         object-fit: cover;
@@ -325,13 +339,13 @@ nav {
       button:hover:before {
         @include dotted-border;
       }
-      button:hover ~ img:before {
+      button:hover ~ .gif:before {
         @include dotted-border;
       }
-      img:hover {
+      .gif:hover {
         outline: 0.07rem dashed #000000;
       }
-      img:hover ~ button:before {
+      .gif:hover ~ button:before {
         @include dotted-border;
       }
     }

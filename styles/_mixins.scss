@@ -25,16 +25,6 @@
   //background-color: transparent;
 }
 
-@mixin dotted-border {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
 @mixin intro-section {
   margin: 0 10rem 0 7.14rem;
   display: flex;
@@ -77,15 +67,25 @@
     color: #ffffff;
     max-width: 19vw;
     white-space: nowrap;
-    animation: animation-textfloat 6s infinite alternate ease-in-out;
+    animation: animation-textfloat 5s 1 ease-in-out;
     animation-timing-function: linear;
   }
   @keyframes animation-textfloat {
     0% {
-      transform: translateX(5%);
+      transform: translateX(100%);
     }
     100% {
       transform: translateX(-100%);
     }
   }
+}
+
+@mixin dotted-border {
+  border: 0.07rem dashed #000000;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
