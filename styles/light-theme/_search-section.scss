@@ -1,0 +1,181 @@
+.search-section {
+  margin: 0 10rem 0 7.14rem;
+  .bottom-part-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7.4rem;
+    background-color: #e6e6e6;
+    box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset,
+      -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+    h2 {
+      margin: 0.14rem;
+      background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
+      color: #ffffff;
+      font-size: 1rem;
+      font-family: $font;
+      font-weight: 600;
+      padding-left: 0.21rem;
+      line-height: 1.8rem;
+    }
+    .search-bar-container {
+      display: none;
+      display: flex;
+      flex-wrap: wrap;
+      .search-bar {
+        background-color: #ffffff;
+        padding: 0 0 0 1.14rem;
+        margin: 0.86rem 0 0.86rem 1.07rem;
+        border: 1px solid #979797;
+        box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6,
+          inset 0.14rem 0.14rem 0 0 #000000;
+        height: 3.43rem;
+        width: 60%;
+        flex-grow: 1;
+        font-size: 1.14rem;
+        font-family: $font;
+        font-weight: 300;
+        color: #b4b4b4;
+        &:focus {
+          color: #110038;
+        }
+        // &:focus ~ .on-search-menu {
+        //   display: block;
+        // }
+        &:focus ~ button {
+          background-color: #f7c9f3;
+          &:hover:before {
+            @include dotted-border;
+          }
+          p {
+            color: #110038;
+          }
+          .lupa-inactive {
+            display: none;
+          }
+          .lupa {
+            display: block;
+            padding: 0 0 0 0.5rem;
+          }
+        }
+      }
+      button {
+        display: flex;
+        width: 7.29rem;
+        height: 2.57rem;
+        margin: auto 1.29rem auto 0.57rem;
+        justify-content: space-around;
+        align-items: center;
+        background: #e6e6e6;
+        border: 0.07rem solid #808080;
+        box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4,
+          inset 0.07rem 0.07rem 0 0 #ffffff;
+        position: relative;
+        p {
+          font-family: $font;
+          font-size: 1.14rem;
+          color: #b4b4b4;
+          padding: 0 1.29rem 0 0.71rem;
+        }
+        .lupa-inactive {
+          padding: 0 0 0 0.5rem;
+        }
+        .lupa {
+          display: none;
+        }
+        // &:hover {
+        //   background-color: #f7c9f3;
+        //   p {
+        //     color: #110038;
+        //   }
+        //   .lupa-inactive {
+        //     display: none;
+        //   }
+        //   .lupa {
+        //     display: block;
+        //     padding: 0 0 0 0.5rem;
+        //   }
+        // }
+        &:active:before {
+          @include dotted-border;
+        }
+        &:active {
+          background-color: $pushed-button-light;
+          p {
+            color: #110038;
+          }
+          .lupa-inactive {
+            display: none;
+          }
+          .lupa {
+            display: block;
+            padding: 0 0 0 0.5rem;
+          }
+        }
+      }
+      .on-search-menu {
+        display: none;
+        width: 100%;
+        background-color: #e6e6e6;
+        box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset,
+          -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+        height: fit-content;
+        z-index: 1;
+        img {
+          position: relative;
+          top: 0.5rem;
+          left: 0.5rem;
+          &:hover {
+            outline: 0.07rem dashed #000000;
+          }
+        }
+        li {
+          font-family: $font;
+          list-style: none;
+          padding: 0.5rem 1.14rem;
+          background: #f0f0f0;
+          border: 0.07rem solid #808080;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4,
+            inset 0.07rem 0.07rem 0 0 #ffffff;
+          margin: 1.21rem 9.21rem 1.21rem 1.14rem;
+          position: relative;
+        }
+        li:hover:before {
+          @include dotted-border;
+          background: #dbdbdb;
+        }
+        a {
+          text-decoration: none;
+          font-size: 1.14rem;
+          color: #110038;
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  .results-buttons-container {
+    display: none;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    &::-webkit-scrollbar {
+      height: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #a8a8a8;
+      border-radius: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #949494;
+    }
+  }
+  .result-button {
+    @include button-blue;
+    padding: 0.57rem 0.5rem;
+    margin: 0.86rem 0.57rem 0 0.1rem;
+  }
+}
