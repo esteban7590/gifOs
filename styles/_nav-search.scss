@@ -226,12 +226,11 @@ nav {
         //     padding: 0 0 0 0.5rem;
         //   }
         // }
-
-        &:focus:before {
+        &:active:before {
           @include dotted-border;
         }
-        &:focus {
-          background-color: #f7c9f3;
+        &:active {
+          background-color: $pushed-button-light;
           p {
             color: #110038;
           }
@@ -288,11 +287,26 @@ nav {
 
   .results-buttons-container {
     display: none;
-    .result-button {
-      @include button-blue;
-      padding: 0.57rem 0.5rem;
-      margin: 0.86rem 0.57rem 3.86rem 0.1rem;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    &::-webkit-scrollbar {
+      height: 0.5rem;
     }
+    &::-webkit-scrollbar-thumb {
+      background: #a8a8a8;
+      border-radius: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #949494;
+    }
+  }
+  .result-button {
+    @include button-blue;
+    padding: 0.57rem 0.5rem;
+    margin: 0.86rem 0.57rem 0 0.1rem;
   }
 }
 

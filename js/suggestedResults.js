@@ -46,7 +46,7 @@ inputField.oninput = function () {
 let searchButton = document.getElementById("search-button");
 let sessionSearches = [];
 
-searchButton.onclick = () => {
+searchButton.onclick = searchAction = () => {
   let searchTerm = document.getElementById("input-field").value;
   changeGifImgsAndTitles(searchTerm);
   sessionSearches.unshift(searchTerm);
@@ -54,13 +54,32 @@ searchButton.onclick = () => {
   let resultsSection = document.getElementById("results-section");
   resultsSection.style.display = "block";
   resultsSection.scrollIntoView();
+  let onSearch = document.getElementById("auto-list");
+  onSearch.style.display = "none";
   loadRecentSearches();
+  searchTerm = "";
+  document.getElementById("input-field").innerHTML = "";
 };
 
 let loadRecentSearches = () => {
+  let buttonsContainer = document.getElementById("results-buttons-container");
+  buttonsContainer.style.display = "block";
   let recent = JSON.parse(sessionStorage.getItem("sessionSearches"));
-  recent.forEach((element, index) => {
-    let result = document.getElementById(posArray[index]);
-    result.innerHTML = element;
-  });
+  if (recent == "") {
+    buttonsContainer.style.display = "none";
+  } else {
+    buttonsContainer.innerHTML = "";
+    recent.forEach((element) => {
+      let recentButton = document.createElement("button");
+      recentButton.setAttribute("class", "result-button");
+      recentButton.innerHTML = "#" + element;
+      buttonsContainer.appendChild(recentButton);
+      recentButton.onclick = () => {
+        changeGifImgsAndTitles(element);
+        let resultsSection = document.getElementById("results-section");
+        resultsSection.style.display = "block";
+        resultsSection.scrollIntoView();
+      };
+    });
+  }
 };

@@ -9,6 +9,12 @@ document.getElementById("close-onsearch").onclick = () => {
   onSearch.style.display = "none";
 };
 
+document.getElementById("input-field").onkeyup = (event) => {
+  if (event.keyCode === 13) {
+    searchAction();
+  }
+};
+
 var data;
 
 let searchFunction = async (term) => {
@@ -41,7 +47,7 @@ let changeGifImgsAndTitles = async (term) => {
     document.getElementById("resultados").innerHTML = "";
   } else {
     document.getElementById("resultados").innerHTML = "";
-    document.getElementById("results-intro").innerHTML = term;
+    document.getElementById("results-intro").innerHTML = term + " (resultados)";
     document.getElementById("input-field").value = "";
     array.forEach((element, index) => {
       const divImg = document.createElement("div");
