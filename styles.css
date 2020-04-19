@@ -440,6 +440,13 @@ html {
   margin: 0.86rem 0.57rem 0 0.1rem;
 }
 
+.sailor-day h1 {
+  display: none;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+  padding: 3rem;
+}
+
 .sailor-day .suggested-section {
   padding: 4.57rem 0 0 0;
 }

@@ -30,15 +30,7 @@ let imgPosArray = ["pos1", "pos2", "pos3", "pos4"];
 let idArray = ["gif-heading1", "gif-heading2", "gif-heading3", "gif-heading4"];
 let termsArray = ["Oh boy", "Shit", "Yeah", "Damn"];
 
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-let termsArrayShuffled = shuffleArray(termsArray);
+let termsArrayShuffled = termsArray.sort((a, b) => 0.5 - Math.random());
 
 let loadSuggestedGif = () => {
   termsArray.forEach(async (element, index) => {
@@ -60,12 +52,6 @@ let searchButton4 = document.getElementById("more-button4");
 
 let searchArray = [searchButton1, searchButton2, searchButton3, searchButton4];
 
-let searchSuggestion1 = document.getElementById("result1");
-let searchSuggestion2 = document.getElementById("result2");
-let searchSuggestion3 = document.getElementById("result3");
-
-let suggestionArray = [searchSuggestion1, searchSuggestion2, searchSuggestion3];
-
 searchArray.forEach((element, index) => {
   element.onclick = () => {
     changeGifImgsAndTitles(termsArrayShuffled[index]);
@@ -74,6 +60,12 @@ searchArray.forEach((element, index) => {
     resultsSection.scrollIntoView();
   };
 });
+
+let searchSuggestion1 = document.getElementById("result1");
+let searchSuggestion2 = document.getElementById("result2");
+let searchSuggestion3 = document.getElementById("result3");
+
+let suggestionArray = [searchSuggestion1, searchSuggestion2, searchSuggestion3];
 
 suggestionArray.forEach((element) => {
   element.onclick = () => {
