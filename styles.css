@@ -440,7 +440,7 @@ html {
   margin: 0.86rem 0.57rem 0 0.1rem;
 }
 
-.sailor-day h1 {
+.sailor-day .wrong-message {
   display: none;
   font-family: "Chakra Petch", sans-serif;
   text-align: center;
@@ -755,12 +755,23 @@ html {
   padding-top: 0rem;
 }
 
-.sailor-night {
-  background-color: #14005d;
+.sailor-day .go-back {
+  display: none;
+  position: absolute;
+  top: 5.5rem;
+  left: 4rem;
 }
 
-.sailor-night body {
-  background-color: #150061;
+.sailor-day .start {
+  display: none;
+}
+
+.sailor-day .record-buttons {
+  display: none;
+}
+
+.sailor-night {
+  background-color: #14005d;
 }
 
 .sailor-night header {
@@ -1189,6 +1200,13 @@ html {
   line-height: 1.29rem;
   padding: 0.57rem 0.5rem;
   margin: 0.86rem 0.57rem 0 0.1rem;
+}
+
+.sailor-night .wrong-message {
+  display: none;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+  padding: 3rem;
 }
 
 .sailor-night .suggested-section {

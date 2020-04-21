@@ -51,3 +51,5 @@ const loadSection = async (url, sectionContainer) => {
     container.appendChild(gifContainer);
   });
 };
+
+//function that set's up misguifos html to create gifos

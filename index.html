@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="sailor-day">
+  <body id="body-theme" class="sailor-day">
     <header>
       <h1>
         ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número
@@ -23,7 +23,7 @@
         ><img src="images/gifOF_logo.png" alt="Logo gifOs"
       /></a>
       <div>
-        <button class="crear-button">Crear Guifos</button>
+        <button id="crear-button" class="crear-button">Crear Guifos</button>
         <div class="tema-button-container">
           <button class="tema-button">Elegir tema</button>
           <button class="dropdown-button">
@@ -34,10 +34,7 @@
             <button id="night" class="night-button">Sailor Night</button>
           </ul>
         </div>
-        <button
-          class="mis-guifos"
-          onclick="window.location.href = 'mis-guifos.html';"
-        >
+        <button id="mis-guifos" class="mis-guifos">
           <u>M</u>is Guifos
         </button>
         <!-- <a href="mis-guifos.html" class="btn btn-primary">Go to Google</a> -->
@@ -77,7 +74,7 @@
       <div id="results-buttons-container" class="results-buttons-container">
         <!-- <button class="result-button">#Un ejemplo</button> -->
       </div>
-      <h1 id="wrong">SOMETHING WENT WRONG :(</h1>
+      <h1 class="wrong-message" id="wrong">SOMETHING WENT WRONG :(</h1>
     </section>
     <section class="suggested-section">
       <div class="intro-section">

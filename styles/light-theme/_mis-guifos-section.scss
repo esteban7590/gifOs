@@ -1,7 +1,18 @@
 .mis-guifos-section {
   padding-top: 0rem;
 }
-
+.go-back {
+  display: none;
+  position: absolute;
+  top: 5.5rem;
+  left: 4rem;
+}
+.start {
+  display: none;
+}
+.record-buttons {
+  display: none;
+}
 // nav a::before {
 //   content: url("images/arrow.svg");
 //   position: relative;

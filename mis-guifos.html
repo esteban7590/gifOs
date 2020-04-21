@@ -4,26 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mis GifOS</title>
+    <title>GifOS</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="sailor-day">
+  <body id="body-theme" class="sailor-day">
     <header>
       <h1>
         ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número
         de visitas: 12.765.803
       </h1>
     </header>
+    <img id="go-back" class="go-back" src="images/arrow.svg" alt="" />
     <nav>
       <a href="index.html"
         ><img src="images/gifOF_logo.png" alt="Logo gifOs"
       /></a>
-      <div>
-        <button class="crear-button">Crear Guifos</button>
+      <div id="nav-buttons">
+        <button id="crear-button" class="crear-button">Crear Guifos</button>
         <div class="tema-button-container">
           <button class="tema-button">Elegir tema</button>
           <button class="dropdown-button">
@@ -34,15 +35,24 @@
             <button id="night" class="night-button">Sailor Night</button>
           </ul>
         </div>
-        <button
-          class="mis-guifos"
-          onclick="window.location.href = 'mis-guifos.html';"
-        >
-          <u>M</u>is Guifos
-        </button>
+        <button id="mis-guifos" class="mis-guifos"><u>M</u>is Guifos</button>
         <!-- <a href="mis-guifos.html" class="btn btn-primary">Go to Google</a> -->
       </div>
     </nav>
+    <section class="record">
+      <div>
+        <button class="start" id="start">Start</button>
+      </div>
+      <div class="record-buttons" id="record-buttons">
+        <button id="grabar">Record</button>
+        <button id="estop">Estop</button>
+        <button id="upload">Upload this shit</button>
+        <button id="ripit">Ripit</button>
+
+        <video id="preview">Start streaming</video>
+        <img id="example" alt="test" />
+      </div>
+    </section>
     <section id="mis-guifos" class="template-section mis-guifos-section">
       <div class="intro-section">
         <h3>Mis Guifos</h3>
@@ -56,6 +66,10 @@
         </div> -->
       </div>
     </section>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script type="text/javascript" src="js/crear-gifos.js"></script>
+    <script type="text/javascript" src="js/shared/variables.js"></script>
+    <script type="text/javascript" src="js/shared/helper.js"></script>
     <script type="text/javascript" src="js/theme.js"></script>
   </body>
 </html>

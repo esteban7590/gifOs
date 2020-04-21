@@ -1,7 +1,11 @@
+let searchButton = document.getElementById("search-button");
+searchButton.disabled = true;
+
 // display or hide the dropdown
 document.getElementById("input-field").onkeydown = () => {
   let onSearch = document.getElementById("auto-list");
   onSearch.style.display = "block";
+  searchButton.disabled = false;
 };
 
 document.getElementById("close-onsearch").onclick = () => {
@@ -29,9 +33,9 @@ const inputSearch = () => {
   document.getElementById("input-field").value = "";
 };
 
-let searchButton = document.getElementById("search-button");
 searchButton.onclick = () => {
   inputSearch();
+  searchButton.disabled = true;
 };
 
 document.getElementById("input-field").onkeyup = (event) => {
