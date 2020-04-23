@@ -1,28 +1,10 @@
-const crearGifos = document.getElementById("crear-button");
-crearGifos.onclick = () => {
-  // function that set's up misguifos html to create in helper.js
-  setHtml();
-};
-
-const start = document.getElementById("start");
-const setHtml = () => {
-  document.getElementById("go-back").style.display = "block";
-  document.getElementById("nav-buttons").style.display = "none";
-  start.style.display = "block";
-};
-
-start.onclick = () => {
-  document.getElementById("record-buttons").style.display = "block";
-  setRecorder();
-};
-
 //---------------------------------------------
 
 const setRecorder = async () => {
   let stream = null;
   stream = await navigator.mediaDevices.getUserMedia({
     video: {
-      height: { max: 200 },
+      height: { max: 450 },
     },
     audio: false,
   });
@@ -41,7 +23,7 @@ const record = async () => {
       type: "gif",
       frameRate: 1,
       quality: 10,
-      canvas: { width: 200, height: 200 },
+      // canvas: { width: 200, height: 200 },
     });
     return recorder;
   } catch (err) {
@@ -51,7 +33,7 @@ const record = async () => {
 
 const showPreview = (blob) => {
   const objectURL = URL.createObjectURL(blob);
-  document.getElementById("example").src = objectURL;
+  document.getElementById("recorded-preview").src = objectURL;
 };
 
 const format = (blob) => {
@@ -100,6 +82,8 @@ const estop = document.getElementById("estop");
 estop.style.display = "none";
 const upload = document.getElementById("upload");
 upload.style.display = "none";
+const ripit = document.getElementById("ripit");
+ripit.style.display = "none";
 
 const recordGif = () => {
   const grabar = document.getElementById("grabar");
@@ -121,7 +105,9 @@ const recordGif = () => {
 
     const estop = document.getElementById("estop");
     estop.style.display = "block";
+    document.getElementById("recorded-preview").style.display = "block";
     estop.onclick = async () => {
+      ripit.style.display = "block";
       await recorder.stopRecording();
       grabar.disabled = false;
       let blob = await recorder.getBlob();
@@ -138,7 +124,7 @@ const recordGif = () => {
       };
     };
   };
-  const ripit = document.getElementById("ripit");
+
   ripit.onclick = () => {
     const img = document.getElementById("example");
     img.setAttribute("src", "");

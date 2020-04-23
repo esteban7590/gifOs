@@ -39,21 +39,47 @@
         <!-- <a href="mis-guifos.html" class="btn btn-primary">Go to Google</a> -->
       </div>
     </nav>
-    <section class="record">
-      <div>
-        <button class="start" id="start">Start</button>
+    <section id="record-section" class="record-section">
+      <div id="crear-window" class="crear-window">
+        <h2 class="window-top-bar">Crear gifos</h2>
+        <div class="window-title-container">
+          <img src="images/window_img.png" alt="" />
+          <p><strong>Aquí podrás crear tus propios guifos</strong></p>
+        </div>
+        <p class="instructions">
+          Crear tu <span class="bold-word">guifo</span> es muy fácil, graba
+          cualquier imagen con tu cámara y obtén guifos personalizados. Los
+          pasos para crear tu guifo son: <br />
+          <br />
+          <strong>1)</strong> Dar permisos de acceso a la cámara (sólo por el
+          tiempo de uso) <br />
+          <br /><strong>2)</strong> Capturar tu momento guifo <br />
+          <br />
+          <strong>3)</strong> Revisar el momento <br />
+          <br /><strong>4)</strong> Listo para subir y compartir!<br />
+          <br />
+          ¿Quieres comenzar a crear tu
+          <span class="bold-word">guifo</span> ahora?
+        </p>
+        <div class="empezar-terminar-btn-container">
+          <button class="cancel" id="cancel">Cancelar</button>
+          <button class="start" id="start">Comenzar</button>
+        </div>
       </div>
-      <div class="record-buttons" id="record-buttons">
-        <button id="grabar">Record</button>
+      <div id="record-window" class="record-window">
+        <div class="title-bar">
+          <h2>Un chequeo antes de empezar</h4>
+          <img src="images/button_close.svg" alt="exit" />
+        </div>
+        <video id="preview" class="preview"></video>
+        <button id="grabar" class="record-button"><img src="images/camera.svg" alt=""><span>Capturar</span></button>
         <button id="estop">Estop</button>
         <button id="upload">Upload this shit</button>
         <button id="ripit">Ripit</button>
-
-        <video id="preview">Start streaming</video>
-        <img id="example" alt="test" />
+        <img id="recorded-preview" class="recorded-preview" alt="test" />
       </div>
     </section>
-    <section id="mis-guifos" class="template-section mis-guifos-section">
+    <section id="mis-guifos-section" class="template-section mis-guifos-section">
       <div class="intro-section">
         <h3>Mis Guifos</h3>
       </div>
@@ -67,7 +93,8 @@
       </div>
     </section>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
-    <script type="text/javascript" src="js/crear-gifos.js"></script>
+    <script type="text/javascript" src="js/record.js"></script>
+    <script type="text/javascript" src="js/shared/crear-gifos.js"></script>
     <script type="text/javascript" src="js/shared/variables.js"></script>
     <script type="text/javascript" src="js/shared/helper.js"></script>
     <script type="text/javascript" src="js/theme.js"></script>

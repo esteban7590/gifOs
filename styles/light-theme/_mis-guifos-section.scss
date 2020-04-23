@@ -1,21 +1,116 @@
-.mis-guifos-section {
-  padding-top: 0rem;
-}
 .go-back {
   display: none;
   position: absolute;
   top: 5.5rem;
   left: 4rem;
 }
-.start {
+
+.record-section {
+  display: none;
+  .record-buttons {
+    display: none;
+  }
+  .crear-window {
+    margin: 5.36rem 27rem 10.93rem 27rem;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+    font-family: $font;
+    .window-top-bar {
+      @include hashtag-bar;
+      padding: 0.24rem 0 0.19rem 0.29rem;
+      position: relative;
+      top: 0.2rem;
+      font-family: $font;
+      font-weight: bold;
+      color: white;
+      font-size: 1rem;
+    }
+    .window-title-container {
+      display: flex;
+      padding: 4.07rem 0 0 1.79rem;
+      :first-child {
+        padding-right: 1.14rem;
+      }
+    }
+    .instructions {
+      padding: 0.5rem 6.64rem 2rem 5.21rem;
+      .bold-word {
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
+    .empezar-terminar-btn-container {
+      display: flex;
+      padding: 0 2.57rem 2.57rem 24.57rem;
+      button {
+        height: 2.57rem;
+        width: 10.29rem;
+        font-family: $font;
+        font-size: 1.14rem;
+      }
+      :first-child {
+        background: #fff4fd;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+      }
+      :nth-child(2) {
+        margin-left: 1.14rem;
+        background: #f7c9f3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+      }
+    }
+  }
+
+  .record-window {
+    display: none;
+    flex-direction: column;
+    margin: 6rem 22rem 0 19rem;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+    font-family: $font;
+    // max-height: 40rem;
+    .title-bar {
+      @include hashtag-bar;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.24rem 0 0.19rem 0.29rem;
+      position: relative;
+      top: 0.2rem;
+      h2 {
+        font-family: $font;
+        font-weight: bold;
+        font-size: 1rem;
+        color: white;
+        font-size: 1rem;
+      }
+    }
+    .preview {
+      width: 59vw;
+      height: 30vw;
+      object-fit: cover;
+      margin: 2.71rem 1.21rem 0 0.71rem;
+      // background: #ffffff;
+      border: 1px solid #979797;
+      box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+    }
+    .record-button {
+      width: 10.29rem;
+      height: 2.57rem;
+      background: #f7c9f3;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+      font-family: $font;
+      font-size: 1.14rem;
+      margin: 1.5rem 1.14rem 1.14rem 53rem;
+    }
+  }
+}
+
+.recorded-preview {
   display: none;
 }
-.record-buttons {
-  display: none;
+
+.mis-guifos-section {
+  padding-top: 0rem;
 }
-// nav a::before {
-//   content: url("images/arrow.svg");
-//   position: relative;
-//   top: -3.5rem;
-//   left: 4rem;
-// }

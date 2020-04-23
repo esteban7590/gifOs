@@ -53,3 +53,9 @@ const loadSection = async (url, sectionContainer) => {
 };
 
 //function that set's up misguifos html to create gifos
+const setHtml = () => {
+  document.getElementById("go-back").style.display = "block";
+  document.getElementById("nav-buttons").style.display = "none";
+  start.style.display = "block";
+  document.getElementById("record-section").style.display = "block";
+};

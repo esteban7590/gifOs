@@ -751,10 +751,6 @@ html {
   padding-top: 5rem;
 }
 
-.sailor-day .mis-guifos-section {
-  padding-top: 0rem;
-}
-
 .sailor-day .go-back {
   display: none;
   position: absolute;
@@ -762,12 +758,213 @@ html {
   left: 4rem;
 }
 
-.sailor-day .start {
+.sailor-day .record-section {
   display: none;
 }
 
-.sailor-day .record-buttons {
+.sailor-day .record-section .record-buttons {
   display: none;
+}
+
+.sailor-day .record-section .crear-window {
+  margin: 5.36rem 27rem 10.93rem 27rem;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.sailor-day .record-section .crear-window .window-top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  position: relative;
+  top: -1.3rem;
+  left: 0.1rem;
+  margin: 0 0.2rem -1.25rem 0;
+  padding: 0.24rem 0 0.19rem 0.29rem;
+  position: relative;
+  top: 0.2rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+}
+
+.sailor-day .record-section .crear-window .window-top-bar .gif-text {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  max-width: 19vw;
+  white-space: nowrap;
+  -webkit-animation: animation-textfloat 5s 1 ease-in-out;
+          animation: animation-textfloat 5s 1 ease-in-out;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes animation-textfloat {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.sailor-day .record-section .crear-window .window-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4.07rem 0 0 1.79rem;
+}
+
+.sailor-day .record-section .crear-window .window-title-container :first-child {
+  padding-right: 1.14rem;
+}
+
+.sailor-day .record-section .crear-window .instructions {
+  padding: 0.5rem 6.64rem 2rem 5.21rem;
+}
+
+.sailor-day .record-section .crear-window .instructions .bold-word {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.sailor-day .record-section .crear-window .empezar-terminar-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2.57rem 2.57rem 24.57rem;
+}
+
+.sailor-day .record-section .crear-window .empezar-terminar-btn-container button {
+  height: 2.57rem;
+  width: 10.29rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+}
+
+.sailor-day .record-section .crear-window .empezar-terminar-btn-container :first-child {
+  background: #fff4fd;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+
+.sailor-day .record-section .crear-window .empezar-terminar-btn-container :nth-child(2) {
+  margin-left: 1.14rem;
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+
+.sailor-day .record-section .record-window {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 6rem 22rem 0 19rem;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.sailor-day .record-section .record-window .title-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  position: relative;
+  top: -1.3rem;
+  left: 0.1rem;
+  margin: 0 0.2rem -1.25rem 0;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.24rem 0 0.19rem 0.29rem;
+  position: relative;
+  top: 0.2rem;
+}
+
+.sailor-day .record-section .record-window .title-bar .gif-text {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  max-width: 19vw;
+  white-space: nowrap;
+  -webkit-animation: animation-textfloat 5s 1 ease-in-out;
+          animation: animation-textfloat 5s 1 ease-in-out;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes animation-textfloat {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.sailor-day .record-section .record-window .title-bar h2 {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.sailor-day .record-section .record-window .preview {
+  width: 59vw;
+  height: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 2.71rem 1.21rem 0 0.71rem;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+}
+
+.sailor-day .record-section .record-window .record-button {
+  width: 10.29rem;
+  height: 2.57rem;
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  margin: 1.5rem 1.14rem 1.14rem 53rem;
+}
+
+.sailor-day .recorded-preview {
+  display: none;
+}
+
+.sailor-day .mis-guifos-section {
+  padding-top: 0rem;
 }
 
 .sailor-night {
