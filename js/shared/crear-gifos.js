@@ -1,7 +1,7 @@
 //como hago para que desde index vaya a mis guifos y tambien setHtml??
 const crearGifos = document.getElementById("crear-button");
 crearGifos.onclick = () => {
-  // window.location.href = "mis-guifos.html";
+  window.location.href = "mis-guifos.html";
   setHtml();
 };
 
