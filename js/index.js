@@ -4,7 +4,7 @@ window.onload = () => {
 
   const misGuifos = document.getElementById("mis-guifos");
   misGuifos.onclick = () => {
-    cambiarHtml("mis-gifOs");
+    cambiarHtml();
   };
 
   const crearGifos = document.getElementById("crear-button");
