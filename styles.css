@@ -937,8 +937,8 @@ html {
 }
 
 .sailor-day .record-section .record-window .preview {
-  width: 59vw;
-  height: 30vw;
+  width: 95%;
+  height: 36rem;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 2.71rem 1.21rem 0 0.71rem;
