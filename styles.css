@@ -40,7 +40,6 @@ html {
 
 .sailor-day nav img {
   padding: 2.5rem 7rem;
-  height: 4rem;
 }
 
 .sailor-day nav div {
@@ -630,7 +629,6 @@ html {
   background: #e6e6e6;
   -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
           box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-  position: relative;
   margin: 0 0 1.14rem 0;
 }
 
@@ -751,22 +749,32 @@ html {
   padding-top: 5rem;
 }
 
-.sailor-day .go-back {
-  display: none;
+.sailor-day .mis-guifos-section {
+  padding-top: 0rem;
+}
+
+.sailor-day .logo-goback-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sailor-day .logo-goback-container .go-back {
   position: absolute;
   top: 5.5rem;
   left: 4rem;
-}
-
-.sailor-day .record-section {
-  display: none;
-}
-
-.sailor-day .record-section .record-buttons {
-  display: none;
+  height: 1.71rem;
+  padding: 0;
 }
 
 .sailor-day .record-section .crear-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 5.36rem 27rem 10.93rem 27rem;
   background: #e6e6e6;
   -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
@@ -844,7 +852,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 2.57rem 2.57rem 24.57rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0 2.57rem 2.57rem 0rem;
 }
 
 .sailor-day .record-section .crear-window .empezar-terminar-btn-container button {
@@ -936,18 +946,46 @@ html {
   font-size: 1rem;
 }
 
-.sailor-day .record-section .record-window .preview {
-  width: 95%;
+.sailor-day .record-section .record-window .title-bar :nth-child(2) {
+  padding: 0.2rem 0.6rem;
+}
+
+.sailor-day .record-section .record-window .preview-background {
+  width: 97%;
   height: 36rem;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 2.71rem 1.21rem 0 0.71rem;
+  background: #ffffff;
   border: 1px solid #979797;
   -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
           box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
 }
 
+.sailor-day .record-section .record-window .preview-background .preview {
+  width: 99.7%;
+  height: 99.5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0.15rem;
+}
+
+.sailor-day .record-section .record-window .preview-background .recorded-preview {
+  display: none;
+}
+
 .sailor-day .record-section .record-window .record-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 10.29rem;
   height: 2.57rem;
   background: #f7c9f3;
@@ -956,750 +994,93 @@ html {
           box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
-  margin: 1.5rem 1.14rem 1.14rem 53rem;
+  margin: 1.5rem 2% 1.14rem 0;
 }
 
-.sailor-day .recorded-preview {
-  display: none;
+.sailor-day .record-section .record-window .time-stop-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 1.14rem 1.14rem 1.5rem;
+}
+
+.sailor-day .record-section .record-window .time-stop-container .time-elapsed {
+  padding: 0.5rem 1.5rem;
+  width: 3rem;
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+}
+
+.sailor-day .record-section .record-window .time-stop-container .stop-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 10.29rem;
+  height: 2.57rem;
+  background: #ff6161;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+.sailor-day .record-section .record-window .upload-repeat-container {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1.5rem 1.14rem 1.14rem 0rem;
+}
+
+.sailor-day .record-section .record-window .upload-repeat-container button {
+  height: 2.57rem;
+  width: 10.29rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+}
+
+.sailor-day .record-section .record-window .upload-repeat-container :first-child {
+  background: #fff4fd;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+
+.sailor-day .record-section .record-window .upload-repeat-container :nth-child(2) {
+  margin-left: 1.14rem;
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
 }
 
 .sailor-day .mis-guifos-section {
-  padding-top: 0rem;
-}
-
-.sailor-night {
-  background-color: #14005d;
-}
-
-.sailor-night header {
-  background-image: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
-  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
-  -webkit-box-shadow: 0 0.07rem #110038;
-          box-shadow: 0 0.07rem #110038;
-}
-
-.sailor-night header h1 {
-  color: #ffffff;
-  font-size: 0.86rem;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 400;
-  padding-top: 0.21rem;
-  padding-left: 0.5rem;
-  padding-bottom: 0.29rem;
-}
-
-.sailor-night nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.sailor-night nav img {
-  padding: 2.5rem 7rem;
-  height: 4rem;
-}
-
-.sailor-night nav div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 3.14rem 10.04rem 2.5rem;
-}
-
-.sailor-night nav div button {
-  border: solid 0.07rem;
-  background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-  padding: 0.64rem 1.89rem;
-  margin: 0.57rem;
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 1.14rem;
-  color: #110038;
-  text-align: center;
-  line-height: 1.19rem;
-  position: relative;
-}
-
-.sailor-night nav div .crear-button {
-  margin-right: 1.14rem;
-}
-
-.sailor-night nav div .crear-button:active {
-  background: #daafd7;
-}
-
-.sailor-night nav div button:hover:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.sailor-night nav div button:focus:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.sailor-night nav div .tema-button-container {
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-}
-
-.sailor-night nav div .tema-button-container .dropdown-button {
-  border: solid 0.07rem;
-  background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-  position: relative;
-  margin: 0.57rem 0;
-  padding: 0.93rem 1.07rem;
-}
-
-.sailor-night nav div .tema-button-container .dropdown-button:active {
-  background: #daafd7;
-}
-
-.sailor-night nav div .tema-button-container .dropdown-button .dropdown-icon {
-  margin: 0;
-  padding: 0;
-  height: auto;
-}
-
-.sailor-night nav div .tema-button-container .tema-button {
-  border: solid 0.07rem;
-  background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-  position: relative;
-  margin: 0.57rem 0;
-  padding: 0.64rem 1.71rem;
-}
-
-.sailor-night nav div .tema-button-container .tema-button:active {
-  background: #daafd7;
-}
-
-.sailor-night nav div .tema-button-container .dropdown-button:hover ~ .tema-button:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.sailor-night nav div .tema-button-container .dropdown-themes {
-  display: none;
-  position: absolute;
-  top: 3.7rem;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-  z-index: 1;
-  padding-bottom: 0.71rem;
-}
-
-.sailor-night nav div .tema-button-container .dropdown-themes button {
-  width: 86.5%;
-  margin: 0.71rem 0 0 0.71rem;
-  padding: 0.5rem 1.14rem;
-  background: #f0f0f0;
-  border: 0.07rem solid #808080;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 1.14rem;
-  text-align: left;
-}
-
-.sailor-night nav div .tema-button-container .dropdown-themes .day-button {
-  background: #fff4fd;
-  border: 1px solid #cca6c9;
-  -webkit-box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
-}
-
-.sailor-night nav div .tema-button-container .dropdown-themes .day-button::first-letter {
-  text-decoration: underline;
-}
-
-.sailor-night nav div .dropdown-button:focus ~ .dropdown-themes {
-  display: block;
-}
-
-.sailor-night nav div .tema-button:focus ~ .dropdown-themes {
-  display: block;
-}
-
-.sailor-night nav .mis-guifos {
-  background-color: transparent;
-  padding: 0 0.8rem;
-  margin: 0.4rem 0;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.sailor-night nav .mis-guifos:focus {
-  color: #9674e6;
-}
-
-.sailor-night .search-section {
-  margin: 0 10rem 0 7.14rem;
-}
-
-.sailor-night .search-section .bottom-part-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 7.4rem;
-  background-color: #e6e6e6;
-  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
-          box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
-}
-
-.sailor-night .search-section .bottom-part-container h2 {
-  margin: 0.14rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
-  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
-  color: #ffffff;
-  font-size: 1rem;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 600;
-  padding-left: 0.21rem;
-  line-height: 1.8rem;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container {
-  display: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar {
-  background-color: #ffffff;
-  padding: 0 0 0 1.14rem;
-  margin: 0.86rem 0 0.86rem 1.07rem;
-  border: 1px solid #979797;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #000000;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #000000;
-  height: 3.43rem;
-  width: 60%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  font-size: 1.14rem;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 300;
-  color: #b4b4b4;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus {
-  color: #110038;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button {
-  background-color: #f7c9f3;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button:hover:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button p {
-  color: #110038;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button .lupa-inactive {
-  display: none;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button .lupa {
-  display: block;
-  padding: 0 0 0 0.5rem;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 7.29rem;
-  height: 2.57rem;
-  margin: auto 1.29rem auto 0.57rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #e6e6e6;
-  border: 0.07rem solid #808080;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-  position: relative;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container button p {
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 1.14rem;
-  color: #b4b4b4;
-  padding: 0 1.29rem 0 0.71rem;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container button .lupa-inactive {
-  padding: 0 0 0 0.5rem;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container button .lupa {
-  display: none;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container button:active:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container button:active {
-  background-color: #daafd7;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container button:active p {
-  color: #110038;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container button:active .lupa-inactive {
-  display: none;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container button:active .lupa {
-  display: block;
-  padding: 0 0 0 0.5rem;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu {
-  display: none;
-  width: 100%;
-  background-color: #e6e6e6;
-  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
-          box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  z-index: 1;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu img {
-  position: relative;
-  top: 0.5rem;
-  left: 0.5rem;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu img:hover {
-  outline: 0.07rem dashed #000000;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu li {
-  font-family: "Chakra Petch", sans-serif;
-  list-style: none;
-  padding: 0.5rem 1.14rem;
-  background: #f0f0f0;
-  border: 0.07rem solid #808080;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-  margin: 1.21rem 9.21rem 1.21rem 1.14rem;
-  position: relative;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu li:hover:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-  background: #dbdbdb;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu a {
-  text-decoration: none;
-  font-size: 1.14rem;
-  color: #110038;
-  position: relative;
-  z-index: 1;
-}
-
-.sailor-night .search-section .results-buttons-container {
-  display: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  padding-bottom: 0.5rem;
-}
-
-.sailor-night .search-section .results-buttons-container::-webkit-scrollbar {
-  height: 0.5rem;
-}
-
-.sailor-night .search-section .results-buttons-container::-webkit-scrollbar-thumb {
-  background: #a8a8a8;
-  border-radius: 0.5rem;
-}
-
-.sailor-night .search-section .results-buttons-container::-webkit-scrollbar-thumb:hover {
-  background: #949494;
-}
-
-.sailor-night .search-section .result-button {
-  background: #4180f6;
-  border: 0.07rem solid #4c2f99;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
-  color: #ffffff;
-  font-size: 1rem;
-  font-family: "Chakra Petch", sans-serif;
-  line-height: 1.29rem;
-  padding: 0.57rem 0.5rem;
-  margin: 0.86rem 0.57rem 0 0.1rem;
-}
-
-.sailor-night .wrong-message {
-  display: none;
-  font-family: "Chakra Petch", sans-serif;
-  text-align: center;
-  padding: 3rem;
-}
-
-.sailor-night .suggested-section {
-  padding: 4.57rem 0 0 0;
-}
-
-.sailor-night .suggested-section .intro-section {
-  margin: 0 10rem 0 7.14rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #fffafe;
-  border: 0.07rem solid #e6bbe2;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
-}
-
-.sailor-night .suggested-section .intro-section h3 {
-  padding: 0.5rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1rem;
-  font-family: "Chakra Petch", sans-serif;
-  color: #110038;
-  font-weight: 300;
-}
-
-.sailor-night .suggested-section .suggested-gif-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 1.36rem 10rem 0 7.14rem;
-}
-
-.sailor-night .suggested-section .suggested-gif-container .suggested-gif {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: none;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-  position: relative;
-}
-
-.sailor-night .suggested-section .suggested-gif-container .suggested-gif .hashtag-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
-  margin: 0.2rem 0.29rem 0rem;
-}
-
-.sailor-night .suggested-section .suggested-gif-container .suggested-gif .hashtag-bar h4 {
-  color: #ffffff;
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.2rem 0.3rem;
-}
-
-.sailor-night .suggested-section .suggested-gif-container .suggested-gif .gif {
-  margin: 0.14rem 0.29rem;
-  width: 18.5vw;
-  height: 19vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.sailor-night .suggested-section .suggested-gif-container .suggested-gif button {
-  position: relative;
-  left: 0.79rem;
-  top: -3.65rem;
-  width: 5.79rem;
-  height: 2.43rem;
-  margin-bottom: -2.25rem;
-  background: #4180f6;
-  border: 0.07rem solid #4c2f99;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
-  color: #ffffff;
-  font-size: 1rem;
-  font-family: "Chakra Petch", sans-serif;
-  line-height: 1.29rem;
-}
-
-.sailor-night .suggested-section .suggested-gif-container .suggested-gif button:hover:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.sailor-night .suggested-section .suggested-gif-container .suggested-gif button:hover ~ .gif:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.sailor-night .suggested-section .suggested-gif-container .suggested-gif .gif:hover {
-  outline: 0.07rem dashed #000000;
-}
-
-.sailor-night .suggested-section .suggested-gif-container .suggested-gif .gif:hover ~ button:before {
-  border: 0.07rem dashed #000000;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.sailor-night .template-section {
-  padding: 4.57rem 0 0 0;
-}
-
-.sailor-night .template-section .intro-section {
-  margin: 0 10rem 0 7.14rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #fffafe;
-  border: 0.07rem solid #e6bbe2;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
-}
-
-.sailor-night .template-section .intro-section h3 {
-  padding: 0.5rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1rem;
-  font-family: "Chakra Petch", sans-serif;
-  color: #110038;
-  font-weight: 300;
-}
-
-.sailor-night .template-section .template-gif-container {
-  margin: 1.36rem 10rem 0 7.43rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.sailor-night .template-section .template-gif-container .template-gif {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: none;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-  position: relative;
-  margin: 0 0 1.14rem 0;
-}
-
-.sailor-night .template-section .template-gif-container .template-gif .gif-img {
-  width: 19vw;
-  height: 19vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.sailor-night .template-section .template-gif-container .template-gif .gif-img:hover {
-  outline: 0.07rem dashed #000000;
-  width: 18.8vw;
-  height: 18.7vw;
-  padding: 0.1vw;
-}
-
-.sailor-night .template-section .template-gif-container .template-gif .gif-img:hover ~ .gif-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
-  position: relative;
-  top: -1.3rem;
-  left: 0.1rem;
-  margin: 0 0.2rem -1.25rem 0;
-}
-
-.sailor-night .template-section .template-gif-container .template-gif .gif-img:hover ~ .gif-title .gif-text {
-  display: inline-block;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #ffffff;
-  max-width: 19vw;
-  white-space: nowrap;
-  -webkit-animation: animation-textfloat 5s 1 ease-in-out;
-          animation: animation-textfloat 5s 1 ease-in-out;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@keyframes animation-textfloat {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-.sailor-night .template-section .template-gif-container .template-gif .gif-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
-  position: relative;
-  top: -1.3rem;
-  left: 0.1rem;
-  margin: 0 0.2rem -1.25rem 0;
-  overflow: hidden;
-  width: 18.8vw;
-  display: none;
-}
-
-.sailor-night .template-section .template-gif-container .template-gif .gif-title .gif-text {
-  display: inline-block;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #ffffff;
-  max-width: 19vw;
-  white-space: nowrap;
-  -webkit-animation: animation-textfloat 5s 1 ease-in-out;
-          animation: animation-textfloat 5s 1 ease-in-out;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@keyframes animation-textfloat {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-.sailor-night .template-section .template-gif-container .template-gif .gif-title:hover {
-  display: block;
-  background-image: -webkit-gradient(linear, right top, left top, from(#4180f6), to(#f7c9f3));
-  background-image: linear-gradient(270deg, #4180f6, #f7c9f3);
-}
-
-.sailor-night .results-section {
-  display: none;
-  padding-top: 5rem;
-}
-
-.sailor-night .mis-guifos-section {
   padding-top: 0rem;
 }
 /*# sourceMappingURL=styles.css.map */

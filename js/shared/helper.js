@@ -52,12 +52,18 @@ const loadSection = async (url, sectionContainer) => {
   });
 };
 
-//function that set's up misguifos html to create gifos
-const setHtml = () => {
-  document.getElementById("go-back").style.display = "block";
-  document.getElementById("crear-button").style.display = "none";
-  document.getElementById("start").style.display = "block";
-  document.getElementById("record-section").style.display = "block";
-  document.getElementById("temas").style.display = "";
-  document.getElementById("mis-guifos").style.display = "none";
+const crearOnClick = () => {
+  const misGuifos = document.getElementById("mis-guifos");
+  misGuifos.onclick = () => {
+    changeHtml("mis-guifos.html");
+  };
+
+  const crearGuifos = document.getElementById("crear-button");
+  crearGuifos.onclick = () => {
+    changeHtml("crear-guifos.html");
+  };
+};
+
+const changeHtml = (url) => {
+  window.location.href = url;
 };

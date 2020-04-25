@@ -10,7 +10,7 @@
     justify-content: space-between;
     .template-gif {
       @include gif-img-container;
-      position: relative;
+      // position: relative;
       margin: 0 0 1.14rem 0;
       .gif-img {
         width: 19vw;

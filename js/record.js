@@ -1,20 +1,45 @@
-//---------------------------------------------
+const preview = document.getElementById("preview");
+
+var recorder;
+
+let recordedPreview = document.getElementById("recorded-preview");
+
+const grabar = document.getElementById("grabar");
+
+const estop = document.getElementById("estop");
+estop.style.display = "none";
+const upload = document.getElementById("upload");
+// upload.style.display = "none";
+const ripit = document.getElementById("ripit");
+// ripit.style.display = "none";
+
+const timeElapsed = document.getElementById("time-elapsed");
+
+const timeStopContainer = document.getElementById("time-stop-container");
+timeStopContainer.style.display = "none";
+
+const uploadRepeatContainer = document.getElementById(
+  "upload-repeat-container"
+);
+uploadRepeatContainer.style.display = "none";
+
+const previewBackground = document.getElementById("preview-background");
+// previewBackground.style.display = "none";
+
+const img = document.getElementById("ripit");
 
 const setRecorder = async () => {
   let stream = null;
   stream = await navigator.mediaDevices.getUserMedia({
     video: {
-      height: { max: 450 },
+      height: { max: 500 },
     },
     audio: false,
   });
-  const preview = document.getElementById("preview");
   preview.srcObject = stream;
   preview.play();
   return stream;
 };
-
-var recorder;
 
 const record = async () => {
   try {
@@ -33,7 +58,7 @@ const record = async () => {
 
 const showPreview = (blob) => {
   const objectURL = URL.createObjectURL(blob);
-  document.getElementById("recorded-preview").src = objectURL;
+  recordedPreview.src = objectURL;
 };
 
 const format = (blob) => {
@@ -78,20 +103,15 @@ function calculateTimeDuration(secs) {
   return hr + ":" + min + ":" + sec;
 }
 
-const estop = document.getElementById("estop");
-estop.style.display = "none";
-const upload = document.getElementById("upload");
-upload.style.display = "none";
-const ripit = document.getElementById("ripit");
-ripit.style.display = "none";
-
 const recordGif = () => {
-  const grabar = document.getElementById("grabar");
   grabar.onclick = async () => {
     grabar.disabled = true;
+    grabar.style.display = "none";
+    estop.style.display = "flex";
     let recorder = await record();
     recorder.startRecording();
     let dateStarted = new Date().getTime();
+
     (function looper() {
       if (!recorder) {
         return;
@@ -99,34 +119,43 @@ const recordGif = () => {
       let time = calculateTimeDuration(
         (new Date().getTime() - dateStarted) / 1000
       );
-      console.log(time);
+      // console.log(time);
+      timeElapsed.innerHTML = time;
       setTimeout(looper, 1000);
     })();
 
-    const estop = document.getElementById("estop");
-    estop.style.display = "block";
-    document.getElementById("recorded-preview").style.display = "block";
+    timeStopContainer.style.display = "flex";
     estop.onclick = async () => {
-      ripit.style.display = "block";
+      recordedPreview.style.display = "block";
       await recorder.stopRecording();
+      preview.style.display = "none";
       grabar.disabled = false;
       let blob = await recorder.getBlob();
       console.log(blob);
       showPreview(blob);
       let form = format(blob);
       console.log(form.get("file"));
-      estop.style.display = "none";
-      const upload = document.getElementById("upload");
-      upload.style.display = "block";
+      timeStopContainer.style.display = "none";
+      // upload.style.display = "block";
+      // ripit.style.display = "block";
+      uploadRepeatContainer.style.display = "flex";
       recorder = null;
       upload.onclick = async () => {
+        uploadRepeatContainer.style.display = "none";
+        recordedPreview.style.display = "none";
         await postForm(form);
       };
     };
   };
 
   ripit.onclick = () => {
-    const img = document.getElementById("example");
+    grabar.style.display = "flex";
+    uploadRepeatContainer.style.display = "none";
+    // ripit.style.display = "none";
+    // upload.style.display = "none";
+    preview.style.display = "block";
+    recordedPreview.style.display = "none";
+    timeStopContainer.style.display = "none";
     img.setAttribute("src", "");
     recordGif();
     recorder.reset();
