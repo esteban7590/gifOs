@@ -1,5 +1,3 @@
-var recorder;
-
 const initialSetup = () => {
   document.getElementById("nav-buttons").style.display = "none";
   document.getElementById("done-window-container").style.display = "none";
@@ -10,20 +8,19 @@ const initialSetup = () => {
 };
 
 const setCrearWindow = () => {
-  start.onclick = () => {
+  document.getElementById("start").onclick = () => {
     document.getElementById("mis-guifos-section").style.display = "none";
     document.getElementById("crear-window").style.display = "none";
-    document.getElementById("grabar").style.display = "flex";
+    recordButton.style.display = "flex";
     document.getElementById("record-window").style.display = "flex";
     setRecorder();
   };
 
-  cancelCrear.onclick = () => {
+  document.getElementById("cancel").onclick = () => {
     changeHtml("mis-guifos.html");
   };
 };
 
-var stream = null;
 const setRecorder = async () => {
   stream = await navigator.mediaDevices.getUserMedia({
     video: {
@@ -36,6 +33,44 @@ const setRecorder = async () => {
   return stream;
 };
 
+const recordGif = () => {
+  recordButton.onclick = async () => {
+    recordButton.disabled = true;
+    recordButton.style.display = "none";
+    stopButton.style.display = "flex";
+    timeStopContainer.style.display = "flex";
+    recorder = await record();
+    recorder.startRecording();
+    dateStarted = new Date().getTime();
+    looper();
+  };
+};
+
+const looper = () => {
+  if (!recorder) {
+    return;
+  }
+  const time = calculateTimeDuration(
+    (new Date().getTime() - dateStarted) / 1000
+  );
+  console.log(time);
+  document.getElementById("time-elapsed").innerHTML = time;
+  setTimeout(looper, 1000);
+};
+
+const calculateTimeDuration = (secs) => {
+  let hr = Math.floor(secs / 3600);
+  let min = Math.floor((secs - hr * 3600) / 60);
+  let sec = Math.floor(secs - hr * 3600 - min * 60);
+  if (min < 10) {
+    min = "0" + min;
+  }
+  if (sec < 10) {
+    sec = "0" + sec;
+  }
+  return hr + ":" + min + ":" + sec;
+};
+
 const record = async () => {
   try {
     let stream = await setRecorder();
@@ -43,7 +78,6 @@ const record = async () => {
       type: "gif",
       frameRate: 1,
       quality: 10,
-      // canvas: { width: 200, height: 200 },
     });
     return recorder;
   } catch (err) {
@@ -51,9 +85,27 @@ const record = async () => {
   }
 };
 
-const showPreview = (element, blob) => {
-  const objectURL = URL.createObjectURL(blob);
-  element.src = objectURL;
+const stopGifRecording = () => {
+  stopButton.onclick = async () => {
+    recordedPreview.style.display = "block";
+    await recorder.stopRecording();
+    preview.style.display = "none";
+    recordButton.disabled = false;
+    blob = await recorder.getBlob();
+    console.log(blob);
+    showPreview(recordedPreview, blob);
+    form = format(blob);
+    console.log(form.get("file"));
+    document.getElementById("file-link").href = URL.createObjectURL(blob);
+    timeStopContainer.style.display = "none";
+    uploadRepeatContainer.style.display = "flex";
+    recorder.reset();
+    stream.getTracks().forEach(function (track) {
+      console.log("stop");
+      track.stop();
+    });
+    recorder = false;
+  };
 };
 
 const format = (blob) => {
@@ -62,44 +114,48 @@ const format = (blob) => {
   return form;
 };
 
-const postForm = async (form) => {
-  try {
-    let response = await fetch(
-      "http://upload.giphy.com/v1/gifs?api_key=nviDGCCp3515X3VeiJdD4zAohJ9inqtJ",
-      {
-        method: "POST",
-        body: form,
-      }
-    );
-    let result = await response.json();
-    // let message = result.meta.msg;
-    console.log(result);
-    return result;
-  } catch (err) {
-    console.log(err);
-    uploadingContainer.innerHTML = "Something fucked up :/ try again";
-  }
+const showPreview = (element, blob) => {
+  element.src = URL.createObjectURL(blob);
 };
 
-function calculateTimeDuration(secs) {
-  var hr = Math.floor(secs / 3600);
-  var min = Math.floor((secs - hr * 3600) / 60);
-  var sec = Math.floor(secs - hr * 3600 - min * 60);
+const uploadGif = () => {
+  uploadButton.onclick = async () => {
+    uploadRepeatContainer.style.display = "none";
+    recordedPreview.style.display = "none";
+    uploadingContainer.style.display = "block";
+    cancelButton.style.display = "block";
 
-  if (min < 10) {
-    min = "0" + min;
-  }
+    createProgressBarBoxes();
 
-  if (sec < 10) {
-    sec = "0" + sec;
-  }
+    result = await postForm(form);
+    if (result) {
+      gifId = result.data.id;
+      localStorage.setItem(gifId, JSON.stringify(result));
 
-  if (hr <= 0) {
-    return min + ":" + sec;
-  }
-
-  return hr + ":" + min + ":" + sec;
-}
+      const message = await result.meta.msg;
+      if (message === "OK") {
+        document.getElementById("record-window").style.display = "none";
+        document.getElementById("crear-window").style.display = "flex";
+        document.getElementById("crear-instructions").style.display = "none";
+        document.getElementById("window-title-container").style.display =
+          "none";
+        document.getElementById(
+          "empezar-terminar-btn-container"
+        ).style.display = "none";
+        document.getElementById("done-window-container").style.display =
+          "block";
+        uploadedPreview.style.display = "block";
+        showPreview(uploadedPreview, blob);
+        document.getElementById("done-button").onclick = () => {
+          setUrl("mis-guifos.html");
+        };
+      }
+    } else {
+      console.log("something went wrong");
+      uploadingContainer.innerHTML = "Something fucked up :/ try again";
+    }
+  };
+};
 
 const createProgressBarBoxes = () => {
   for (let index = 0; index < 23; index++) {
@@ -108,142 +164,80 @@ const createProgressBarBoxes = () => {
   }
 };
 
-const recordGif = () => {
-  grabar.onclick = async () => {
-    grabar.disabled = true;
-    grabar.style.display = "none";
-    estop.style.display = "flex";
-    let recorder = await record();
-    recorder.startRecording();
-    let dateStarted = new Date().getTime();
+const postForm = async (form) => {
+  try {
+    let response = await fetch(
+      "http://upload.giphy.com/v1/gifs?api_key=nviDGCCp3515X3VeiJdD4zAohJ9inqtJ",
 
-    const looper = () => {
-      if (!recorder) {
-        return;
+      {
+        method: "POST",
+        body: form,
+        signal: controller.signal,
       }
-      let time = calculateTimeDuration(
-        (new Date().getTime() - dateStarted) / 1000
-      );
-      console.log(time);
-      timeElapsed.innerHTML = time;
-      setTimeout(looper, 500);
-    };
+    );
+    const result = await response.json();
+    console.log(result);
+    return result;
+  } catch (err) {
+    console.log(err);
+    uploadingContainer.innerHTML = "Something fucked up :/ try again";
+  }
+};
 
-    looper();
-
-    timeStopContainer.style.display = "flex";
-    estop.onclick = async () => {
-      recordedPreview.style.display = "block";
-      await recorder.stopRecording();
-      preview.style.display = "none";
-      grabar.disabled = false;
-      var blob = await recorder.getBlob();
-      console.log(blob);
-      showPreview(recordedPreview, blob);
-      let form = format(blob);
-      console.log(form.get("file"));
-      var ahref = URL.createObjectURL(blob);
-      document.getElementById("file-link").href = ahref;
-      timeStopContainer.style.display = "none";
-      // upload.style.display = "block";
-      // ripit.style.display = "block";
-      uploadRepeatContainer.style.display = "flex";
-      recorder.reset();
-      stream.getTracks().forEach(function (track) {
-        console.log("stop");
-        track.stop();
-      });
-      recorder = false;
-      upload.onclick = async () => {
-        uploadRepeatContainer.style.display = "none";
-        recordedPreview.style.display = "none";
-        uploadingContainer.style.display = "block";
-        cancelButton.style.display = "block";
-        createProgressBarBoxes();
-        let result = await postForm(form);
-        let message = result.meta.msg;
-        if (message === "OK") {
-          document.getElementById("record-window").style.display = "none";
-          document.getElementById("crear-window").style.display = "flex";
-          document.getElementById("crear-instructions").style.display = "none";
-          document.getElementById("window-title-container").style.display =
-            "none";
-          document.getElementById(
-            "empezar-terminar-btn-container"
-          ).style.display = "none";
-          doneWindowContainer.style.display = "block";
-          let uploadedPreview = document.getElementById("uploaded-preview");
-          uploadedPreview.style.display = "block";
-          showPreview(uploadedPreview, blob);
-        } else {
-          console.log("something went wrong");
-          uploadingContainer.innerHTML = "Something fucked up :/ try again";
-        }
-
-        var gifId = result.data.id;
-        localStorage.setItem(gifId, JSON.stringify(result));
-
-        copyLinkButton.onclick = async () => {
-          let response = await apiFetch(API_URL + "/" + gifId + "?" + API_KEY);
-          let giphyUrl = response.url;
-          copyToClipboard(giphyUrl);
-          copyLinkButton.innerHTML = "Copied!";
-          setTimeout(() => {
-            copyLinkButton.innerHTML = "Copiar Enlace Giphy";
-          }, 1500);
-          console.log("link copied");
-        };
-      };
-    };
+const cancelUpload = () => {
+  cancelButton.onclick = () => {
+    controller.abort();
+    setTimeout(() => {
+      setUrl("mis-guifos.html");
+    }, 1000);
   };
 };
-ripit.onclick = () => {
-  setRecorder();
-  grabar.style.display = "flex";
-  uploadRepeatContainer.style.display = "none";
-  // ripit.style.display = "none";
-  // upload.style.display = "none";
-  preview.style.display = "block";
-  recordedPreview.style.display = "none";
-  timeStopContainer.style.display = "none";
-  document.getElementById("ripit").setAttribute("src", "");
-  recordGif();
-  recorder.reset();
-};
-cancelButton.onclick = () => {
-  changeHtml("mis-guifos.html");
-};
 
-doneButton.onclick = () => {
-  setUrl("mis-guifos.html");
-};
+const copyLink = () => {
+  copyLinkButton.onclick = async () => {
+    const response = await apiFetch(API_URL + "/" + gifId + "?" + API_KEY);
+    const giphyUrl = response.url;
+    copyToClipboard(giphyUrl);
+    copyLinkButton.innerHTML = "Copied!";
+    setTimeout(() => {
+      copyLinkButton.innerHTML = "Copiar Enlace Giphy";
+    }, 1500);
+    console.log("link copied");
+  };
 
-downloadButton.onclick = () => {
-  console.log("downloaded");
-};
-
-copyLinkButton.onclick = () => {
-  copyLinkButton.innerHTML = "Copied!";
-  setTimeout(() => {
-    copyLinkButton.innerHTML = "Copiar Enlace Giphy";
-  }, 1500);
+  repeatButton.onclick = () => {
+    setRecorder();
+    recordButton.style.display = "flex";
+    uploadRepeatContainer.style.display = "none";
+    preview.style.display = "block";
+    recordedPreview.style.display = "none";
+    timeStopContainer.style.display = "none";
+    recordGif();
+    recorder.reset;
+  };
 };
 
 const copyToClipboard = (text) => {
-  var dummy = document.createElement("textarea");
-  // to avoid breaking orgain page when copying more words
-  // cant copy when adding below this code
-  // dummy.style.display = 'none'
+  const dummy = document.createElement("textarea");
   document.body.appendChild(dummy);
-  //Be careful if you use texarea. setAttribute('value', value), which works with "input" does not work with "textarea". – Eduard
   dummy.value = text;
   dummy.select();
   document.execCommand("copy");
   document.body.removeChild(dummy);
 };
 
-recordGif();
+const downloadGif = () => {
+  document.getElementById("download-button").onclick = () => {
+    console.log("downloaded");
+  };
+};
 
-const setCrearNuevoGuifo = () => {
+const setRecordEnvironment = () => {
   setCrearWindow();
+  recordGif();
+  stopGifRecording();
+  uploadGif();
+  cancelUpload();
+  copyLink();
+  downloadGif();
 };

@@ -897,7 +897,8 @@ html {
 
 .sailor-day .record-section .crear-window .img-buttons-container .uploaded-preview-background {
   width: 75%;
-  margin: 2.71rem 1.21rem 1.71rem 0.71rem;
+  height: 50%;
+  margin: 2.71rem 1.21rem 3.14rem 0.71rem;
   background: #ffffff;
   border: 1px solid #979797;
   -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
@@ -906,7 +907,7 @@ html {
 
 .sailor-day .record-section .crear-window .img-buttons-container .uploaded-preview-background .uploaded-preview {
   display: none;
-  width: 99%;
+  width: 99.5%;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0.1rem;
@@ -947,8 +948,8 @@ html {
   color: unset;
 }
 
-.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container .button10 {
-  margin-top: 4rem;
+.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container .done-button {
+  margin: 4rem 0 3.14rem 0;
   height: 2.57rem;
   width: 16rem;
   font-family: "Chakra Petch", sans-serif;

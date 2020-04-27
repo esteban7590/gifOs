@@ -1,6 +1,6 @@
 window.onload = () => {
   initialSetup();
-  setCrearNuevoGuifo();
+  setRecordEnvironment();
   themeChange();
   htmlChange();
   loadMisGuifos();

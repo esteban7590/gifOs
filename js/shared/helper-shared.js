@@ -12,6 +12,7 @@ const apiFetch = async (url) => {
   }
 };
 
+//organize API response into an array with only useful properties
 const createGifObjectsArray = async (url) => {
   const data = await apiFetch(url);
   if (data) {
@@ -29,6 +30,7 @@ const createGifObjectsArray = async (url) => {
   }
 };
 
+//load an html section with the results from a fetch
 const loadSection = async (url, sectionContainer) => {
   const container = document.getElementById(sectionContainer);
   container.innerHTML = "";

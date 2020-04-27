@@ -70,13 +70,14 @@
       display: flex;
       .uploaded-preview-background {
         width: 75%;
-        margin: 2.71rem 1.21rem 1.71rem 0.71rem;
+        height: 50%;
+        margin: 2.71rem 1.21rem 3.14rem 0.71rem;
         background: #ffffff;
         border: 1px solid #979797;
         box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
         .uploaded-preview {
           display: none;
-          width: 99%;
+          width: 99.5%;
           // height: 10%;
           object-fit: cover;
           margin: 0.1rem;
@@ -106,8 +107,8 @@
             color: unset;
           }
         }
-        .button10 {
-          margin-top: 4rem;
+        .done-button {
+          margin: 4rem 0 3.14rem 0;
           height: 2.57rem;
           width: 16rem;
           font-family: $font;

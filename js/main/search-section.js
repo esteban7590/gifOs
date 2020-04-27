@@ -110,7 +110,7 @@ const loadRecentSearches = () => {
   const buttonsContainer = document.getElementById("results-buttons-container");
   buttonsContainer.style.display = "block";
   const recent = JSON.parse(sessionStorage.getItem("SESSION_SEARCHES"));
-  if (recent == "") {
+  if (!recent) {
     buttonsContainer.style.display = "none";
   } else {
     buttonsContainer.innerHTML = "";
