@@ -63,6 +63,58 @@
         box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
       }
     }
+    .img-buttons-container {
+      display: flex;
+      .uploaded-preview-background {
+        width: 75%;
+        margin: 2.71rem 1.21rem 1.71rem 0.71rem;
+        background: #ffffff;
+        border: 1px solid #979797;
+        box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+        .uploaded-preview {
+          display: none;
+          width: 99%;
+          // height: 10%;
+          object-fit: cover;
+          margin: 0.1rem;
+        }
+      }
+      .done-buttons-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.71rem;
+        :first-child {
+          padding: 5.43rem 0 1.14rem 0;
+          height: 2.57rem;
+          width: 18.29rem;
+        }
+        .download-copy-button {
+          margin-bottom: 1rem;
+          height: 2.57rem;
+          width: 16rem;
+          font-family: $font;
+          font-size: 1.14rem;
+          background: #fff4fd;
+          border: 1px solid #110038;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          a {
+            padding: 5% 20%;
+            text-decoration: none;
+            color: unset;
+          }
+        }
+        .button10 {
+          margin-top: 4rem;
+          height: 2.57rem;
+          width: 16rem;
+          font-family: $font;
+          font-size: 1.14rem;
+          background: #f7c9f3;
+          border: 1px solid #110038;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+        }
+      }
+    }
   }
 
   .record-window {
@@ -92,6 +144,9 @@
       }
     }
     .preview-background {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 97%;
       height: 36rem;
       object-fit: cover;
@@ -107,6 +162,141 @@
       }
       .recorded-preview {
         display: none;
+      }
+      .uploading-container {
+        text-align: center;
+        .globe-img {
+          padding-bottom: 0.67rem;
+        }
+        .uploading-title {
+          padding-bottom: 3.42rem;
+        }
+        .progress-container {
+          display: flex;
+          height: 1.71rem;
+          padding: 0 0.1rem 0 0;
+          margin-bottom: 0.67rem;
+          background: #b4b4b4;
+          box-shadow: inset -2px -2px 0 0 #fffcfc, inset 2px 2px 0 0 #000000;
+          div {
+            position: relative;
+            top: 0.15rem;
+            left: 0.15rem;
+            height: 1.43rem;
+            width: 9%;
+            float: left;
+            margin-right: 0.14rem;
+            background-color: gray;
+          }
+
+          :first-child {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 0;
+          }
+          :nth-child(2) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 0.2s;
+          }
+          :nth-child(3) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 0.4s;
+          }
+          :nth-child(4) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 0.6s;
+          }
+          :nth-child(5) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 0.8s;
+          }
+          :nth-child(6) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 1s;
+          }
+          :nth-child(7) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 1.2s;
+          }
+          :nth-child(8) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 1.4s;
+          }
+          :nth-child(9) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 1.6s;
+          }
+          :nth-child(10) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 1.8s;
+          }
+          :nth-child(11) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 2s;
+          }
+          :nth-child(12) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 2.2s;
+          }
+          :nth-child(13) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 2.4s;
+          }
+          :nth-child(14) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 2.6s;
+          }
+          :nth-child(15) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 2.8s;
+          }
+          :nth-child(16) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 3s;
+          }
+          :nth-child(17) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 3.2s;
+          }
+          :nth-child(18) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 3.4s;
+          }
+          :nth-child(19) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 3.6s;
+          }
+          :nth-child(20) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 3.8s;
+          }
+          :nth-child(21) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 4s;
+          }
+          :nth-child(22) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 4.2s;
+          }
+          :nth-child(23) {
+            animation: progress 6s steps(1, end) infinite;
+            animation-delay: 4.4s;
+          }
+
+          @keyframes progress {
+            0% {
+              background-color: pink;
+            }
+            60% {
+              background-color: gray;
+            }
+            100% {
+              background-color: pink;
+            }
+          }
+        }
+      }
+      .time-left {
+        padding-bottom: 3.42rem;
       }
     }
     .record-button {

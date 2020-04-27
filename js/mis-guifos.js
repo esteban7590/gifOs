@@ -2,4 +2,5 @@ window.onload = () => {
   crearOnClick();
 };
 
-loadSection(TRENDING, "mis-guifos-container");
+loadMisGuifos();
+// loadSection(TRENDING, "mis-guifos-container");

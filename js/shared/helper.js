@@ -52,6 +52,22 @@ const loadSection = async (url, sectionContainer) => {
   });
 };
 
+const loadMisGuifos = () => {
+  if (localStorage.length !== 0) {
+    let idsAarray = [];
+    for (let index = 0; index < localStorage.length; index++) {
+      let id = localStorage.key(index);
+      idsAarray.unshift(id);
+    }
+    let misUrl = API_URL + "?" + API_KEY + "&" + "ids=" + idsAarray;
+    loadSection(misUrl, "mis-guifos-container");
+  } else {
+    document.getElementById("wrong").innerHTML =
+      "Aqui apareceran los guifos que vayas creando...";
+    document.getElementById("wrong").style.display = "block";
+  }
+};
+
 const crearOnClick = () => {
   const misGuifos = document.getElementById("mis-guifos");
   misGuifos.onclick = () => {

@@ -396,6 +396,7 @@ html {
 }
 
 .sailor-day .search-section .bottom-part-container .search-bar-container .on-search-menu a {
+  padding: 0.5rem 99% 0.5rem 0;
   text-decoration: none;
   font-size: 1.14rem;
   color: #110038;
@@ -879,6 +880,76 @@ html {
           box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
 }
 
+.sailor-day .record-section .crear-window .img-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sailor-day .record-section .crear-window .img-buttons-container .uploaded-preview-background {
+  width: 75%;
+  margin: 2.71rem 1.21rem 1.71rem 0.71rem;
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+}
+
+.sailor-day .record-section .crear-window .img-buttons-container .uploaded-preview-background .uploaded-preview {
+  display: none;
+  width: 99%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0.1rem;
+}
+
+.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 1.71rem;
+}
+
+.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container :first-child {
+  padding: 5.43rem 0 1.14rem 0;
+  height: 2.57rem;
+  width: 18.29rem;
+}
+
+.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container .download-copy-button {
+  margin-bottom: 1rem;
+  height: 2.57rem;
+  width: 16rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  background: #fff4fd;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+
+.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container .download-copy-button a {
+  padding: 5% 20%;
+  text-decoration: none;
+  color: unset;
+}
+
+.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container .button10 {
+  margin-top: 4rem;
+  height: 2.57rem;
+  width: 16rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+
 .sailor-day .record-section .record-window {
   display: none;
   -webkit-box-orient: vertical;
@@ -951,6 +1022,15 @@ html {
 }
 
 .sailor-day .record-section .record-window .preview-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 97%;
   height: 36rem;
   -o-object-fit: cover;
@@ -972,6 +1052,230 @@ html {
 
 .sailor-day .record-section .record-window .preview-background .recorded-preview {
   display: none;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container {
+  text-align: center;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .globe-img {
+  padding-bottom: 0.67rem;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .uploading-title {
+  padding-bottom: 3.42rem;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.71rem;
+  padding: 0 0.1rem 0 0;
+  margin-bottom: 0.67rem;
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #fffcfc, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #fffcfc, inset 2px 2px 0 0 #000000;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container div {
+  position: relative;
+  top: 0.15rem;
+  left: 0.15rem;
+  height: 1.43rem;
+  width: 9%;
+  float: left;
+  margin-right: 0.14rem;
+  background-color: gray;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :first-child {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(2) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(3) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(4) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(5) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(6) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(7) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(8) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(9) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(10) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(11) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(12) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(13) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(14) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(15) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(16) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(17) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(18) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(19) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(20) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(21) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(22) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+.sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(23) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    background-color: pink;
+  }
+  60% {
+    background-color: gray;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+
+@keyframes progress {
+  0% {
+    background-color: pink;
+  }
+  60% {
+    background-color: gray;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+
+.sailor-day .record-section .record-window .preview-background .time-left {
+  padding-bottom: 3.42rem;
 }
 
 .sailor-day .record-section .record-window .record-button {
