@@ -22,21 +22,21 @@
       <a href="index.html"
         ><img src="images/gifOF_logo.png" alt="Logo gifOs"
       /></a>
-      <div>
+      <div id="nav-buttons">
         <button id="crear-button" class="crear-button">Crear Guifos</button>
-        <div class="tema-button-container">
-          <button class="tema-button">Elegir tema</button>
-          <button class="dropdown-button">
+        <div id="theme-button-container" class="tema-button-container">
+          <button id="theme-button" class="tema-button">Elegir tema</button>
+          <button id="theme-button-arrow" class="dropdown-button">
             <img class="dropdown-icon" src="images/dropdown.svg" alt="arrow" />
           </button>
-          <ul class="dropdown-themes">
-            <button id="day" class="day-button">Sailor Day</button>
-            <button id="night" class="night-button">Sailor Night</button>
+          <ul id="dropdown-themes" class="dropdown-themes">
+            <li><button id="day" class="day-button">Sailor Day</button></li>
+            <li>
+              <button id="night" class="night-button">Sailor Night</button>
+            </li>
           </ul>
         </div>
-        <button id="mis-guifos" class="mis-guifos">
-          <u>M</u>is Guifos
-        </button>
+        <button id="mis-guifos" class="mis-guifos"><u>M</u>is Guifos</button>
         <!-- <a href="mis-guifos.html" class="btn btn-primary">Go to Google</a> -->
       </div>
     </nav>
@@ -48,7 +48,7 @@
             id="input-field"
             class="search-bar"
             type="text"
-            size="10%"
+            size="10"
             placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
             autocomplete="on"
           />
@@ -59,22 +59,26 @@
               alt="Lupa"
             />
             <img class="lupa" src="images/lupa.svg" alt="Lupa" />
-            <p>Buscar</p>
+            <span>Buscar</span>
           </button>
           <ul id="auto-list" class="on-search-menu">
-            <img id="close-onsearch" src="images/button_close.svg" alt="">
-            <li><a id="result1" href="javascript:void(0)">Resultado de búsqueda sugerido</a></li>
-            <li>
-              <a id="result2" href="javascript:void(0)">Un resultado similar de búsqueda</a>
+            <li class="close-on-search-li">
+              <img id="close-onsearch" src="images/button_close.svg" alt="" />
             </li>
-            <li><a id="result3" href="javascript:void(0)">Y otro más</a></li>
+            <li>
+              <a id="result1" href="javascript:void(0)"></a>
+            </li>
+            <li>
+              <a id="result2" href="javascript:void(0)"></a>
+            </li>
+            <li><a id="result3" href="javascript:void(0)"></a></li>
           </ul>
         </div>
       </div>
       <div id="results-buttons-container" class="results-buttons-container">
         <!-- <button class="result-button">#Un ejemplo</button> -->
       </div>
-      <h1 class="wrong-message" id="wrong">SOMETHING WENT WRONG :(</h1>
+      <h3 class="wrong-message" id="wrong">SOMETHING WENT WRONG :(</h3>
     </section>
     <section class="suggested-section">
       <div class="intro-section">
@@ -86,32 +90,32 @@
             <h4 id="gif-heading1">#hashtag</h4>
             <img src="images/button_close.svg" alt="exit" />
           </div>
-          <img class="gif" id="pos1" src="" alt="Suggested Gif 1" />
-          <button id='more-button1'>Ver más...</button>
+          <img class="gif" id="pos1" src="#" alt="Suggested Gif 1" />
+          <button id="more-button1">Ver más...</button>
         </div>
         <div class="suggested-gif">
           <div class="hashtag-bar">
             <h4 id="gif-heading2">#hashtag</h4>
             <img src="images/button_close.svg" alt="exit" />
           </div>
-          <img class="gif" id="pos2" src="" alt="Suggested gif 2" />
-          <button id='more-button2'>Ver más...</button>
+          <img class="gif" id="pos2" src="#" alt="Suggested gif 2" />
+          <button id="more-button2">Ver más...</button>
         </div>
         <div class="suggested-gif">
           <div class="hashtag-bar">
             <h4 id="gif-heading3">#hashtag</h4>
             <img src="images/button_close.svg" alt="exit" />
           </div>
-          <img class="gif" id="pos3" src="" alt="Suggested Gif 3" />
-          <button id='more-button3'>Ver más...</button>
+          <img class="gif" id="pos3" src="#" alt="Suggested Gif 3" />
+          <button id="more-button3">Ver más...</button>
         </div>
         <div class="suggested-gif">
           <div class="hashtag-bar">
             <h4 id="gif-heading4">#hashtag</h4>
             <img src="images/button_close.svg" alt="exit" />
           </div>
-          <img class="gif" id="pos4" src="" alt="Suggested Gif 4" />
-          <button id='more-button4'>Ver más...</button>
+          <img class="gif" id="pos4" src="#" alt="Suggested Gif 4" />
+          <button id="more-button4">Ver más...</button>
         </div>
       </div>
     </section>
@@ -126,7 +130,6 @@
             <p class="gif-text">title</p>
           </div>
         </div> -->
-        </div>
       </div>
     </section>
     <section id="tendencias" class="template-section">
@@ -142,11 +145,12 @@
         </div> -->
       </div>
     </section>
-    <script type="text/javascript" src="js/shared/variables.js"></script>
-    <script type="text/javascript" src="js/shared/helper.js"></script>
-    <script type="text/javascript" src="js/search-section.js"></script>
-    <script type="text/javascript" src="js/suggested-section.js"></script>
-    <script type="text/javascript" src="js/theme.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/shared/variables-shared.js"></script>
+    <script src="js/shared/helper-shared.js"></script>
+    <script src="js/shared/theme-shared.js"></script>
+    <script src="js/main/header-nav-section.js"></script>
+    <script src="js/main/search-section.js"></script>
+    <script src="js/main/suggested-section.js"></script>
+    <script src="js/main/index.js"></script>
   </body>
 </html>

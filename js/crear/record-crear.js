@@ -1,39 +1,27 @@
-const preview = document.getElementById("preview");
-
 var recorder;
 
-let recordedPreview = document.getElementById("recorded-preview");
+const initialSetup = () => {
+  document.getElementById("nav-buttons").style.display = "none";
+  document.getElementById("done-window-container").style.display = "none";
+  uploadingContainer.style.display = "none";
+  timeStopContainer.style.display = "none";
+  uploadRepeatContainer.style.display = "none";
+  cancelButton.style.display = "none";
+};
 
-const grabar = document.getElementById("grabar");
+const setCrearWindow = () => {
+  start.onclick = () => {
+    document.getElementById("mis-guifos-section").style.display = "none";
+    document.getElementById("crear-window").style.display = "none";
+    document.getElementById("grabar").style.display = "flex";
+    document.getElementById("record-window").style.display = "flex";
+    setRecorder();
+  };
 
-const estop = document.getElementById("estop");
-estop.style.display = "none";
-const upload = document.getElementById("upload");
-// upload.style.display = "none";
-const ripit = document.getElementById("ripit");
-// ripit.style.display = "none";
-
-const timeElapsed = document.getElementById("time-elapsed");
-
-const previewBackground = document.getElementById("preview-background");
-// previewBackground.style.display = "none";
-
-const uploadedPreview = document.getElementById("uploaded-preview");
-// previewBackground.style.display = "none";
-
-const copyLinkButton = document.getElementById("copy-link-button");
-// copyLinkButton.style.display = "none";
-
-const downloadButton = document.getElementById("download-button");
-// copyLinkButton.style.display = "none";
-
-const doneButton = document.getElementById("done-button");
-// timeStopContainer.style.display = "none";
-
-const doneWindowContainer = document.getElementById("done-window-container");
-doneWindowContainer.style.display = "none";
-
-const img = document.getElementById("ripit");
+  cancelCrear.onclick = () => {
+    changeHtml("mis-guifos.html");
+  };
+};
 
 var stream = null;
 const setRecorder = async () => {
@@ -113,6 +101,13 @@ function calculateTimeDuration(secs) {
   return hr + ":" + min + ":" + sec;
 }
 
+const createProgressBarBoxes = () => {
+  for (let index = 0; index < 23; index++) {
+    const barBox = document.createElement("div");
+    document.getElementById("progress").appendChild(barBox);
+  }
+};
+
 const recordGif = () => {
   grabar.onclick = async () => {
     grabar.disabled = true;
@@ -164,6 +159,7 @@ const recordGif = () => {
         recordedPreview.style.display = "none";
         uploadingContainer.style.display = "block";
         cancelButton.style.display = "block";
+        createProgressBarBoxes();
         let result = await postForm(form);
         let message = result.meta.msg;
         if (message === "OK") {
@@ -210,7 +206,7 @@ ripit.onclick = () => {
   preview.style.display = "block";
   recordedPreview.style.display = "none";
   timeStopContainer.style.display = "none";
-  img.setAttribute("src", "");
+  document.getElementById("ripit").setAttribute("src", "");
   recordGif();
   recorder.reset();
 };
@@ -219,7 +215,7 @@ cancelButton.onclick = () => {
 };
 
 doneButton.onclick = () => {
-  changeHtml("mis-guifos.html");
+  setUrl("mis-guifos.html");
 };
 
 downloadButton.onclick = () => {
@@ -247,3 +243,7 @@ const copyToClipboard = (text) => {
 };
 
 recordGif();
+
+const setCrearNuevoGuifo = () => {
+  setCrearWindow();
+};

@@ -19,20 +19,22 @@
       </h1>
     </header>
     <nav>
-        <a class="logo-goback-container" href="mis-guifos.html">
+      <a class="logo-goback-container" href="mis-guifos.html">
         <img id="go-back" class="go-back" src="images/arrow.svg" alt="" />
-        <img src="images/gifOF_logo.png" alt="Logo gifOs"/>
+        <img src="images/gifOF_logo.png" alt="Logo gifOs" />
       </a>
       <div id="nav-buttons">
         <button id="crear-button" class="crear-button">Crear Guifos</button>
-        <div class="tema-button-container" id="temas">
-          <button class="tema-button">Elegir tema</button>
-          <button class="dropdown-button">
+        <div id="theme-button-container" class="tema-button-container">
+          <button id="theme-button" class="tema-button">Elegir tema</button>
+          <button id="theme-button-arrow" class="dropdown-button">
             <img class="dropdown-icon" src="images/dropdown.svg" alt="arrow" />
           </button>
-          <ul class="dropdown-themes">
-            <button id="day" class="day-button">Sailor Day</button>
-            <button id="night" class="night-button">Sailor Night</button>
+          <ul id="dropdown-themes" class="dropdown-themes">
+            <li><button id="day" class="day-button">Sailor Day</button></li>
+            <li>
+              <button id="night" class="night-button">Sailor Night</button>
+            </li>
           </ul>
         </div>
         <button id="mis-guifos" class="mis-guifos"><u>M</u>is Guifos</button>
@@ -46,7 +48,7 @@
           <img src="images/window_img.png" alt="" />
           <p><strong>Aquí podrás crear tus propios guifos</strong></p>
         </div>
-        <p id="crear-instructions"class="instructions">
+        <p id="crear-instructions" class="instructions">
           Crear tu <span class="bold-word">guifo</span> es muy fácil, graba
           cualquier imagen con tu cámara y obtén guifos personalizados. Los
           pasos para crear tu guifo son: <br />
@@ -61,57 +63,84 @@
           ¿Quieres comenzar a crear tu
           <span class="bold-word">guifo</span> ahora?
         </p>
-        <div id="empezar-terminar-btn-container" class="empezar-terminar-btn-container">
+        <div
+          id="empezar-terminar-btn-container"
+          class="empezar-terminar-btn-container"
+        >
           <button class="cancel" id="cancel">Cancelar</button>
           <button class="start" id="start">Comenzar</button>
         </div>
-        <div id="done-window-container">
+        <div id="done-window-container" class="done-window-container">
           <div class="img-buttons-container">
             <div class="uploaded-preview-background">
-            <img id="uploaded-preview" class="uploaded-preview" alt="test" />
+              <img
+                id="uploaded-preview"
+                class="uploaded-preview"
+                src="#"
+                alt="test"
+              />
             </div>
             <div class="done-buttons-container">
               <h3>Guifo creado con éxito!!!</h3>
-              <button id="copy-link-button" class="download-copy-button">Copiar Enlace Giphy</button>
-              <button id="download-button" class="download-copy-button"><a id="file-link" download="My_Guifo">Download Guifo</a></button> 
+              <button id="copy-link-button" class="download-copy-button">
+                Copiar Enlace Giphy
+              </button>
+              <button id="download-button" class="download-copy-button">
+                <a href="#" id="file-link" download="My_Guifo"
+                  >Download Guifo</a
+                >
+              </button>
               <button id="done-button" class="button10">Listo</button>
             </div>
-          </div>   
+          </div>
         </div>
       </div>
       <div id="record-window" class="record-window">
         <div class="title-bar">
-          <h2>Un chequeo antes de empezar</h4>
+          <h2>Un chequeo antes de empezar</h2>
           <img src="images/button_close.svg" alt="exit" />
         </div>
         <div id="preview-background" class="preview-background">
-            <video id="preview" class="preview"></video>
-            <img id="recorded-preview" class="recorded-preview preview" alt="test" />
-            <div class="uploading-container" id="uploading-container">
-              <img class="globe-img" src="images/globe_img.png" alt="globe">
-              <h3 class="uploading-title">Estamos subiendo tu guifo</h3>
-              <div class="progress-container" id="progress">
-              </div>
-              <p class="time-left">Tiempo restante: <s>38 años</s> algunos minutos</p>
-            </div>
+          <video id="preview" class="preview"></video>
+          <img
+            id="recorded-preview"
+            class="recorded-preview preview"
+            src="#"
+            alt="test"
+          />
+          <div class="uploading-container" id="uploading-container">
+            <img class="globe-img" src="images/globe_img.png" alt="globe" />
+            <h3 class="uploading-title">Estamos subiendo tu guifo</h3>
+            <div class="progress-container" id="progress"></div>
+            <p class="time-left">
+              Tiempo restante: <s>38 años</s> algunos minutos
+            </p>
+          </div>
         </div>
-        <button id="grabar" class="record-button"><img src="images/camera.svg" alt=""><span>Capturar</span></button>
+        <button id="grabar" class="record-button">
+          <img src="images/camera.svg" alt="" /><span>Capturar</span>
+        </button>
         <div id="time-stop-container" class="time-stop-container">
-            <p id="time-elapsed" class="time-elapsed"></p>
-            <button id="estop" class="stop-button"><img src="images/recording.svg" alt=""><span>Listo</span></button>
+          <p id="time-elapsed" class="time-elapsed"></p>
+          <button id="estop" class="stop-button">
+            <img src="images/recording.svg" alt="" /><span>Listo</span>
+          </button>
         </div>
         <div id="upload-repeat-container" class="upload-repeat-container">
-            <button id="upload">Subir guifo</button>
-            <button id="ripit">Repetir captura</button>
+          <button id="upload">Subir guifo</button>
+          <button id="ripit">Repetir captura</button>
         </div>
         <button id="cancel-button" class="record-button">Cancelar</button>
       </div>
     </section>
-    <section id="mis-guifos-section" class="template-section mis-guifos-section">
-        <div class="intro-section">
-          <h3>Mis Guifos</h3>
-        </div>
-        <h1 class="wrong-message" id="wrong">SOMETHING WENT WRONG :(</h1>
+    <section
+      id="mis-guifos-section"
+      class="template-section mis-guifos-section"
+    >
+      <div class="intro-section">
+        <h3>Mis Guifos</h3>
+      </div>
+      <h3 class="wrong-message" id="wrong">SOMETHING WENT WRONG :(</h3>
       <div id="mis-guifos-container" class="template-gif-container">
         <!-- <div class="template-gif">
           <img class="gif-img" src="images/Capture.JPG" alt="gif1" />
@@ -119,14 +148,14 @@
             <p class="gif-text">title</p>
           </div>
         </div> -->
-        </div>
       </div>
     </section>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
-    <script type="text/javascript" src="js/shared/variables.js"></script>
-    <script type="text/javascript" src="js/shared/helper.js"></script>
-    <script type="text/javascript" src="js/theme.js"></script>
-    <script type="text/javascript" src="js/crear-guifos.js"></script>
-    <script type="text/javascript" src="js/record.js"></script>
+    <script src="js/shared/variables-shared.js"></script>
+    <script src="js/shared/helper-shared.js"></script>
+    <script src="js/crear/variables-crear.js"></script>
+    <script src="js/crear/index-crear.js"></script>
+    <script src="js/crear/record-crear.js"></script>
+    <script src="js/shared/theme-shared.js"></script>
   </body>
 </html>

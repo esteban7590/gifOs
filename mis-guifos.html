@@ -22,27 +22,32 @@
       <a href="index.html"
         ><img src="images/gifOF_logo.png" alt="Logo gifOs"
       /></a>
-      <div id="nav-buttons">
+      <div>
         <button id="crear-button" class="crear-button">Crear Guifos</button>
-        <div class="tema-button-container" id="temas">
-          <button class="tema-button">Elegir tema</button>
-          <button class="dropdown-button">
+        <div id="theme-button-container" class="tema-button-container">
+          <button id="theme-button" class="tema-button">Elegir tema</button>
+          <button id="theme-button-arrow" class="dropdown-button">
             <img class="dropdown-icon" src="images/dropdown.svg" alt="arrow" />
           </button>
-          <ul class="dropdown-themes">
-            <button id="day" class="day-button">Sailor Day</button>
-            <button id="night" class="night-button">Sailor Night</button>
+          <ul id="dropdown-themes" class="dropdown-themes">
+            <li><button id="day" class="day-button">Sailor Day</button></li>
+            <li>
+              <button id="night" class="night-button">Sailor Night</button>
+            </li>
           </ul>
         </div>
         <button id="mis-guifos" class="mis-guifos"><u>M</u>is Guifos</button>
         <!-- <a href="mis-guifos.html" class="btn btn-primary">Go to Google</a> -->
       </div>
     </nav>
-      <section id="mis-guifos-section" class="template-section mis-guifos-section">
-        <div class="intro-section">
-          <h3>Mis Guifos</h3>
-        </div>
-        <h1 class="wrong-message" id="wrong">SOMETHING WENT WRONG :(</h1>
+    <section
+      id="mis-guifos-section"
+      class="template-section mis-guifos-section"
+    >
+      <div class="intro-section">
+        <h3>Mis Guifos</h3>
+      </div>
+      <h3 class="wrong-message" id="wrong">SOMETHING WENT WRONG :(</h3>
       <div id="mis-guifos-container" class="template-gif-container">
         <!-- <div class="template-gif">
           <img class="gif-img" src="images/Capture.JPG" alt="gif1" />
@@ -50,13 +55,12 @@
             <p class="gif-text">title</p>
           </div>
         </div> -->
-        </div>
       </div>
-      </section>
+    </section>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
-    <script type="text/javascript" src="js/shared/variables.js"></script>
-    <script type="text/javascript" src="js/shared/helper.js"></script>
-    <script type="text/javascript" src="js/theme.js"></script>
-    <script type="text/javascript" src="js/mis-guifos.js"></script>
+    <script src="js/shared/variables-shared.js"></script>
+    <script src="js/shared/helper-shared.js"></script>
+    <script src="js/shared/theme-shared.js"></script>
+    <script src="js/mis-guifos.js"></script>
   </body>
 </html>

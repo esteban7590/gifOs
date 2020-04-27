@@ -1,8 +1,8 @@
 const apiFetch = async (url) => {
   try {
-    let response = await fetch(url);
+    const response = await fetch(url);
     if (response.ok) {
-      let responseJson = await response.json();
+      const responseJson = await response.json();
       return responseJson.data;
     }
     return null;
@@ -13,7 +13,7 @@ const apiFetch = async (url) => {
 };
 
 const createGifObjectsArray = async (url) => {
-  let data = await apiFetch(url);
+  const data = await apiFetch(url);
   if (data) {
     let gifObjectsArray = [];
     data.forEach((element) => {
@@ -52,34 +52,31 @@ const loadSection = async (url, sectionContainer) => {
   });
 };
 
+const setUrl = (url) => {
+  window.location.href = url;
+};
+
+const htmlChange = () => {
+  document.getElementById("mis-guifos").onclick = () => {
+    setUrl("mis-guifos.html");
+  };
+  document.getElementById("crear-button").onclick = () => {
+    setUrl("crear-guifos.html");
+  };
+};
+
 const loadMisGuifos = () => {
   if (localStorage.length !== 0) {
     let idsAarray = [];
     for (let index = 0; index < localStorage.length; index++) {
-      let id = localStorage.key(index);
+      const id = localStorage.key(index);
       idsAarray.unshift(id);
     }
-    let misUrl = API_URL + "?" + API_KEY + "&" + "ids=" + idsAarray;
-    loadSection(misUrl, "mis-guifos-container");
+    const url = GET_BY_IDS + idsAarray;
+    loadSection(url, "mis-guifos-container");
   } else {
     document.getElementById("wrong").innerHTML =
       "Aqui apareceran los guifos que vayas creando...";
     document.getElementById("wrong").style.display = "block";
   }
-};
-
-const crearOnClick = () => {
-  const misGuifos = document.getElementById("mis-guifos");
-  misGuifos.onclick = () => {
-    changeHtml("mis-guifos.html");
-  };
-
-  const crearGuifos = document.getElementById("crear-button");
-  crearGuifos.onclick = () => {
-    changeHtml("crear-guifos.html");
-  };
-};
-
-const changeHtml = (url) => {
-  window.location.href = url;
 };
