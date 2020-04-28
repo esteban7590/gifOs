@@ -192,7 +192,7 @@ const postForm = async (form) => {
   try {
     controller = new AbortController();
     let response = await fetch(
-      "http://upload.giphy.com/v1/gifs?api_key=nviDGCCp3515X3VeiJdD4zAohJ9inqtJ",
+      "https://upload.giphy.com/v1/gifs?api_key=nviDGCCp3515X3VeiJdD4zAohJ9inqtJ",
 
       {
         method: "POST",
