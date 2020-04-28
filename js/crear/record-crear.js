@@ -1,3 +1,26 @@
+var stream, dateStarted, recorder, result, gifId, blob, form, controller;
+
+//containers used more than once
+const uploadingContainer = document.getElementById("uploading-container");
+const timeStopContainer = document.getElementById("time-stop-container");
+const uploadRepeatContainer = document.getElementById(
+  "upload-repeat-container"
+);
+
+//img or video tags used more than once
+const recordedPreview = document.getElementById("recorded-preview");
+const preview = document.getElementById("preview");
+const uploadedPreview = document.getElementById("uploaded-preview");
+
+//Buttons used more than once
+const cancelButton = document.getElementById("cancel-button");
+const recordButton = document.getElementById("grabar");
+const stopButton = document.getElementById("estop");
+const uploadButton = document.getElementById("upload");
+const repeatButton = document.getElementById("ripit");
+const copyLinkButton = document.getElementById("copy-link-button");
+
+//environment setup
 const initialSetup = () => {
   document.getElementById("nav-buttons").style.display = "none";
   document.getElementById("done-window-container").style.display = "none";
@@ -21,6 +44,7 @@ const setCrearWindow = () => {
   };
 };
 
+//recording related functions
 const setRecorder = async () => {
   stream = await navigator.mediaDevices.getUserMedia({
     video: {
@@ -166,6 +190,7 @@ const createProgressBarBoxes = () => {
 
 const postForm = async (form) => {
   try {
+    controller = new AbortController();
     let response = await fetch(
       "http://upload.giphy.com/v1/gifs?api_key=nviDGCCp3515X3VeiJdD4zAohJ9inqtJ",
 
@@ -232,6 +257,7 @@ const downloadGif = () => {
   };
 };
 
+//initialization functions for the recording environment
 const setRecordEnvironment = () => {
   setCrearWindow();
   recordGif();
