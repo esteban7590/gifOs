@@ -14,10 +14,10 @@ const uploadedPreview = document.getElementById("uploaded-preview");
 
 //Buttons used more than once
 const cancelButton = document.getElementById("cancel-button");
-const recordButton = document.getElementById("grabar");
-const stopButton = document.getElementById("estop");
+const recordButton = document.getElementById("record-button");
+const stopButton = document.getElementById("stop-button");
 const uploadButton = document.getElementById("upload");
-const repeatButton = document.getElementById("ripit");
+const repeatButton = document.getElementById("repeat-button");
 const copyLinkButton = document.getElementById("copy-link-button");
 
 //environment setup
@@ -40,7 +40,7 @@ const setCrearWindow = () => {
   };
 
   document.getElementById("cancel").onclick = () => {
-    changeHtml("mis-guifos.html");
+    setUrl("mis-guifos.html");
   };
 };
 

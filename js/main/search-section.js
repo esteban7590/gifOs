@@ -1,11 +1,11 @@
-let SESSION_SEARCHES = [];
-const SEARCH_BUTTON = document.getElementById("search-button");
+let sessionSearches = [];
+const searchButton = document.getElementById("search-button");
 
 const setSearchSection = () => {
-  SEARCH_BUTTON.disabled = true;
+  searchButton.disabled = true;
   document.getElementById("input-field").onkeydown = () => {
     document.getElementById("auto-list").style.display = "block";
-    SEARCH_BUTTON.disabled = false;
+    searchButton.disabled = false;
   };
   document.getElementById("close-onsearch").onclick = () => {
     document.getElementById("input-field").value = "";
@@ -23,8 +23,8 @@ const inputSearch = () => {
   const searchTerm = document.getElementById("input-field").value;
   const searchUrl = SEARCH + searchTerm;
   loadSection(searchUrl, "result-gifs-container");
-  SESSION_SEARCHES.unshift(searchTerm);
-  sessionStorage.setItem("SESSION_SEARCHES", JSON.stringify(SESSION_SEARCHES));
+  sessionSearches.unshift(searchTerm);
+  sessionStorage.setItem("sessionSearches", JSON.stringify(sessionSearches));
   document.getElementById("results-intro").innerHTML =
     "Resultados: (" + searchTerm + ")";
   const resultsSection = document.getElementById("results-section");
@@ -79,10 +79,10 @@ const searchSuggestionBased = () => {
   suggestionAarray.forEach((element) => {
     element.onclick = () => {
       loadSection(SEARCH + element.innerHTML, "result-gifs-container");
-      SESSION_SEARCHES.unshift(element.innerHTML);
+      sessionSearches.unshift(element.innerHTML);
       sessionStorage.setItem(
-        "SESSION_SEARCHES",
-        JSON.stringify(SESSION_SEARCHES)
+        "sessionSearches",
+        JSON.stringify(sessionSearches)
       );
       document.getElementById("results-intro").innerHTML =
         "Resultados: (" + element.innerHTML + ")";
@@ -99,9 +99,9 @@ const searchSuggestionBased = () => {
 
 //search on search button click
 const searchOnButtonPress = () => {
-  SEARCH_BUTTON.onclick = () => {
+  searchButton.onclick = () => {
     inputSearch();
-    SEARCH_BUTTON.disabled = true;
+    searchButton.disabled = true;
   };
 };
 
@@ -109,7 +109,7 @@ const searchOnButtonPress = () => {
 const loadRecentSearches = () => {
   const buttonsContainer = document.getElementById("results-buttons-container");
   buttonsContainer.style.display = "block";
-  const recent = JSON.parse(sessionStorage.getItem("SESSION_SEARCHES"));
+  const recent = JSON.parse(sessionStorage.getItem("sessionSearches"));
   if (!recent) {
     buttonsContainer.style.display = "none";
   } else {
