@@ -2,11 +2,11 @@ header {
   background-image: $day-gradient;
   box-shadow: 0 0.07rem;
   h1 {
+    padding: 0.21rem 0 0.29rem 0.5rem;
     color: $white;
     font-family: $font;
     font-size: 0.86rem;
     font-weight: $regular;
-    padding: 0.21rem 0 0.29rem 0.5rem;
   }
 }
 nav {
@@ -18,12 +18,12 @@ nav {
     object-fit: scale-down;
   }
   div {
-    display: flex;
     padding: 3.14rem 10.04rem 2.5rem;
+    display: flex;
     button {
       @include button;
-      padding: 0.64rem 1.89rem;
       margin: 0.57rem;
+      padding: 0.64rem 1.89rem;
       font-family: $font;
       font-size: 1.14rem;
       color: $black;
@@ -40,38 +40,42 @@ nav {
     button:hover:before {
       @include dotted-border;
     }
-    button:focus:before {
-      @include dotted-border;
-    }
     .tema-button-container {
       position: relative;
       margin: 0;
       padding: 0;
-      .dropdown-button {
-        @include button;
-        position: relative;
-        margin: 0.57rem 0;
-        padding: 0.93rem 1.07rem;
-        &:active {
-          background: $day-pink-pushed-button;
-        }
-        .dropdown-icon {
-          margin: 0;
-          padding: 0;
-          height: auto;
-        }
+      &:hover > .tema-button {
+        background-color: $day-pink-pushed-button;
+      }
+      &:hover > .dropdown-button {
+        background-color: $day-pink-pushed-button;
+      }
+      &:hover > .tema-button:before {
+        @include dotted-border;
+      }
+      &:hover > .dropdown-button:before {
+        @include dotted-border;
+      }
+      &:active > .tema-button {
+        background-color: $day-pink-pushed-button;
+      }
+      &:active > .dropdown-button {
+        background-color: $day-pink-pushed-button;
       }
       .tema-button {
         @include button;
         position: relative;
         margin: 0.57rem 0;
         padding: 0.64rem 1.71rem;
-        &:active {
-          background: $day-pink-pushed-button;
-        }
       }
-      .dropdown-button:hover ~ .tema-button:before {
-        @include dotted-border;
+      .dropdown-button {
+        @include button;
+        position: relative;
+        margin: 0.57rem 0;
+        padding: 0.93rem 1.07rem;
+        .dropdown-icon {
+          padding: 0;
+        }
       }
       .dropdown-themes {
         display: none;
@@ -88,7 +92,7 @@ nav {
             width: 86.5%;
             margin: 0.71rem 0 0 0.71rem;
             padding: 0.5rem 1.14rem;
-            background: $day-gray-button-normal;
+            background-color: $day-gray-button-normal;
             border: $border;
             border-color: $day-gray-pushed-button;
             box-shadow: $day-box-shadow-1-pink;

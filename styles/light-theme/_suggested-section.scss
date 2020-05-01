@@ -16,11 +16,10 @@
         background-image: $day-gradient;
         margin: 0.2rem 0.29rem 0rem;
         h4 {
+          padding: 0.2rem 0.3rem;
           color: $white;
           font-family: $font;
-          font-size: 1rem;
           font-weight: $bold;
-          padding: 0.2rem 0.3rem;
         }
       }
       .gif {
