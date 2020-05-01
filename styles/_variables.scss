@@ -1,3 +1,4 @@
+//Day theme variables
 $font: "Chakra Petch", sans-serif;
 $regular: 400;
 $bold: 600;
@@ -19,7 +20,7 @@ $day-gradient: linear-gradient(
   $day-pink-button-normal
 );
 
-$white: #ffffff;
+$white: #fff0fe;
 $black: #110038;
 
 $border: solid 0.07rem $black;
@@ -36,3 +37,33 @@ $day-box-shadow-2-black: inset -0.14rem -0.14rem 0 0 $day-gray-box-background,
 
 $day-box-shadow-section-intro: inset -0.07rem -0.07rem 0 0 #e6dce4,
   inset 0.07rem 0.07rem 0 0 $white;
+
+//Night theme variables
+
+$night-pink-button-normal: #ee3efe;
+$night-pink-pushed-button: #ce36db;
+$night-pale-button-normal: $black;
+
+$night-gray-button-normal: #808080;
+$night-gray-pushed-button: #818181;
+$night-gray-inactive: #b4b4b4;
+
+$night-gray-box-background: #b4b4b4;
+
+$night-gradient-blue: #2e32fb;
+$night-gradient: linear-gradient(
+  90deg,
+  $night-gradient-blue,
+  $night-pink-button-normal
+);
+
+$night-box-shadow-1-pink: inset -0.07rem -0.07rem 0 0 #a72cb3,
+  inset 0.07rem 0.07rem 0 0 $white;
+$night-box-shadow-1-gray: inset -0.07rem -0.07rem 0 0 #8f8f8f,
+  inset 0.07rem 0.07rem 0 0 $white;
+$night-box-shadow-2-gray: inset -0.14rem -0.14rem 0 0 #8f8f8f,
+  inset 0.14rem 0.14rem 0 0 $white;
+
+$night-box-shadow-2-black: inset -0.14rem -0.14rem 0 0
+    $night-gray-box-background,
+  inset 0.14rem 0.14rem 0 0 $black;

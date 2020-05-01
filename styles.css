@@ -21,7 +21,7 @@ html {
 
 .sailor-day header h1 {
   padding: 0.21rem 0 0.29rem 0.5rem;
-  color: #ffffff;
+  color: #fff0fe;
   font-family: "Chakra Petch", sans-serif;
   font-size: 0.86rem;
   font-weight: 400;
@@ -55,8 +55,8 @@ html {
 .sailor-day nav div button {
   border: solid 0.07rem #110038;
   background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
   margin: 0.57rem;
   padding: 0.64rem 1.89rem;
   font-family: "Chakra Petch", sans-serif;
@@ -130,8 +130,8 @@ html {
 .sailor-day nav div .tema-button-container .tema-button {
   border: solid 0.07rem #110038;
   background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
   position: relative;
   margin: 0.57rem 0;
   padding: 0.64rem 1.71rem;
@@ -140,8 +140,8 @@ html {
 .sailor-day nav div .tema-button-container .dropdown-button {
   border: solid 0.07rem #110038;
   background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
   position: relative;
   margin: 0.57rem 0;
   padding: 0.93rem 1.07rem;
@@ -157,8 +157,8 @@ html {
   top: 3.7rem;
   width: 100%;
   background: #e6e6e6;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
   z-index: 1;
   padding-bottom: 0.71rem;
 }
@@ -174,8 +174,8 @@ html {
   background-color: #f0f0f0;
   border: solid 0.07rem #110038;
   border-color: #808080;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
   text-align: left;
@@ -185,8 +185,8 @@ html {
   background: #fff4fd;
   border: solid 0.07rem #110038;
   border-color: #cca6c9;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #e6dce4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #e6dce4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #e6dce4, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #e6dce4, inset 0.07rem 0.07rem 0 0 #fff0fe;
 }
 
 .sailor-day nav div .tema-button-container .dropdown-themes li .day-button::first-letter {
@@ -223,15 +223,15 @@ html {
           justify-content: space-between;
   height: 7.4rem;
   background-color: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #fff0fe;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #fff0fe;
 }
 
 .sailor-day .search-section .bottom-part-container h2 {
   margin: 0.14rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
   background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
-  color: #ffffff;
+  color: #fff0fe;
   font-size: 1rem;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
@@ -249,7 +249,7 @@ html {
 }
 
 .sailor-day .search-section .bottom-part-container .search-bar-container .search-bar {
-  background-color: #ffffff;
+  background-color: #fff0fe;
   padding: 0 0 0 1.14rem;
   margin: 0.86rem 0 0.86rem 1.07rem;
   border: solid 0.07rem #110038;
@@ -314,8 +314,8 @@ html {
   background: #e6e6e6;
   border: solid 0.07rem #110038;
   border-color: #808080;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
   position: relative;
 }
 
@@ -365,8 +365,8 @@ html {
   display: none;
   width: 100%;
   background-color: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #fff0fe;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #fff0fe;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -392,8 +392,8 @@ html {
   background: #f0f0f0;
   border: solid 0.07rem #110038;
   border-color: #808080;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
   margin: 1.21rem 9.21rem 1.21rem 1.14rem;
   position: relative;
 }
@@ -445,9 +445,9 @@ html {
 .sailor-day .search-section .result-button {
   background: #4180f6;
   border: solid 0.07rem #110038 #4c2f99;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
-  color: #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #fff0fe;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1rem;
   line-height: 1.29rem;
@@ -509,8 +509,8 @@ html {
           flex-direction: column;
   border: none;
   background: #e6e6e6;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
   position: relative;
 }
 
@@ -531,7 +531,7 @@ html {
 
 .sailor-day .suggested-section .suggested-gif-container .suggested-gif .hashtag-bar h4 {
   padding: 0.2rem 0.3rem;
-  color: #ffffff;
+  color: #fff0fe;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
 }
@@ -553,9 +553,9 @@ html {
   margin-bottom: -2.25rem;
   background: #4180f6;
   border: solid 0.07rem #110038 #4c2f99;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
-  color: #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #fff0fe;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1rem;
   line-height: 1.29rem;
@@ -641,8 +641,8 @@ html {
           flex-direction: column;
   border: none;
   background: #e6e6e6;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
   margin: 0 2rem 1.14rem 0;
 }
 
@@ -681,7 +681,7 @@ html {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  color: #ffffff;
+  color: #fff0fe;
   max-width: 19vw;
   white-space: nowrap;
   -webkit-animation: animation-textfloat 5s 1 ease-in-out;
@@ -734,7 +734,7 @@ html {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  color: #ffffff;
+  color: #fff0fe;
   max-width: 19vw;
   white-space: nowrap;
   -webkit-animation: animation-textfloat 5s 1 ease-in-out;
@@ -817,8 +817,8 @@ html {
           flex-direction: column;
   margin: 5.36rem 27rem 10.93rem 27rem;
   background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #fff0fe;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #fff0fe;
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -839,7 +839,7 @@ html {
   top: 0.2rem;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
-  color: #ffffff;
+  color: #fff0fe;
   font-size: 1rem;
 }
 
@@ -848,7 +848,7 @@ html {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  color: #ffffff;
+  color: #fff0fe;
   max-width: 19vw;
   white-space: nowrap;
   -webkit-animation: animation-textfloat 5s 1 ease-in-out;
@@ -907,16 +907,16 @@ html {
 .sailor-day .record-section .crear-window .empezar-terminar-btn-container :first-child {
   border: solid 0.07rem #110038;
   background-color: #fff4fd;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
 }
 
 .sailor-day .record-section .crear-window .empezar-terminar-btn-container :nth-child(2) {
   margin-left: 1.14rem;
   border: solid 0.07rem #110038;
   background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
 }
 
 .sailor-day .record-section .crear-window .empezar-terminar-btn-container .done-window-container {
@@ -933,7 +933,7 @@ html {
   width: 75%;
   height: 50%;
   margin: 2.71rem 1.21rem 3.14rem 0.71rem;
-  background: #ffffff;
+  background: #fff0fe;
   border: solid 0.07rem #110038;
   border-color: #979797;
   -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
@@ -973,8 +973,8 @@ html {
   font-size: 1.14rem;
   border: solid 0.07rem #110038;
   background-color: #fff4fd;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
 }
 
 .sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container .download-copy-button a {
@@ -991,8 +991,8 @@ html {
   font-size: 1.14rem;
   border: solid 0.07rem #110038;
   background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
 }
 
 .sailor-day .record-section .record-window {
@@ -1003,8 +1003,8 @@ html {
           flex-direction: column;
   margin: 6rem 22rem 0 19rem;
   background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #fff0fe;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #fff0fe;
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -1034,7 +1034,7 @@ html {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  color: #ffffff;
+  color: #fff0fe;
   max-width: 19vw;
   white-space: nowrap;
   -webkit-animation: animation-textfloat 5s 1 ease-in-out;
@@ -1081,7 +1081,7 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
   margin: 2.71rem 1.21rem 0 0.71rem;
-  background: #ffffff;
+  background: #fff0fe;
   border: solid 0.07rem #110038;
   border-color: #979797;
   -webkit-box-shadow: inset inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
@@ -1338,8 +1338,8 @@ html {
   height: 2.57rem;
   border: solid 0.07rem #110038;
   background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
   margin: 1.5rem 2% 1.14rem 0;
@@ -1348,8 +1348,8 @@ html {
 .sailor-day .record-section .record-window .cancel-upload-button {
   border: solid 0.07rem #110038;
   background-color: #fff4fd;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
 }
 
 .sailor-day .record-section .record-window .time-stop-container {
@@ -1369,7 +1369,7 @@ html {
 .sailor-day .record-section .record-window .time-stop-container .time-elapsed {
   padding: 0.5rem 1.5rem;
   width: 3rem;
-  background: #ffffff;
+  background: #fff0fe;
   border: solid 0.07rem #110038;
   border-color: #979797;
   -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
@@ -1389,11 +1389,11 @@ html {
   height: 2.57rem;
   background: #ff6161;
   border: solid 0.07rem #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #fff0fe;
+          box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #fff0fe;
   font-family: "Chakra Petch", sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  color: #fff0fe;
   letter-spacing: 0;
   text-align: center;
   line-height: 18px;
@@ -1422,19 +1422,1433 @@ html {
 .sailor-day .record-section .record-window .upload-repeat-container :first-child {
   border: solid 0.07rem #110038;
   background-color: #fff4fd;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
 }
 
 .sailor-day .record-section .record-window .upload-repeat-container :nth-child(2) {
   margin-left: 1.14rem;
   border: solid 0.07rem #110038;
   background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #fff0fe;
 }
 
 .sailor-day .mis-guifos-section {
+  padding-top: 0rem;
+}
+
+.sailor-night {
+  background-color: #110038;
+}
+
+.sailor-night header {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e32fb), to(#ee3efe));
+  background-image: linear-gradient(90deg, #2e32fb, #ee3efe);
+  -webkit-box-shadow: 0 0.07rem;
+          box-shadow: 0 0.07rem;
+}
+
+.sailor-night header h1 {
+  padding: 0.21rem 0 0.29rem 0.5rem;
+  color: #fff0fe;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.86rem;
+  font-weight: 400;
+}
+
+.sailor-night nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sailor-night nav img {
+  padding: 2.5rem 7rem;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.sailor-night nav .logo {
+  content: url("images/gifOF_logo_dark.png");
+}
+
+.sailor-night nav div {
+  padding: 3.14rem 10.04rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sailor-night nav div button {
+  border: solid 0.07rem #110038;
+  background-color: #ee3efe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  margin: 0.57rem;
+  padding: 0.64rem 1.89rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  color: #fff0fe;
+  text-align: center;
+  line-height: 1.19rem;
+  position: relative;
+}
+
+.sailor-night nav div .crear-button {
+  margin-right: 1.14rem;
+}
+
+.sailor-night nav div .crear-button:active {
+  background: #ce36db;
+}
+
+.sailor-night nav div button:hover:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.sailor-night nav div .tema-button-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.sailor-night nav div .tema-button-container:hover > .tema-button {
+  background-color: #ce36db;
+}
+
+.sailor-night nav div .tema-button-container:hover > .dropdown-button {
+  background-color: #ce36db;
+}
+
+.sailor-night nav div .tema-button-container:hover > .tema-button:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.sailor-night nav div .tema-button-container:hover > .dropdown-button:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.sailor-night nav div .tema-button-container:active > .tema-button {
+  background-color: #ce36db;
+}
+
+.sailor-night nav div .tema-button-container:active > .dropdown-button {
+  background-color: #ce36db;
+}
+
+.sailor-night nav div .tema-button-container .tema-button {
+  border: solid 0.07rem #110038;
+  background-color: #ee3efe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  position: relative;
+  margin: 0.57rem 0;
+  padding: 0.64rem 1.71rem;
+}
+
+.sailor-night nav div .tema-button-container .dropdown-button {
+  border: solid 0.07rem #110038;
+  background-color: #ee3efe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  position: relative;
+  margin: 0.57rem 0;
+  padding: 0.93rem 1.07rem;
+}
+
+.sailor-night nav div .tema-button-container .dropdown-button .dropdown-icon {
+  padding: 0;
+}
+
+.sailor-night nav div .tema-button-container .dropdown-themes {
+  display: none;
+  position: absolute;
+  top: 3.7rem;
+  width: 100%;
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #8f8f8f, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #8f8f8f, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  z-index: 1;
+  padding-bottom: 0.71rem;
+}
+
+.sailor-night nav div .tema-button-container .dropdown-themes li {
+  list-style: none;
+}
+
+.sailor-night nav div .tema-button-container .dropdown-themes li button {
+  width: 86.5%;
+  margin: 0.71rem 0 0 0.71rem;
+  padding: 0.5rem 1.14rem;
+  background-color: #808080;
+  border: solid 0.07rem #110038;
+  border-color: #818181;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  text-align: left;
+}
+
+.sailor-night nav div .tema-button-container .dropdown-themes li .day-button {
+  background: #cccccc;
+  border: solid 0.07rem #110038;
+  border-color: #808080;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #110038;
+}
+
+.sailor-night nav div .tema-button-container .dropdown-themes li .night-button {
+  background: #2e32fb;
+  border: solid 0.07rem #110038;
+  border-color: #33358f33;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #e6dce4, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #e6dce4, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #fff0fe;
+}
+
+.sailor-night nav div .tema-button-container .dropdown-themes li .day-button::first-letter {
+  text-decoration: underline;
+}
+
+.sailor-night nav .mis-guifos {
+  background-color: transparent;
+  padding: 0 0.8rem;
+  margin: 0.4rem 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.sailor-night nav .mis-guifos:hover:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+  border: 0.07rem dashed #fff0fe;
+}
+
+.sailor-night nav .mis-guifos:active {
+  color: #2e32fb;
+}
+
+.sailor-night .search-section {
+  margin: 0 10rem 0 7.14rem;
+}
+
+.sailor-night .search-section .bottom-part-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 7.4rem;
+  background-color: #b4b4b4;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #8f8f8f, inset 0.14rem 0.14rem 0 0 #fff0fe;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #8f8f8f, inset 0.14rem 0.14rem 0 0 #fff0fe;
+}
+
+.sailor-night .search-section .bottom-part-container h2 {
+  margin: 0.14rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e32fb), to(#ee3efe));
+  background-image: linear-gradient(90deg, #2e32fb, #ee3efe);
+  color: #fff0fe;
+  font-size: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  padding-left: 0.21rem;
+  line-height: 1.8rem;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar {
+  background-color: #fff0fe;
+  padding: 0 0 0 1.14rem;
+  margin: 0.86rem 0 0.86rem 1.07rem;
+  border: solid 0.07rem #110038;
+  border-color: #979797;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #110038;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #110038;
+  height: 3.43rem;
+  width: 60%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.14rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  color: #b4b4b4;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus {
+  color: #110038;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button {
+  background-color: #ee3efe;
+  border: solid 0.07rem #110038;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button span {
+  color: #fff0fe;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button .lupa {
+  content: url("images/lupa_light.svg");
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button:hover {
+  background-color: #ce36db;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button:hover:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 7.29rem;
+  height: 2.57rem;
+  margin: auto 1.29rem auto 0.57rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #b4b4b4;
+  border: solid 0.07rem #110038;
+  border-color: #818181;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #8f8f8f, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #8f8f8f, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  position: relative;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container button span {
+  padding: 0 1.29rem 0 0.71rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  color: #818181;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container button .lupa-inactive {
+  display: none;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container button .lupa {
+  padding: 0 0 0 0.5rem;
+  content: url("images/lupa.svg");
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container button:active:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container button:active {
+  background-color: #ce36db;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container button:active span {
+  color: #fff0fe;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container button:active .lupa {
+  content: url("images/lupa_light.svg");
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu {
+  display: none;
+  width: 100%;
+  background-color: #b4b4b4;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #8f8f8f, inset 0.14rem 0.14rem 0 0 #fff0fe;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #8f8f8f, inset 0.14rem 0.14rem 0 0 #fff0fe;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu .close-on-search-li {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu .close-on-search-li img:hover {
+  outline: 0.07rem dashed #110038;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu li {
+  font-family: "Chakra Petch", sans-serif;
+  list-style: none;
+  padding: 0.5rem 1.14rem;
+  background: #b4b4b4;
+  border: solid 0.07rem #110038;
+  border-color: #818181;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #8f8f8f, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #8f8f8f, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  margin: 1.21rem 9.21rem 1.21rem 1.14rem;
+  position: relative;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu li:hover:not(.close-on-search-li):before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+  background: #808080;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu a {
+  white-space: nowrap;
+  padding: 0.5rem 99% 0.5rem 0;
+  text-decoration: none;
+  font-size: 1.14rem;
+  color: #110038;
+  position: relative;
+  z-index: 1;
+}
+
+.sailor-night .search-section .results-buttons-container {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 0.5rem;
+}
+
+.sailor-night .search-section .results-buttons-container::-webkit-scrollbar {
+  height: 0.5rem;
+}
+
+.sailor-night .search-section .results-buttons-container::-webkit-scrollbar-thumb {
+  background: #818181;
+  border-radius: 0.5rem;
+}
+
+.sailor-night .search-section .results-buttons-container::-webkit-scrollbar-thumb:hover {
+  background: #b4b4b4;
+}
+
+.sailor-night .search-section .result-button {
+  background: #2e32fb;
+  border: solid 0.07rem #110038 #4c2f99;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #fff0fe;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
+  line-height: 1.29rem;
+  padding: 0.57rem 0.5rem;
+  margin: 0.86rem 0.57rem 0 0.1rem;
+}
+
+.sailor-night .wrong-message {
+  display: none;
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+  padding: 3rem;
+}
+
+.sailor-night .suggested-section {
+  padding: 4.57rem 0 0 0;
+}
+
+.sailor-night .suggested-section .intro-section {
+  margin: 0 10rem 0 7.14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fffafe;
+  border: solid 0.07rem #110038;
+  border-color: #e6bbe2;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+}
+
+.sailor-night .suggested-section .intro-section h3 {
+  padding: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+  color: #110038;
+  font-weight: 400;
+}
+
+.sailor-night .suggested-section .suggested-gif-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.36rem 10rem 0 7.14rem;
+}
+
+.sailor-night .suggested-section .suggested-gif-container .suggested-gif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #8f8f8f, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #8f8f8f, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  position: relative;
+}
+
+.sailor-night .suggested-section .suggested-gif-container .suggested-gif .hashtag-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e32fb), to(#ee3efe));
+  background-image: linear-gradient(90deg, #2e32fb, #ee3efe);
+  margin: 0.2rem 0.29rem 0rem;
+}
+
+.sailor-night .suggested-section .suggested-gif-container .suggested-gif .hashtag-bar h4 {
+  padding: 0.2rem 0.3rem;
+  color: #fff0fe;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+}
+
+.sailor-night .suggested-section .suggested-gif-container .suggested-gif .gif {
+  margin: 0.14rem 0.29rem;
+  width: 18.5vw;
+  height: 19vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sailor-night .suggested-section .suggested-gif-container .suggested-gif button {
+  position: relative;
+  left: 0.79rem;
+  top: -3.65rem;
+  width: 5.79rem;
+  height: 2.43rem;
+  margin-bottom: -2.25rem;
+  background: #2e32fb;
+  border: solid 0.07rem #110038 #4c2f99;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #fff0fe;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
+  line-height: 1.29rem;
+}
+
+.sailor-night .suggested-section .suggested-gif-container .suggested-gif button:hover:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.sailor-night .suggested-section .suggested-gif-container .suggested-gif button:hover ~ .gif:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.sailor-night .suggested-section .suggested-gif-container .suggested-gif .gif:hover {
+  outline: 0.07rem dashed #110038;
+}
+
+.sailor-night .suggested-section .suggested-gif-container .suggested-gif .gif:hover ~ button:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.sailor-night .template-section {
+  padding: 4.57rem 0 0 0;
+}
+
+.sailor-night .template-section .intro-section {
+  margin: 0 10rem 0 7.14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fffafe;
+  border: solid 0.07rem #110038;
+  border-color: #e6bbe2;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+}
+
+.sailor-night .template-section .intro-section h3 {
+  padding: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+  color: #110038;
+  font-weight: 400;
+}
+
+.sailor-night .template-section .template-gif-container {
+  margin: 1.36rem 6.5rem 0 7.43rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sailor-night .template-section .template-gif-container .template-gif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #8f8f8f, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #8f8f8f, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  margin: 0 2rem 1.14rem 0;
+}
+
+.sailor-night .template-section .template-gif-container .template-gif .gif-img {
+  -webkit-animation: fadeInAndScale 0.3s ease-in-out forwards;
+          animation: fadeInAndScale 0.3s ease-in-out forwards;
+  width: 19vw;
+  height: 19vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sailor-night .template-section .template-gif-container .template-gif .gif-img:hover {
+  outline: 0.07rem dashed #110038;
+  width: 18.8vw;
+  height: 18.7vw;
+  padding: 0.1vw;
+}
+
+.sailor-night .template-section .template-gif-container .template-gif .gif-img:hover ~ .gif-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e32fb), to(#ee3efe));
+  background-image: linear-gradient(90deg, #2e32fb, #ee3efe);
+  position: relative;
+  top: -1.3rem;
+  left: 0.1rem;
+  margin: 0 0.2rem -1.25rem 0;
+}
+
+.sailor-night .template-section .template-gif-container .template-gif .gif-img:hover ~ .gif-title .gif-text {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff0fe;
+  max-width: 19vw;
+  white-space: nowrap;
+  -webkit-animation: animation-textfloat 5s 1 ease-in-out;
+          animation: animation-textfloat 5s 1 ease-in-out;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes animation-textfloat {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.sailor-night .template-section .template-gif-container .template-gif .gif-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e32fb), to(#ee3efe));
+  background-image: linear-gradient(90deg, #2e32fb, #ee3efe);
+  position: relative;
+  top: -1.3rem;
+  left: 0.1rem;
+  margin: 0 0.2rem -1.25rem 0;
+  overflow: hidden;
+  width: 18.8vw;
+  display: none;
+}
+
+.sailor-night .template-section .template-gif-container .template-gif .gif-title .gif-text {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff0fe;
+  max-width: 19vw;
+  white-space: nowrap;
+  -webkit-animation: animation-textfloat 5s 1 ease-in-out;
+          animation: animation-textfloat 5s 1 ease-in-out;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes animation-textfloat {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.sailor-night .template-section .template-gif-container .template-gif .gif-title:hover {
+  display: block;
+}
+
+@keyframes fadeInAndScale {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.sailor-night .results-section {
+  display: none;
+  padding-top: 5rem;
+}
+
+.sailor-night .mis-guifos-section {
+  padding-top: 0rem;
+}
+
+.sailor-night .logo-goback-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sailor-night .logo-goback-container .go-back {
+  position: absolute;
+  top: 5.5rem;
+  left: 4rem;
+  height: 1.71rem;
+  padding: 0;
+}
+
+.sailor-night .record-section .crear-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5.36rem 27rem 10.93rem 27rem;
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #8f8f8f, inset 0.14rem 0.14rem 0 0 #fff0fe;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #8f8f8f, inset 0.14rem 0.14rem 0 0 #fff0fe;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.sailor-night .record-section .crear-window .window-top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e32fb), to(#ee3efe));
+  background-image: linear-gradient(90deg, #2e32fb, #ee3efe);
+  position: relative;
+  top: -1.3rem;
+  left: 0.1rem;
+  margin: 0 0.2rem -1.25rem 0;
+  padding: 0.24rem 0 0.19rem 0.29rem;
+  position: relative;
+  top: 0.2rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  color: #fff0fe;
+  font-size: 1rem;
+}
+
+.sailor-night .record-section .crear-window .window-top-bar .gif-text {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff0fe;
+  max-width: 19vw;
+  white-space: nowrap;
+  -webkit-animation: animation-textfloat 5s 1 ease-in-out;
+          animation: animation-textfloat 5s 1 ease-in-out;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes animation-textfloat {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.sailor-night .record-section .crear-window .window-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4.07rem 0 0 1.79rem;
+}
+
+.sailor-night .record-section .crear-window .window-title-container :first-child {
+  padding-right: 1.14rem;
+}
+
+.sailor-night .record-section .crear-window .instructions {
+  padding: 0.5rem 6.64rem 2rem 5.21rem;
+}
+
+.sailor-night .record-section .crear-window .instructions .bold-word {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.sailor-night .record-section .crear-window .empezar-terminar-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0 2.57rem 2.57rem 0rem;
+}
+
+.sailor-night .record-section .crear-window .empezar-terminar-btn-container button {
+  height: 2.57rem;
+  width: 10.29rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+}
+
+.sailor-night .record-section .crear-window .empezar-terminar-btn-container :first-child {
+  border: solid 0.07rem #110038;
+  background-color: #110038;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+}
+
+.sailor-night .record-section .crear-window .empezar-terminar-btn-container :nth-child(2) {
+  margin-left: 1.14rem;
+  border: solid 0.07rem #110038;
+  background-color: #ee3efe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+}
+
+.sailor-night .record-section .crear-window .empezar-terminar-btn-container .done-window-container {
+  display: none;
+}
+
+.sailor-night .record-section .crear-window .img-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sailor-night .record-section .crear-window .img-buttons-container .uploaded-preview-background {
+  width: 75%;
+  height: 50%;
+  margin: 2.71rem 1.21rem 3.14rem 0.71rem;
+  background: #fff0fe;
+  border: solid 0.07rem #110038;
+  border-color: #979797;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #110038;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #110038;
+}
+
+.sailor-night .record-section .crear-window .img-buttons-container .uploaded-preview-background .uploaded-preview {
+  display: none;
+  width: 99.5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0.1rem;
+}
+
+.sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 1.71rem;
+}
+
+.sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container :first-child {
+  padding: 5.43rem 0 1.14rem 0;
+  height: 2.57rem;
+  width: 18.29rem;
+}
+
+.sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container .download-copy-button {
+  margin-bottom: 1rem;
+  height: 2.57rem;
+  width: 16rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  border: solid 0.07rem #110038;
+  background-color: #110038;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+}
+
+.sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container .download-copy-button a {
+  padding: 5% 20%;
+  text-decoration: none;
+  color: unset;
+}
+
+.sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container .done-button {
+  margin: 4rem 0 3.14rem 0;
+  height: 2.57rem;
+  width: 16rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  border: solid 0.07rem #110038;
+  background-color: #ee3efe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+}
+
+.sailor-night .record-section .record-window {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 6rem 22rem 0 19rem;
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #8f8f8f, inset 0.14rem 0.14rem 0 0 #fff0fe;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #8f8f8f, inset 0.14rem 0.14rem 0 0 #fff0fe;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.sailor-night .record-section .record-window .title-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e32fb), to(#ee3efe));
+  background-image: linear-gradient(90deg, #2e32fb, #ee3efe);
+  position: relative;
+  top: -1.3rem;
+  left: 0.1rem;
+  margin: 0 0.2rem -1.25rem 0;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.24rem 0 0.19rem 0.29rem;
+  position: relative;
+  top: 0.2rem;
+}
+
+.sailor-night .record-section .record-window .title-bar .gif-text {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff0fe;
+  max-width: 19vw;
+  white-space: nowrap;
+  -webkit-animation: animation-textfloat 5s 1 ease-in-out;
+          animation: animation-textfloat 5s 1 ease-in-out;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes animation-textfloat {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.sailor-night .record-section .record-window .title-bar h2 {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff0fe;
+  font-size: 1rem;
+}
+
+.sailor-night .record-section .record-window .title-bar :nth-child(2) {
+  padding: 0.2rem 0.6rem;
+}
+
+.sailor-night .record-section .record-window .preview-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 97%;
+  height: 36rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 2.71rem 1.21rem 0 0.71rem;
+  background: #fff0fe;
+  border: solid 0.07rem #110038;
+  border-color: #979797;
+  -webkit-box-shadow: inset inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #110038;
+          box-shadow: inset inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #110038;
+}
+
+.sailor-night .record-section .record-window .preview-background .preview {
+  width: 99.7%;
+  height: 99.5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0.15rem;
+}
+
+.sailor-night .record-section .record-window .preview-background .recorded-preview {
+  display: none;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container {
+  text-align: center;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .globe-img {
+  padding-bottom: 0.67rem;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .uploading-title {
+  padding-bottom: 3.42rem;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.71rem;
+  padding: 0 0.1rem 0 0;
+  margin-bottom: 0.67rem;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #110038;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #110038;
+  background: #b4b4b4;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container div {
+  position: relative;
+  top: 0.15rem;
+  left: 0.15rem;
+  height: 1.43rem;
+  width: 9%;
+  float: left;
+  margin-right: 0.14rem;
+  background-color: #b4b4b4;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :first-child {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(2) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(3) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(4) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(5) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(6) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(7) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(8) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(9) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(10) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(11) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(12) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(13) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(14) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(15) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(16) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(17) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(18) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(19) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(20) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(21) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(22) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+.sailor-night .record-section .record-window .preview-background .uploading-container .progress-container :nth-child(23) {
+  -webkit-animation: progress 6s steps(1, end) infinite;
+          animation: progress 6s steps(1, end) infinite;
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+@keyframes progress {
+  0% {
+    background-color: #ee3efe;
+  }
+  60% {
+    background-color: #818181;
+  }
+  100% {
+    background-color: #ee3efe;
+  }
+}
+
+.sailor-night .record-section .record-window .preview-background .time-left {
+  padding-bottom: 3.42rem;
+}
+
+.sailor-night .record-section .record-window .record-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 10.29rem;
+  height: 2.57rem;
+  border: solid 0.07rem #110038;
+  background-color: #ee3efe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+  margin: 1.5rem 2% 1.14rem 0;
+}
+
+.sailor-night .record-section .record-window .cancel-upload-button {
+  border: solid 0.07rem #110038;
+  background-color: #110038;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+}
+
+.sailor-night .record-section .record-window .time-stop-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 1.14rem 1.14rem 1.5rem;
+}
+
+.sailor-night .record-section .record-window .time-stop-container .time-elapsed {
+  padding: 0.5rem 1.5rem;
+  width: 3rem;
+  background: #fff0fe;
+  border: solid 0.07rem #110038;
+  border-color: #979797;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #110038;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #110038;
+}
+
+.sailor-night .record-section .record-window .time-stop-container .stop-button {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 10.29rem;
+  height: 2.57rem;
+  background: #ff6161;
+  border: solid 0.07rem #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #fff0fe;
+          box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #fff0fe;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #fff0fe;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+.sailor-night .record-section .record-window .upload-repeat-container {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1.5rem 1.14rem 1.14rem 0rem;
+}
+
+.sailor-night .record-section .record-window .upload-repeat-container button {
+  height: 2.57rem;
+  width: 10.29rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.14rem;
+}
+
+.sailor-night .record-section .record-window .upload-repeat-container :first-child {
+  border: solid 0.07rem #110038;
+  background-color: #110038;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+}
+
+.sailor-night .record-section .record-window .upload-repeat-container :nth-child(2) {
+  margin-left: 1.14rem;
+  border: solid 0.07rem #110038;
+  background-color: #ee3efe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+}
+
+.sailor-night .mis-guifos-section {
   padding-top: 0rem;
 }
 /*# sourceMappingURL=styles.css.map */

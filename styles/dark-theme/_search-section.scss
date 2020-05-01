@@ -1,0 +1,171 @@
+.search-section {
+  margin: 0 10rem 0 7.14rem;
+  .bottom-part-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7.4rem;
+    background-color: $night-gray-box-background;
+    box-shadow: $night-box-shadow-2-gray;
+    h2 {
+      margin: 0.14rem;
+      background-image: $night-gradient;
+      color: $white;
+      font-size: 1rem;
+      font-family: $font;
+      font-weight: $bold;
+      padding-left: 0.21rem;
+      line-height: 1.8rem;
+    }
+    .search-bar-container {
+      display: none;
+      display: flex;
+      flex-wrap: wrap;
+      .search-bar {
+        background-color: $white;
+        padding: 0 0 0 1.14rem;
+        margin: 0.86rem 0 0.86rem 1.07rem;
+        border: $border;
+        border-color: #979797;
+        box-shadow: $night-box-shadow-2-black;
+        height: 3.43rem;
+        width: 60%;
+        flex-grow: 1;
+        font-size: 1.14rem;
+        font-family: $font;
+        font-weight: $regular;
+        color: $night-gray-inactive;
+        &:focus {
+          color: $black;
+        }
+        &:focus ~ button {
+          background-color: $night-pink-button-normal;
+          border: $border;
+          span {
+            color: $white;
+          }
+          .lupa {
+            content: url("images/lupa_light.svg");
+          }
+          &:hover {
+            background-color: $night-pink-pushed-button;
+          }
+          &:hover:before {
+            @include dotted-border;
+          }
+        }
+      }
+      button {
+        display: flex;
+        width: 7.29rem;
+        height: 2.57rem;
+        margin: auto 1.29rem auto 0.57rem;
+        justify-content: space-around;
+        align-items: center;
+        background: $night-gray-box-background;
+        border: $border;
+        border-color: $night-gray-pushed-button;
+        box-shadow: $night-box-shadow-1-gray;
+        position: relative;
+        span {
+          padding: 0 1.29rem 0 0.71rem;
+          font-family: $font;
+          font-size: 1.14rem;
+          color: $night-gray-pushed-button;
+        }
+        .lupa-inactive {
+          display: none;
+        }
+        .lupa {
+          padding: 0 0 0 0.5rem;
+          content: url("images/lupa.svg");
+        }
+        &:active:before {
+          @include dotted-border;
+        }
+        &:active {
+          background-color: $night-pink-pushed-button;
+          span {
+            color: $white;
+          }
+          .lupa {
+            content: url("images/lupa_light.svg");
+          }
+        }
+      }
+      .on-search-menu {
+        display: none;
+        width: 100%;
+        background-color: $night-gray-box-background;
+        box-shadow: $night-box-shadow-2-gray;
+        height: fit-content;
+        z-index: 1;
+        .close-on-search-li {
+          border: none;
+          box-shadow: none;
+          background-color: transparent;
+          padding: 0;
+          img:hover {
+            outline: 0.07rem dashed $black;
+          }
+        }
+
+        li {
+          font-family: $font;
+          list-style: none;
+          padding: 0.5rem 1.14rem;
+          background: $night-gray-box-background;
+          border: $border;
+          border-color: $night-gray-pushed-button;
+          box-shadow: $night-box-shadow-1-gray;
+          margin: 1.21rem 9.21rem 1.21rem 1.14rem;
+          position: relative;
+        }
+        li:hover:not(.close-on-search-li):before {
+          @include dotted-border;
+          background: $night-gray-button-normal;
+        }
+        a {
+          white-space: nowrap;
+          padding: 0.5rem 99% 0.5rem 0;
+          text-decoration: none;
+          font-size: 1.14rem;
+          color: $black;
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  .results-buttons-container {
+    display: none;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    &::-webkit-scrollbar {
+      height: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $night-gray-pushed-button;
+      border-radius: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: $night-gray-box-background;
+    }
+  }
+  .result-button {
+    @include button-blue;
+    padding: 0.57rem 0.5rem;
+    margin: 0.86rem 0.57rem 0 0.1rem;
+  }
+}
+
+.wrong-message {
+  display: none;
+  font-family: $font;
+  text-align: center;
+  padding: 3rem;
+}

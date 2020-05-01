@@ -1,0 +1,93 @@
+@mixin button {
+  border: $border;
+  background-color: $night-pink-button-normal;
+  box-shadow: $night-box-shadow-1-pink;
+}
+
+@mixin pale-button {
+  border: $border;
+  background-color: $night-pale-button-normal;
+  box-shadow: $night-box-shadow-1-pink;
+}
+
+@mixin button-blue {
+  background: $night-gradient-blue;
+  border: $border #4c2f99;
+  box-shadow: inset -0.07rem -0.07rem 0 0 #284f99,
+    inset 0.07rem 0.07rem 0 0 $white;
+  color: $white;
+  font-family: $font;
+  font-size: 1rem;
+  line-height: 1.29rem;
+}
+
+@mixin gif-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.36rem 10rem 0 7.14rem;
+}
+
+@mixin section-intro {
+  margin: 0 10rem 0 7.14rem;
+  display: flex;
+  background: #fffafe;
+  border: $border;
+  border-color: #e6bbe2;
+  box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4,
+    inset 0.14rem 0.14rem 0 0 #80687d;
+  h3 {
+    padding: 0.5rem;
+    align-self: center;
+    font-size: 1rem;
+    font-family: $font;
+    color: $black;
+    font-weight: $regular;
+  }
+}
+
+@mixin gif-img-container {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background: $night-gray-box-background;
+  box-shadow: $night-box-shadow-1-gray;
+}
+
+@mixin hashtag-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  background-image: $night-gradient;
+  position: relative;
+  top: -1.3rem;
+  left: 0.1rem;
+  margin: 0 0.2rem -1.25rem 0;
+  .gif-text {
+    display: inline-block;
+    font-family: $font;
+    font-weight: $bold;
+    font-size: 1rem;
+    color: $white;
+    max-width: 19vw;
+    white-space: nowrap;
+    animation: animation-textfloat 5s 1 ease-in-out;
+    animation-timing-function: linear;
+  }
+  @keyframes animation-textfloat {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+@mixin dotted-border {
+  border: 0.07rem dashed $black;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}

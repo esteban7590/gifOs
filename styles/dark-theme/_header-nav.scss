@@ -1,0 +1,143 @@
+header {
+  background-image: $night-gradient;
+  box-shadow: 0 0.07rem;
+  h1 {
+    padding: 0.21rem 0 0.29rem 0.5rem;
+    color: $white;
+    font-family: $font;
+    font-size: 0.86rem;
+    font-weight: $regular;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    padding: 2.5rem 7rem;
+    object-fit: scale-down;
+  }
+  .logo {
+    content: url("images/gifOF_logo_dark.png");
+  }
+  div {
+    padding: 3.14rem 10.04rem 2.5rem;
+    display: flex;
+    button {
+      @include button;
+      margin: 0.57rem;
+      padding: 0.64rem 1.89rem;
+      font-family: $font;
+      font-size: 1.14rem;
+      color: $white;
+      text-align: center;
+      line-height: 1.19rem;
+      position: relative;
+    }
+    .crear-button {
+      margin-right: 1.14rem;
+      &:active {
+        background: $night-pink-pushed-button;
+      }
+    }
+    button:hover:before {
+      @include dotted-border;
+    }
+    .tema-button-container {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      &:hover > .tema-button {
+        background-color: $night-pink-pushed-button;
+      }
+      &:hover > .dropdown-button {
+        background-color: $night-pink-pushed-button;
+      }
+      &:hover > .tema-button:before {
+        @include dotted-border;
+      }
+      &:hover > .dropdown-button:before {
+        @include dotted-border;
+      }
+      &:active > .tema-button {
+        background-color: $night-pink-pushed-button;
+      }
+      &:active > .dropdown-button {
+        background-color: $night-pink-pushed-button;
+      }
+      .tema-button {
+        @include button;
+        position: relative;
+        margin: 0.57rem 0;
+        padding: 0.64rem 1.71rem;
+      }
+      .dropdown-button {
+        @include button;
+        position: relative;
+        margin: 0.57rem 0;
+        padding: 0.93rem 1.07rem;
+        .dropdown-icon {
+          padding: 0;
+        }
+      }
+      .dropdown-themes {
+        display: none;
+        position: absolute;
+        top: 3.7rem;
+        width: 100%;
+        background: $night-gray-box-background;
+        box-shadow: $night-box-shadow-1-gray;
+        z-index: 1;
+        padding-bottom: 0.71rem;
+        li {
+          list-style: none;
+          button {
+            width: 86.5%;
+            margin: 0.71rem 0 0 0.71rem;
+            padding: 0.5rem 1.14rem;
+            background-color: $night-gray-button-normal;
+            border: $border;
+            border-color: $night-gray-pushed-button;
+            box-shadow: $night-box-shadow-1-pink;
+            font-family: $font;
+            font-size: 1.14rem;
+            text-align: left;
+          }
+          .day-button {
+            background: #cccccc;
+            border: $border;
+            border-color: $night-gray-button-normal;
+            box-shadow: inset -0.07rem -0.07rem 0 0 $night-gray-box-background,
+              inset 0.07rem 0.07rem 0 0 $white;
+            color: $black;
+          }
+          .night-button {
+            background: $night-gradient-blue;
+            border: $border;
+            border-color: #33358f33;
+            box-shadow: inset -0.07rem -0.07rem 0 0 #e6dce4,
+              inset 0.07rem 0.07rem 0 0 $white;
+            color: $white;
+          }
+          .day-button::first-letter {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .mis-guifos {
+    background-color: transparent;
+    padding: 0 0.8rem;
+    margin: 0.4rem 0;
+    border: none;
+    box-shadow: none;
+    &:hover:before {
+      @include dotted-border;
+      border: 0.07rem dashed $white;
+    }
+  }
+  .mis-guifos:active {
+    color: $night-gradient-blue;
+  }
+}

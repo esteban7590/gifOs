@@ -1,0 +1,59 @@
+.template-section {
+  padding: 4.57rem 0 0 0;
+  .intro-section {
+    @include section-intro;
+  }
+  .template-gif-container {
+    margin: 1.36rem 6.5rem 0 7.43rem;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    .template-gif {
+      @include gif-img-container;
+      margin: 0 2rem 1.14rem 0;
+      .gif-img {
+        animation: fadeInAndScale 0.3s ease-in-out forwards;
+        width: 19vw;
+        height: 19vw;
+        object-fit: cover;
+        &:hover {
+          outline: 0.07rem dashed $black;
+          width: 18.8vw;
+          height: 18.7vw;
+          padding: 0.1vw;
+        }
+        &:hover ~ .gif-title {
+          @include hashtag-bar;
+        }
+      }
+      .gif-title {
+        @include hashtag-bar;
+        overflow: hidden;
+        width: 18.8vw;
+        display: none;
+        &:hover {
+          display: block;
+        }
+      }
+    }
+    @keyframes fadeInAndScale {
+      from {
+        opacity: 0;
+        transform: scale(0);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.results-section {
+  display: none;
+  padding-top: 5rem;
+}
+
+.mis-guifos-section {
+  padding-top: 0rem;
+}

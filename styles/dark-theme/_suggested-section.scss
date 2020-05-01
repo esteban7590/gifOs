@@ -1,0 +1,54 @@
+.suggested-section {
+  padding: 4.57rem 0 0 0;
+  .intro-section {
+    @include section-intro;
+  }
+  .suggested-gif-container {
+    @include gif-container;
+    .suggested-gif {
+      @include gif-img-container;
+      position: relative;
+      .hashtag-bar {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        box-shadow: none;
+        background-image: $night-gradient;
+        margin: 0.2rem 0.29rem 0rem;
+        h4 {
+          padding: 0.2rem 0.3rem;
+          color: $white;
+          font-family: $font;
+          font-weight: $bold;
+        }
+      }
+      .gif {
+        margin: 0.14rem 0.29rem;
+        width: 18.5vw;
+        height: 19vw;
+        object-fit: cover;
+      }
+      button {
+        position: relative;
+        left: 0.79rem;
+        top: -3.65rem;
+        width: 5.79rem;
+        height: 2.43rem;
+        margin-bottom: -2.25rem;
+        @include button-blue;
+      }
+      button:hover:before {
+        @include dotted-border;
+      }
+      button:hover ~ .gif:before {
+        @include dotted-border;
+      }
+      .gif:hover {
+        outline: 0.07rem dashed $black;
+      }
+      .gif:hover ~ button:before {
+        @include dotted-border;
+      }
+    }
+  }
+}
