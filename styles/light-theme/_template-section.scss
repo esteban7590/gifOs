@@ -4,14 +4,15 @@
     @include section-intro;
   }
   .template-gif-container {
-    margin: 1.36rem 10rem 0 7.43rem;
+    margin: 1.36rem 6.5rem 0 7.43rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     .template-gif {
       @include gif-img-container;
-      margin: 0 0 1.14rem 0;
+      margin: 0 2rem 1.14rem 0;
       .gif-img {
+        animation: fadeInAndScale 0.3s ease-in-out forwards;
         width: 19vw;
         height: 19vw;
         object-fit: cover;
@@ -33,6 +34,16 @@
         &:hover {
           display: block;
         }
+      }
+    }
+    @keyframes fadeInAndScale {
+      from {
+        opacity: 0;
+        transform: scale(0);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
       }
     }
   }

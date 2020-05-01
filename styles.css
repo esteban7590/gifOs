@@ -623,15 +623,12 @@ html {
 }
 
 .sailor-day .template-section .template-gif-container {
-  margin: 1.36rem 10rem 0 7.43rem;
+  margin: 1.36rem 6.5rem 0 7.43rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .sailor-day .template-section .template-gif-container .template-gif {
@@ -646,10 +643,12 @@ html {
   background: #e6e6e6;
   -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
           box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-  margin: 0 0 1.14rem 0;
+  margin: 0 2rem 1.14rem 0;
 }
 
 .sailor-day .template-section .template-gif-container .template-gif .gif-img {
+  -webkit-animation: fadeInAndScale 0.3s ease-in-out forwards;
+          animation: fadeInAndScale 0.3s ease-in-out forwards;
   width: 19vw;
   height: 19vw;
   -o-object-fit: cover;
@@ -757,6 +756,32 @@ html {
 
 .sailor-day .template-section .template-gif-container .template-gif .gif-title:hover {
   display: block;
+}
+
+@-webkit-keyframes fadeInAndScale {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadeInAndScale {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .sailor-day .results-section {

@@ -36,21 +36,23 @@ const loadSection = async (url, sectionContainer) => {
   container.innerHTML = "";
   let array = await createGifObjectsArray(url);
   array.forEach((element, index) => {
-    const gifContainer = document.createElement("div");
-    gifContainer.setAttribute("class", "template-gif");
-    const img = document.createElement("img");
-    img.setAttribute("src", array[index].url);
-    img.setAttribute("alt", array[index].title);
-    img.setAttribute("class", "gif-img");
-    const titleContainer = document.createElement("div");
-    titleContainer.setAttribute("class", "gif-title");
-    const gifTitle = document.createElement("p");
-    gifTitle.innerHTML = array[index].title;
-    gifTitle.setAttribute("class", "gif-text");
-    gifContainer.appendChild(img);
-    gifContainer.appendChild(titleContainer);
-    titleContainer.appendChild(gifTitle);
-    container.appendChild(gifContainer);
+    setTimeout(() => {
+      const gifContainer = document.createElement("div");
+      gifContainer.setAttribute("class", "template-gif");
+      const img = document.createElement("img");
+      img.setAttribute("src", array[index].url);
+      img.setAttribute("alt", array[index].title);
+      img.setAttribute("class", "gif-img");
+      const titleContainer = document.createElement("div");
+      titleContainer.setAttribute("class", "gif-title");
+      const gifTitle = document.createElement("p");
+      gifTitle.innerHTML = array[index].title;
+      gifTitle.setAttribute("class", "gif-text");
+      gifContainer.appendChild(img);
+      gifContainer.appendChild(titleContainer);
+      titleContainer.appendChild(gifTitle);
+      container.appendChild(gifContainer);
+    }, index * 120);
   });
 };
 
