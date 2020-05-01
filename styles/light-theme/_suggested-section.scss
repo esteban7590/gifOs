@@ -1,7 +1,7 @@
 .suggested-section {
   padding: 4.57rem 0 0 0;
   .intro-section {
-    @include intro-section;
+    @include section-intro;
   }
   .suggested-gif-container {
     @include gif-container;
@@ -13,13 +13,13 @@
         justify-content: space-between;
         border: none;
         box-shadow: none;
-        background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
+        background-image: $day-gradient;
         margin: 0.2rem 0.29rem 0rem;
         h4 {
-          color: #ffffff;
+          color: $white;
           font-family: $font;
           font-size: 1rem;
-          font-weight: 600;
+          font-weight: $bold;
           padding: 0.2rem 0.3rem;
         }
       }
@@ -45,7 +45,7 @@
         @include dotted-border;
       }
       .gif:hover {
-        outline: 0.07rem dashed #000000;
+        outline: 0.07rem dashed $black;
       }
       .gif:hover ~ button:before {
         @include dotted-border;

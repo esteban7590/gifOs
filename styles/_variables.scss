@@ -1,0 +1,38 @@
+$font: "Chakra Petch", sans-serif;
+$regular: 400;
+$bold: 600;
+
+$day-pink-button-normal: #f7c9f3;
+$day-pink-pushed-button: #e6bbe2;
+$day-palepink-button-normal: #fff4fd;
+
+$day-gray-button-normal: #f0f0f0;
+$day-gray-pushed-button: #808080;
+$day-gray-inactive: #b4b4b4;
+
+$day-gray-box-background: #e6e6e6;
+
+$day-gradient-blue: #4180f6;
+$day-gradient: linear-gradient(
+  90deg,
+  $day-gradient-blue,
+  $day-pink-button-normal
+);
+
+$white: #ffffff;
+$black: #110038;
+
+$border: solid 0.07rem $black;
+
+$day-box-shadow-1-pink: inset -0.07rem -0.07rem 0 0 #997d97,
+  inset 0.07rem 0.07rem 0 0 $white;
+$day-box-shadow-1-gray: inset -0.07rem -0.07rem 0 0 #b4b4b4,
+  inset 0.07rem 0.07rem 0 0 $white;
+$day-box-shadow-2-gray: inset -0.14rem -0.14rem 0 0 #b4b4b4,
+  inset 0.14rem 0.14rem 0 0 $white;
+
+$day-box-shadow-2-black: inset -0.14rem -0.14rem 0 0 $day-gray-box-background,
+  inset 0.14rem 0.14rem 0 0 $black;
+
+$day-box-shadow-section-intro: inset -0.07rem -0.07rem 0 0 #e6dce4,
+  inset 0.07rem 0.07rem 0 0 $white;

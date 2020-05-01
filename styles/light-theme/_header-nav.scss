@@ -1,15 +1,12 @@
 header {
-  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
-  box-shadow: 0 0.07rem #110038;
+  background-image: $day-gradient;
+  box-shadow: 0 0.07rem;
   h1 {
-    color: #ffffff;
-    font-size: 0.86rem;
+    color: $white;
     font-family: $font;
-    font-weight: 400;
-    // padding: 0.21rem, 0, 0.5rem, 0.29rem; not working!!
-    padding-top: 0.21rem;
-    padding-left: 0.5rem;
-    padding-bottom: 0.29rem;
+    font-size: 0.86rem;
+    font-weight: $regular;
+    padding: 0.21rem 0 0.29rem 0.5rem;
   }
 }
 nav {
@@ -29,7 +26,7 @@ nav {
       margin: 0.57rem;
       font-family: $font;
       font-size: 1.14rem;
-      color: #110038;
+      color: $black;
       text-align: center;
       line-height: 1.19rem;
       position: relative;
@@ -37,7 +34,7 @@ nav {
     .crear-button {
       margin-right: 1.14rem;
       &:active {
-        background: $pushed-button-light;
+        background: $day-pink-pushed-button;
       }
     }
     button:hover:before {
@@ -48,15 +45,15 @@ nav {
     }
     .tema-button-container {
       position: relative;
-      margin: 0px;
-      padding: 0px;
+      margin: 0;
+      padding: 0;
       .dropdown-button {
         @include button;
         position: relative;
         margin: 0.57rem 0;
         padding: 0.93rem 1.07rem;
         &:active {
-          background: $pushed-button-light;
+          background: $day-pink-pushed-button;
         }
         .dropdown-icon {
           margin: 0;
@@ -70,7 +67,7 @@ nav {
         margin: 0.57rem 0;
         padding: 0.64rem 1.71rem;
         &:active {
-          background: $pushed-button-light;
+          background: $day-pink-pushed-button;
         }
       }
       .dropdown-button:hover ~ .tema-button:before {
@@ -81,9 +78,8 @@ nav {
         position: absolute;
         top: 3.7rem;
         width: 100%;
-        background: #e6e6e6;
-        box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4,
-          inset 0.14rem 0.14rem 0 0 #ffffff;
+        background: $day-gray-box-background;
+        box-shadow: $day-box-shadow-1-gray;
         z-index: 1;
         padding-bottom: 0.71rem;
         li {
@@ -92,18 +88,19 @@ nav {
             width: 86.5%;
             margin: 0.71rem 0 0 0.71rem;
             padding: 0.5rem 1.14rem;
-            background: #f0f0f0;
-            border: 0.07rem solid #808080;
-            box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4,
-              inset 0.07rem 0.07rem 0 0 #ffffff;
+            background: $day-gray-button-normal;
+            border: $border;
+            border-color: $day-gray-pushed-button;
+            box-shadow: $day-box-shadow-1-pink;
             font-family: $font;
             font-size: 1.14rem;
             text-align: left;
           }
           .day-button {
-            background: #fff4fd;
-            border: 1px solid #cca6c9;
-            box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+            background: $day-palepink-button-normal;
+            border: $border;
+            border-color: #cca6c9;
+            box-shadow: $day-box-shadow-section-intro;
           }
           .day-button::first-letter {
             text-decoration: underline;
@@ -111,12 +108,6 @@ nav {
         }
       }
     }
-    // .dropdown-button:focus ~ .dropdown-themes {
-    //   display: block;
-    // }
-    // .tema-button:focus ~ .dropdown-themes {
-    //   display: block;
-    // }
   }
   .mis-guifos {
     background-color: transparent;
@@ -126,6 +117,6 @@ nav {
     box-shadow: none;
   }
   .mis-guifos:focus {
-    color: #9674e6;
+    color: $black;
   }
 }

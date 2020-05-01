@@ -15,18 +15,16 @@ html {
 .sailor-day header {
   background-image: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
   background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
-  -webkit-box-shadow: 0 0.07rem #110038;
-          box-shadow: 0 0.07rem #110038;
+  -webkit-box-shadow: 0 0.07rem;
+          box-shadow: 0 0.07rem;
 }
 
 .sailor-day header h1 {
   color: #ffffff;
-  font-size: 0.86rem;
   font-family: "Chakra Petch", sans-serif;
+  font-size: 0.86rem;
   font-weight: 400;
-  padding-top: 0.21rem;
-  padding-left: 0.5rem;
-  padding-bottom: 0.29rem;
+  padding: 0.21rem 0 0.29rem 0.5rem;
 }
 
 .sailor-day nav {
@@ -55,10 +53,10 @@ html {
 }
 
 .sailor-day nav div button {
-  border: solid 0.07rem;
+  border: solid 0.07rem #110038;
   background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
   padding: 0.64rem 1.89rem;
   margin: 0.57rem;
   font-family: "Chakra Petch", sans-serif;
@@ -74,11 +72,11 @@ html {
 }
 
 .sailor-day nav div .crear-button:active {
-  background: #daafd7;
+  background: #e6bbe2;
 }
 
 .sailor-day nav div button:hover:before {
-  border: 0.07rem dashed #000000;
+  border: 0.07rem dashed #110038;
   position: absolute;
   content: "";
   top: 0.14rem;
@@ -88,7 +86,7 @@ html {
 }
 
 .sailor-day nav div button:focus:before {
-  border: 0.07rem dashed #000000;
+  border: 0.07rem dashed #110038;
   position: absolute;
   content: "";
   top: 0.14rem;
@@ -99,22 +97,22 @@ html {
 
 .sailor-day nav div .tema-button-container {
   position: relative;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .sailor-day nav div .tema-button-container .dropdown-button {
-  border: solid 0.07rem;
+  border: solid 0.07rem #110038;
   background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
   position: relative;
   margin: 0.57rem 0;
   padding: 0.93rem 1.07rem;
 }
 
 .sailor-day nav div .tema-button-container .dropdown-button:active {
-  background: #daafd7;
+  background: #e6bbe2;
 }
 
 .sailor-day nav div .tema-button-container .dropdown-button .dropdown-icon {
@@ -124,21 +122,21 @@ html {
 }
 
 .sailor-day nav div .tema-button-container .tema-button {
-  border: solid 0.07rem;
+  border: solid 0.07rem #110038;
   background-color: #f7c9f3;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
   position: relative;
   margin: 0.57rem 0;
   padding: 0.64rem 1.71rem;
 }
 
 .sailor-day nav div .tema-button-container .tema-button:active {
-  background: #daafd7;
+  background: #e6bbe2;
 }
 
 .sailor-day nav div .tema-button-container .dropdown-button:hover ~ .tema-button:before {
-  border: 0.07rem dashed #000000;
+  border: 0.07rem dashed #110038;
   position: absolute;
   content: "";
   top: 0.14rem;
@@ -153,8 +151,8 @@ html {
   top: 3.7rem;
   width: 100%;
   background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
   z-index: 1;
   padding-bottom: 0.71rem;
 }
@@ -168,9 +166,10 @@ html {
   margin: 0.71rem 0 0 0.71rem;
   padding: 0.5rem 1.14rem;
   background: #f0f0f0;
-  border: 0.07rem solid #808080;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  border-color: #808080;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
   text-align: left;
@@ -178,9 +177,10 @@ html {
 
 .sailor-day nav div .tema-button-container .dropdown-themes li .day-button {
   background: #fff4fd;
-  border: 1px solid #cca6c9;
-  -webkit-box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  border-color: #cca6c9;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #e6dce4, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #e6dce4, inset 0.07rem 0.07rem 0 0 #ffffff;
 }
 
 .sailor-day nav div .tema-button-container .dropdown-themes li .day-button::first-letter {
@@ -197,7 +197,7 @@ html {
 }
 
 .sailor-day nav .mis-guifos:focus {
-  color: #9674e6;
+  color: #110038;
 }
 
 .sailor-day .search-section {
@@ -217,8 +217,8 @@ html {
           justify-content: space-between;
   height: 7.4rem;
   background-color: #e6e6e6;
-  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
-          box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
 }
 
 .sailor-day .search-section .bottom-part-container h2 {
@@ -246,9 +246,10 @@ html {
   background-color: #ffffff;
   padding: 0 0 0 1.14rem;
   margin: 0.86rem 0 0.86rem 1.07rem;
-  border: 1px solid #979797;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #000000;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #000000;
+  border: solid 0.07rem #110038;
+  border-color: #979797;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
   height: 3.43rem;
   width: 60%;
   -webkit-box-flex: 1;
@@ -256,7 +257,7 @@ html {
           flex-grow: 1;
   font-size: 1.14rem;
   font-family: "Chakra Petch", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #b4b4b4;
 }
 
@@ -266,10 +267,11 @@ html {
 
 .sailor-day .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button {
   background-color: #f7c9f3;
+  border: solid 0.07rem #110038;
 }
 
 .sailor-day .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button:hover:before {
-  border: 0.07rem dashed #000000;
+  border: 0.07rem dashed #110038;
   position: absolute;
   content: "";
   top: 0.14rem;
@@ -304,9 +306,10 @@ html {
       -ms-flex-align: center;
           align-items: center;
   background: #e6e6e6;
-  border: 0.07rem solid #808080;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  border-color: #808080;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
   position: relative;
 }
 
@@ -326,7 +329,7 @@ html {
 }
 
 .sailor-day .search-section .bottom-part-container .search-bar-container button:active:before {
-  border: 0.07rem dashed #000000;
+  border: 0.07rem dashed #110038;
   position: absolute;
   content: "";
   top: 0.14rem;
@@ -336,7 +339,7 @@ html {
 }
 
 .sailor-day .search-section .bottom-part-container .search-bar-container button:active {
-  background-color: #daafd7;
+  background-color: #e6bbe2;
 }
 
 .sailor-day .search-section .bottom-part-container .search-bar-container button:active span {
@@ -356,8 +359,8 @@ html {
   display: none;
   width: 100%;
   background-color: #e6e6e6;
-  -webkit-box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
-          box-shadow: 0.14rem 0.14rem 0 0 #ffffff inset, -0.14rem -0.14rem 0 0 #b4b4b4 inset;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -373,7 +376,7 @@ html {
 }
 
 .sailor-day .search-section .bottom-part-container .search-bar-container .on-search-menu .close-on-search-li img:hover {
-  outline: 0.07rem dashed #000000;
+  outline: 0.07rem dashed #110038;
 }
 
 .sailor-day .search-section .bottom-part-container .search-bar-container .on-search-menu li {
@@ -381,15 +384,16 @@ html {
   list-style: none;
   padding: 0.5rem 1.14rem;
   background: #f0f0f0;
-  border: 0.07rem solid #808080;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  border-color: #808080;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
   margin: 1.21rem 9.21rem 1.21rem 1.14rem;
   position: relative;
 }
 
 .sailor-day .search-section .bottom-part-container .search-bar-container .on-search-menu li:hover:not(.close-on-search-li):before {
-  border: 0.07rem dashed #000000;
+  border: 0.07rem dashed #110038;
   position: absolute;
   content: "";
   top: 0.14rem;
@@ -424,22 +428,22 @@ html {
 }
 
 .sailor-day .search-section .results-buttons-container::-webkit-scrollbar-thumb {
-  background: #a8a8a8;
+  background: #f0f0f0;
   border-radius: 0.5rem;
 }
 
 .sailor-day .search-section .results-buttons-container::-webkit-scrollbar-thumb:hover {
-  background: #949494;
+  background: #808080;
 }
 
 .sailor-day .search-section .result-button {
   background: #4180f6;
-  border: 0.07rem solid #4c2f99;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
+  border: solid 0.07rem #110038 #4c2f99;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
   color: #ffffff;
-  font-size: 1rem;
   font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
   line-height: 1.29rem;
   padding: 0.57rem 0.5rem;
   margin: 0.86rem 0.57rem 0 0.1rem;
@@ -462,7 +466,8 @@ html {
   display: -ms-flexbox;
   display: flex;
   background: #fffafe;
-  border: 0.07rem solid #e6bbe2;
+  border: solid 0.07rem #110038;
+  border-color: #e6bbe2;
   -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
           box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
 }
@@ -475,7 +480,7 @@ html {
   font-size: 1rem;
   font-family: "Chakra Petch", sans-serif;
   color: #110038;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .sailor-day .suggested-section .suggested-gif-container {
@@ -498,8 +503,8 @@ html {
           flex-direction: column;
   border: none;
   background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
   position: relative;
 }
 
@@ -513,8 +518,8 @@ html {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
   margin: 0.2rem 0.29rem 0rem;
 }
 
@@ -542,17 +547,17 @@ html {
   height: 2.43rem;
   margin-bottom: -2.25rem;
   background: #4180f6;
-  border: 0.07rem solid #4c2f99;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
+  border: solid 0.07rem #110038 #4c2f99;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #284f99, inset 0.07rem 0.07rem 0 0 #ffffff;
   color: #ffffff;
-  font-size: 1rem;
   font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
   line-height: 1.29rem;
 }
 
 .sailor-day .suggested-section .suggested-gif-container .suggested-gif button:hover:before {
-  border: 0.07rem dashed #000000;
+  border: 0.07rem dashed #110038;
   position: absolute;
   content: "";
   top: 0.14rem;
@@ -562,7 +567,7 @@ html {
 }
 
 .sailor-day .suggested-section .suggested-gif-container .suggested-gif button:hover ~ .gif:before {
-  border: 0.07rem dashed #000000;
+  border: 0.07rem dashed #110038;
   position: absolute;
   content: "";
   top: 0.14rem;
@@ -572,11 +577,11 @@ html {
 }
 
 .sailor-day .suggested-section .suggested-gif-container .suggested-gif .gif:hover {
-  outline: 0.07rem dashed #000000;
+  outline: 0.07rem dashed #110038;
 }
 
 .sailor-day .suggested-section .suggested-gif-container .suggested-gif .gif:hover ~ button:before {
-  border: 0.07rem dashed #000000;
+  border: 0.07rem dashed #110038;
   position: absolute;
   content: "";
   top: 0.14rem;
@@ -595,7 +600,8 @@ html {
   display: -ms-flexbox;
   display: flex;
   background: #fffafe;
-  border: 0.07rem solid #e6bbe2;
+  border: solid 0.07rem #110038;
+  border-color: #e6bbe2;
   -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
           box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
 }
@@ -608,7 +614,7 @@ html {
   font-size: 1rem;
   font-family: "Chakra Petch", sans-serif;
   color: #110038;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .sailor-day .template-section .template-gif-container {
@@ -633,8 +639,8 @@ html {
           flex-direction: column;
   border: none;
   background: #e6e6e6;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #b4b4b4, inset 0.07rem 0.07rem 0 0 #ffffff;
   margin: 0 0 1.14rem 0;
 }
 
@@ -646,7 +652,7 @@ html {
 }
 
 .sailor-day .template-section .template-gif-container .template-gif .gif-img:hover {
-  outline: 0.07rem dashed #000000;
+  outline: 0.07rem dashed #110038;
   width: 18.8vw;
   height: 18.7vw;
   padding: 0.1vw;
@@ -658,8 +664,8 @@ html {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
   position: relative;
   top: -1.3rem;
   left: 0.1rem;
@@ -708,8 +714,8 @@ html {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
   position: relative;
   top: -1.3rem;
   left: 0.1rem;
@@ -746,8 +752,6 @@ html {
 
 .sailor-day .template-section .template-gif-container .template-gif .gif-title:hover {
   display: block;
-  background-image: -webkit-gradient(linear, right top, left top, from(#4180f6), to(#f7c9f3));
-  background-image: linear-gradient(270deg, #4180f6, #f7c9f3);
 }
 
 .sailor-day .results-section {
@@ -783,8 +787,8 @@ html {
           flex-direction: column;
   margin: 5.36rem 27rem 10.93rem 27rem;
   background: #e6e6e6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
-          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -794,8 +798,8 @@ html {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
   position: relative;
   top: -1.3rem;
   left: 0.1rem;
@@ -804,8 +808,8 @@ html {
   position: relative;
   top: 0.2rem;
   font-family: "Chakra Petch", sans-serif;
-  font-weight: bold;
-  color: white;
+  font-weight: 600;
+  color: #ffffff;
   font-size: 1rem;
 }
 
@@ -851,7 +855,7 @@ html {
 
 .sailor-day .record-section .crear-window .instructions .bold-word {
   font-style: italic;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .sailor-day .record-section .crear-window .empezar-terminar-btn-container {
@@ -871,18 +875,18 @@ html {
 }
 
 .sailor-day .record-section .crear-window .empezar-terminar-btn-container :first-child {
-  background: #fff4fd;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  background-color: #fff4fd;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
 }
 
 .sailor-day .record-section .crear-window .empezar-terminar-btn-container :nth-child(2) {
   margin-left: 1.14rem;
-  background: #f7c9f3;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  background-color: #f7c9f3;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
 }
 
 .sailor-day .record-section .crear-window .empezar-terminar-btn-container .done-window-container {
@@ -900,9 +904,10 @@ html {
   height: 50%;
   margin: 2.71rem 1.21rem 3.14rem 0.71rem;
   background: #ffffff;
-  border: 1px solid #979797;
-  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  border: solid 0.07rem #110038;
+  border-color: #979797;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
 }
 
 .sailor-day .record-section .crear-window .img-buttons-container .uploaded-preview-background .uploaded-preview {
@@ -936,10 +941,10 @@ html {
   width: 16rem;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
-  background: #fff4fd;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  background-color: #fff4fd;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
 }
 
 .sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container .download-copy-button a {
@@ -954,10 +959,10 @@ html {
   width: 16rem;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
-  background: #f7c9f3;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  background-color: #f7c9f3;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
 }
 
 .sailor-day .record-section .record-window {
@@ -968,8 +973,8 @@ html {
           flex-direction: column;
   margin: 6rem 22rem 0 19rem;
   background: #e6e6e6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
-          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #b4b4b4, inset 0.14rem 0.14rem 0 0 #ffffff;
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -979,8 +984,8 @@ html {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
-  background-image: linear-gradient(270deg, #f7c9f3, #4180f6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4180f6), to(#f7c9f3));
+  background-image: linear-gradient(90deg, #4180f6, #f7c9f3);
   position: relative;
   top: -1.3rem;
   left: 0.1rem;
@@ -1021,7 +1026,7 @@ html {
 
 .sailor-day .record-section .record-window .title-bar h2 {
   font-family: "Chakra Petch", sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1rem;
   color: white;
   font-size: 1rem;
@@ -1047,9 +1052,10 @@ html {
      object-fit: cover;
   margin: 2.71rem 1.21rem 0 0.71rem;
   background: #ffffff;
-  border: 1px solid #979797;
-  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  border: solid 0.07rem #110038;
+  border-color: #979797;
+  -webkit-box-shadow: inset inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
+          box-shadow: inset inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
 }
 
 .sailor-day .record-section .record-window .preview-background .preview {
@@ -1083,9 +1089,9 @@ html {
   height: 1.71rem;
   padding: 0 0.1rem 0 0;
   margin-bottom: 0.67rem;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
   background: #b4b4b4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #fffcfc, inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #fffcfc, inset 2px 2px 0 0 #000000;
 }
 
 .sailor-day .record-section .record-window .preview-background .uploading-container .progress-container div {
@@ -1096,7 +1102,7 @@ html {
   width: 9%;
   float: left;
   margin-right: 0.14rem;
-  background-color: gray;
+  background-color: #b4b4b4;
 }
 
 .sailor-day .record-section .record-window .preview-background .uploading-container .progress-container :first-child {
@@ -1260,25 +1266,25 @@ html {
 
 @-webkit-keyframes progress {
   0% {
-    background-color: pink;
+    background-color: #f7c9f3;
   }
   60% {
-    background-color: gray;
+    background-color: #808080;
   }
   100% {
-    background-color: pink;
+    background-color: #f7c9f3;
   }
 }
 
 @keyframes progress {
   0% {
-    background-color: pink;
+    background-color: #f7c9f3;
   }
   60% {
-    background-color: gray;
+    background-color: #808080;
   }
   100% {
-    background-color: pink;
+    background-color: #f7c9f3;
   }
 }
 
@@ -1300,13 +1306,20 @@ html {
       align-self: flex-end;
   width: 10.29rem;
   height: 2.57rem;
-  background: #f7c9f3;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  background-color: #f7c9f3;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
   margin: 1.5rem 2% 1.14rem 0;
+}
+
+.sailor-day .record-section .record-window .cancel-upload-button {
+  border: solid 0.07rem #110038;
+  background-color: #fff4fd;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
 }
 
 .sailor-day .record-section .record-window .time-stop-container {
@@ -1327,9 +1340,10 @@ html {
   padding: 0.5rem 1.5rem;
   width: 3rem;
   background: #ffffff;
-  border: 1px solid #979797;
-  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  border: solid 0.07rem #110038;
+  border-color: #979797;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6e6e6, inset 0.14rem 0.14rem 0 0 #110038;
 }
 
 .sailor-day .record-section .record-window .time-stop-container .stop-button {
@@ -1344,7 +1358,7 @@ html {
   width: 10.29rem;
   height: 2.57rem;
   background: #ff6161;
-  border: 1px solid #110038;
+  border: solid 0.07rem #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
           box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
   font-family: "Chakra Petch", sans-serif;
@@ -1376,18 +1390,18 @@ html {
 }
 
 .sailor-day .record-section .record-window .upload-repeat-container :first-child {
-  background: #fff4fd;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  background-color: #fff4fd;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
 }
 
 .sailor-day .record-section .record-window .upload-repeat-container :nth-child(2) {
   margin-left: 1.14rem;
-  background: #f7c9f3;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  border: solid 0.07rem #110038;
+  background-color: #f7c9f3;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #997d97, inset 0.07rem 0.07rem 0 0 #ffffff;
 }
 
 .sailor-day .mis-guifos-section {
