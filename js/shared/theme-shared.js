@@ -1,5 +1,14 @@
 const dropdown = document.getElementById("dropdown-themes");
 
+const setTheme = () => {
+  const theme = localStorage.getItem("theme");
+  if (theme === "night") {
+    document.getElementById("body-theme").className = "sailor-night";
+  } else {
+    document.getElementById("body-theme").className = "sailor-day";
+  }
+};
+
 const themeChange = () => {
   document.getElementById("theme-button").onclick = (event) => {
     dropdown.style.display = "block";
@@ -18,9 +27,11 @@ const themeChange = () => {
   document.getElementById("night").onclick = () => {
     document.getElementById("body-theme").className = "sailor-night";
     dropdown.style.display = "none";
+    localStorage.setItem("theme", "night");
   };
   document.getElementById("day").onclick = () => {
     document.getElementById("body-theme").className = "sailor-day";
     dropdown.style.display = "none";
+    localStorage.setItem("theme", "day");
   };
 };

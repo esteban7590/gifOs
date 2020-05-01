@@ -1,4 +1,5 @@
 window.onload = () => {
+  setTheme();
   initialSetup();
   setRecordEnvironment();
   themeChange();
