@@ -90,7 +90,6 @@
     animation: progress 6s steps(1, end) infinite;
     animation-delay: 4.4s;
   }
-
   @keyframes progress {
     0% {
       background-color: $day-pink-button-normal;

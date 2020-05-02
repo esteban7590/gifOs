@@ -898,10 +898,21 @@ html {
 }
 
 .sailor-day .record-section .crear-window .empezar-terminar-btn-container button {
+  position: relative;
   height: 2.57rem;
   width: 10.29rem;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
+}
+
+.sailor-day .record-section .crear-window .empezar-terminar-btn-container button:hover:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 .sailor-day .record-section .crear-window .empezar-terminar-btn-container :first-child {
@@ -957,6 +968,20 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 1.71rem;
+}
+
+.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container button {
+  position: relative;
+}
+
+.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container button:hover:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 .sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container :first-child {
@@ -1128,7 +1153,7 @@ html {
   position: relative;
   top: 0.15rem;
   left: 0.15rem;
-  height: 1.43rem;
+  height: 1.4rem;
   width: 9%;
   float: left;
   margin-right: 0.14rem;
@@ -1323,6 +1348,7 @@ html {
 }
 
 .sailor-day .record-section .record-window .record-button {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1343,6 +1369,16 @@ html {
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
   margin: 1.5rem 2% 1.14rem 0;
+}
+
+.sailor-day .record-section .record-window .record-button:hover:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 .sailor-day .record-section .record-window .cancel-upload-button {
@@ -1413,10 +1449,21 @@ html {
 }
 
 .sailor-day .record-section .record-window .upload-repeat-container button {
+  position: relative;
   height: 2.57rem;
   width: 10.29rem;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
+}
+
+.sailor-day .record-section .record-window .upload-repeat-container button:hover:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 .sailor-day .record-section .record-window .upload-repeat-container :first-child {
@@ -2325,17 +2372,31 @@ html {
 }
 
 .sailor-night .record-section .crear-window .empezar-terminar-btn-container button {
+  position: relative;
   height: 2.57rem;
   width: 10.29rem;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
+  color: #fff0fe;
+}
+
+.sailor-night .record-section .crear-window .empezar-terminar-btn-container button:hover:before {
+  border: 0.07rem dashed #fff0fe;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 .sailor-night .record-section .crear-window .empezar-terminar-btn-container :first-child {
   border: solid 0.07rem #110038;
+  border-color: #b4b4b4;
   background-color: #110038;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #5c5c5c, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #5c5c5c, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #fff0fe;
 }
 
 .sailor-night .record-section .crear-window .empezar-terminar-btn-container :nth-child(2) {
@@ -2386,6 +2447,20 @@ html {
   padding-left: 1.71rem;
 }
 
+.sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container button {
+  position: relative;
+}
+
+.sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container button:hover:before {
+  border: 0.07rem dashed #fff0fe;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
 .sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container :first-child {
   padding: 5.43rem 0 1.14rem 0;
   height: 2.57rem;
@@ -2399,9 +2474,11 @@ html {
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
   border: solid 0.07rem #110038;
+  border-color: #b4b4b4;
   background-color: #110038;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #5c5c5c, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #5c5c5c, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #fff0fe;
 }
 
 .sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container .download-copy-button a {
@@ -2723,13 +2800,13 @@ html {
 
 @keyframes progress {
   0% {
-    background-color: #ee3efe;
+    background-color: #f7c9f3;
   }
   60% {
-    background-color: #818181;
+    background-color: #808080;
   }
   100% {
-    background-color: #ee3efe;
+    background-color: #f7c9f3;
   }
 }
 
@@ -2738,6 +2815,7 @@ html {
 }
 
 .sailor-night .record-section .record-window .record-button {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2755,16 +2833,33 @@ html {
   background-color: #ee3efe;
   -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
           box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #fff0fe;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
   margin: 1.5rem 2% 1.14rem 0;
 }
 
+.sailor-night .record-section .record-window .record-button:hover:before {
+  border: 0.07rem dashed #fff0fe;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.sailor-night .record-section .record-window .record-button img {
+  content: url("images/camera_light.svg");
+}
+
 .sailor-night .record-section .record-window .cancel-upload-button {
   border: solid 0.07rem #110038;
+  border-color: #b4b4b4;
   background-color: #110038;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #5c5c5c, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #5c5c5c, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #fff0fe;
 }
 
 .sailor-night .record-section .record-window .time-stop-container {
@@ -2828,17 +2923,31 @@ html {
 }
 
 .sailor-night .record-section .record-window .upload-repeat-container button {
+  position: relative;
   height: 2.57rem;
   width: 10.29rem;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.14rem;
+  color: #fff0fe;
+}
+
+.sailor-night .record-section .record-window .upload-repeat-container button:hover:before {
+  border: 0.07rem dashed #fff0fe;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 .sailor-night .record-section .record-window .upload-repeat-container :first-child {
   border: solid 0.07rem #110038;
+  border-color: #b4b4b4;
   background-color: #110038;
-  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
-          box-shadow: inset -0.07rem -0.07rem 0 0 #a72cb3, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  -webkit-box-shadow: inset -0.07rem -0.07rem 0 0 #5c5c5c, inset 0.07rem 0.07rem 0 0 #fff0fe;
+          box-shadow: inset -0.07rem -0.07rem 0 0 #5c5c5c, inset 0.07rem 0.07rem 0 0 #fff0fe;
+  color: #fff0fe;
 }
 
 .sailor-night .record-section .record-window .upload-repeat-container :nth-child(2) {

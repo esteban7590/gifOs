@@ -6,8 +6,10 @@
 
 @mixin pale-button {
   border: $border;
+  border-color: $night-gray-box-background;
   background-color: $night-pale-button-normal;
-  box-shadow: $night-box-shadow-1-pink;
+  box-shadow: $night-box-shadow-1-pale;
+  color: $white;
 }
 
 @mixin button-blue {
@@ -84,6 +86,15 @@
 
 @mixin dotted-border {
   border: 0.07rem dashed $black;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+@mixin dotted-border-white {
+  border: 0.07rem dashed $white;
   position: absolute;
   content: "";
   top: 0.14rem;
