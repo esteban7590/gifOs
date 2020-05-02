@@ -970,20 +970,6 @@ html {
   padding-left: 1.71rem;
 }
 
-.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container button {
-  position: relative;
-}
-
-.sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container button:hover:before {
-  border: 0.07rem dashed #110038;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
 .sailor-day .record-section .crear-window .img-buttons-container .done-buttons-container :first-child {
   padding: 5.43rem 0 1.14rem 0;
   height: 2.57rem;
@@ -2445,20 +2431,6 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 1.71rem;
-}
-
-.sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container button {
-  position: relative;
-}
-
-.sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container button:hover:before {
-  border: 0.07rem dashed #fff0fe;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
 }
 
 .sailor-night .record-section .crear-window .img-buttons-container .done-buttons-container :first-child {
