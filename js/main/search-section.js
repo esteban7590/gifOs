@@ -2,18 +2,33 @@ let sessionSearches = [];
 const searchButton = document.getElementById("search-button");
 
 const setSearchSection = () => {
-  searchButton.disabled = true;
-  document.getElementById("input-field").onkeydown = () => {
-    document.getElementById("auto-list").style.display = "block";
-    searchButton.disabled = false;
+  document.getElementById("input-field").onkeyup = () => {
+    let length = document.getElementById("input-field").value.length;
+    if (length === 0) {
+      document.getElementById("auto-list").style.display = "none";
+      searchButton.removeAttribute("class");
+      searchButton.disabled = true;
+    } else if (event.keyCode === 13) {
+      inputSearch();
+    } else {
+      document.getElementById("auto-list").style.display = "block";
+      searchButton.setAttribute("class", "search-button-focus");
+      searchButton.disabled = false;
+    }
   };
   document.getElementById("close-onsearch").onclick = () => {
-    document.getElementById("input-field").value = "";
     document.getElementById("auto-list").style.display = "none";
   };
-  document.getElementById("input-field").onkeyup = (event) => {
-    if (event.keyCode === 13) {
+};
+
+//search on search button click
+const searchOnButtonPress = () => {
+  searchButton.onclick = () => {
+    const empty = document.getElementById("input-field").value;
+    if (empty !== "") {
       inputSearch();
+      searchButton.removeAttribute("class");
+      searchButton.disabled = true;
     }
   };
 };
@@ -89,20 +104,14 @@ const searchSuggestionBased = () => {
       document.getElementById("input-field").value = "";
       const onSearch = document.getElementById("auto-list");
       onSearch.style.display = "none";
+      searchButton.removeAttribute("class");
+      searchButton.disabled = true;
       const resultsSection = document.getElementById("results-section");
       resultsSection.style.display = "block";
       resultsSection.scrollIntoView();
       loadRecentSearches();
     };
   });
-};
-
-//search on search button click
-const searchOnButtonPress = () => {
-  searchButton.onclick = () => {
-    inputSearch();
-    searchButton.disabled = true;
-  };
 };
 
 //load search history

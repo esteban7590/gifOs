@@ -271,34 +271,6 @@ html {
   color: #110038;
 }
 
-.sailor-day .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button {
-  background-color: #f7c9f3;
-  border: solid 0.07rem #110038;
-}
-
-.sailor-day .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button:hover:before {
-  border: 0.07rem dashed #110038;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
-.sailor-day .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button span {
-  color: #110038;
-}
-
-.sailor-day .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button .lupa-inactive {
-  display: none;
-}
-
-.sailor-day .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button .lupa {
-  display: block;
-  padding: 0 0 0 0.5rem;
-}
-
 .sailor-day .search-section .bottom-part-container .search-bar-container button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,6 +329,34 @@ html {
 }
 
 .sailor-day .search-section .bottom-part-container .search-bar-container button:active .lupa {
+  display: block;
+  padding: 0 0 0 0.5rem;
+}
+
+.sailor-day .search-section .bottom-part-container .search-bar-container .search-button-focus {
+  background-color: #f7c9f3;
+  border: solid 0.07rem #110038;
+}
+
+.sailor-day .search-section .bottom-part-container .search-bar-container .search-button-focus:hover:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
+}
+
+.sailor-day .search-section .bottom-part-container .search-bar-container .search-button-focus span {
+  color: #110038;
+}
+
+.sailor-day .search-section .bottom-part-container .search-bar-container .search-button-focus .lupa-inactive {
+  display: none;
+}
+
+.sailor-day .search-section .bottom-part-container .search-bar-container .search-button-focus .lupa {
   display: block;
   padding: 0 0 0 0.5rem;
 }
@@ -475,8 +475,8 @@ html {
   background: #fffafe;
   border: solid 0.07rem #110038;
   border-color: #e6bbe2;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
 }
 
 .sailor-day .suggested-section .intro-section h3 {
@@ -609,8 +609,8 @@ html {
   background: #fffafe;
   border: solid 0.07rem #110038;
   border-color: #e6bbe2;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
 }
 
 .sailor-day .template-section .intro-section h3 {
@@ -1761,33 +1761,6 @@ html {
   color: #110038;
 }
 
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button {
-  background-color: #ee3efe;
-  border: solid 0.07rem #110038;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button span {
-  color: #fff0fe;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button .lupa {
-  content: url("images/lupa_light.svg");
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button:hover {
-  background-color: #ce36db;
-}
-
-.sailor-night .search-section .bottom-part-container .search-bar-container .search-bar:focus ~ button:hover:before {
-  border: 0.07rem dashed #110038;
-  position: absolute;
-  content: "";
-  top: 0.14rem;
-  left: 0.14rem;
-  right: 0.14rem;
-  bottom: 0.14rem;
-}
-
 .sailor-night .search-section .bottom-part-container .search-bar-container button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1844,6 +1817,33 @@ html {
 
 .sailor-night .search-section .bottom-part-container .search-bar-container button:active .lupa {
   content: url("images/lupa_light.svg");
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-button-focus {
+  background-color: #ee3efe;
+  border: solid 0.07rem #110038;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-button-focus span {
+  color: #fff0fe;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-button-focus .lupa {
+  content: url("images/lupa_light.svg");
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-button-focus:hover {
+  background-color: #ce36db;
+}
+
+.sailor-night .search-section .bottom-part-container .search-bar-container .search-button-focus:hover:before {
+  border: 0.07rem dashed #110038;
+  position: absolute;
+  content: "";
+  top: 0.14rem;
+  left: 0.14rem;
+  right: 0.14rem;
+  bottom: 0.14rem;
 }
 
 .sailor-night .search-section .bottom-part-container .search-bar-container .on-search-menu {
@@ -1961,8 +1961,8 @@ html {
   background: #fffafe;
   border: solid 0.07rem #110038;
   border-color: #e6bbe2;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
 }
 
 .sailor-night .suggested-section .intro-section h3 {
@@ -2095,8 +2095,8 @@ html {
   background: #fffafe;
   border: solid 0.07rem #110038;
   border-color: #e6bbe2;
-  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
-          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+  -webkit-box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
+          box-shadow: inset -0.14rem -0.14rem 0 0 #e6dce4, inset 0.14rem 0.14rem 0 0 #80687d;
 }
 
 .sailor-night .template-section .intro-section h3 {
