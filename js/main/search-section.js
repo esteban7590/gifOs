@@ -10,6 +10,8 @@ const setSearchSection = () => {
       searchButton.disabled = true;
     } else if (event.keyCode === 13) {
       inputSearch();
+      searchButton.removeAttribute("class");
+      searchButton.disabled = true;
     } else {
       document.getElementById("auto-list").style.display = "block";
       searchButton.setAttribute("class", "search-button-focus");
