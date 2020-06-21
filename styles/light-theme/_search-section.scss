@@ -38,23 +38,6 @@
         &:focus {
           color: $black;
         }
-        &:focus ~ button {
-          background-color: $day-pink-button-normal;
-          border: $border;
-          &:hover:before {
-            @include dotted-border;
-          }
-          span {
-            color: $black;
-          }
-          .lupa-inactive {
-            display: none;
-          }
-          .lupa {
-            display: block;
-            padding: 0 0 0 0.5rem;
-          }
-        }
       }
       button {
         display: flex;
@@ -95,6 +78,23 @@
             display: block;
             padding: 0 0 0 0.5rem;
           }
+        }
+      }
+      .search-button-focus {
+        background-color: $day-pink-button-normal;
+        border: $border;
+        &:hover:before {
+          @include dotted-border;
+        }
+        span {
+          color: $black;
+        }
+        .lupa-inactive {
+          display: none;
+        }
+        .lupa {
+          display: block;
+          padding: 0 0 0 0.5rem;
         }
       }
       .on-search-menu {

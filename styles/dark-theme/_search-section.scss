@@ -38,22 +38,6 @@
         &:focus {
           color: $black;
         }
-        &:focus ~ button {
-          background-color: $night-pink-button-normal;
-          border: $border;
-          span {
-            color: $white;
-          }
-          .lupa {
-            content: url("images/lupa_light.svg");
-          }
-          &:hover {
-            background-color: $night-pink-pushed-button;
-          }
-          &:hover:before {
-            @include dotted-border;
-          }
-        }
       }
       button {
         display: flex;
@@ -91,6 +75,22 @@
           .lupa {
             content: url("images/lupa_light.svg");
           }
+        }
+      }
+      .search-button-focus {
+        background-color: $night-pink-button-normal;
+        border: $border;
+        span {
+          color: $white;
+        }
+        .lupa {
+          content: url("images/lupa_light.svg");
+        }
+        &:hover {
+          background-color: $night-pink-pushed-button;
+        }
+        &:hover:before {
+          @include dotted-border;
         }
       }
       .on-search-menu {
